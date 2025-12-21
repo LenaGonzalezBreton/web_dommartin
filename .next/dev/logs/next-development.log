@@ -1,0 +1,25 @@
+[00:00:01.059] Server  LOG      ✓ Ready in 709ms
+[00:00:30.569] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:57.631] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:01:03.970] Server  LOG      ○ Compiling /programme ...
+[00:03:19.756] Server  LOG      ✓ Compiled in 29ms
+[00:03:22.781] Browser ERROR   ./data/programme.ts:5:17
+Parsing ecmascript source code failed
+  3 | {
+  4 |     id: "1",
+> 5 |         category: "Sécurité",
+    |                 ^
+  6 |             title: "Proximité & Sécurité",
+  7 |                 content: "Renforcement de la présence humaine dans nos rues et nos hameaux. Une police municipale plus proche de vous, à l'écoute et disponible en soirée pour la tranquillité de tous.",
+  8 |                     iconName: "Shield",
+
+Expected ';', '}' or <eof>
+
+Import trace:
+  Server Component:
+    ./data/programme.ts
+    ./app/programme/page.tsx
+[00:03:45.396] Server  LOG      ✓ Compiled in 29ms
+[00:03:51.090] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:13.934] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:06:05.989] Server  LOG      ✓ Compiled in 574ms
