@@ -6,97 +6,96 @@ export function Footer() {
     const shareMessage = "Découvrez Dommartin avec vous - Élections Municipales 2026 !";
 
     return (
-        <footer className="bg-gray-900 text-gray-300">
-            <div className="container mx-auto px-4 py-12">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-                    {/* Brand */}
-                    <div>
-                        <div className="flex items-center space-x-2 mb-4">
-                            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-teal-400 flex items-center justify-center text-white font-bold text-lg">
+        <footer className="bg-stone-50 pt-20 pb-10 text-gray-600 border-t border-gray-200 font-sans">
+            <div className="container mx-auto px-4">
+                <div className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-8 mb-16">
+                    {/* Brand & Mission - Col 4 */}
+                    <div className="md:col-span-4 lg:col-span-5 flex flex-col items-start">
+                        <div className="flex items-center space-x-3 mb-6 group">
+                            <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-white font-bold text-lg shadow-sm group-hover:scale-105 transition-transform duration-300">
                                 D
                             </div>
-                            <span className="text-lg font-bold text-white">
-                                Dommartin avec vous
+                            <span className="text-xl font-bold text-gray-900 tracking-tight">
+                                Dommartin <span className="text-primary">Avec Vous</span>
                             </span>
                         </div>
-                        <p className="text-sm text-gray-400">
-                            Un souffle jeune pour le village et ses hameaux.
+                        <p className="text-base leading-relaxed text-gray-600 mb-8 max-w-sm">
+                            Un nouvel élan citoyen pour construire ensemble l'avenir de nos quartiers et de nos hameaux.
+                            <br />
+                            <span className="text-sm text-gray-500 mt-2 block">Élections municipales 2026</span>
                         </p>
-                    </div>
-
-                    {/* Navigation */}
-                    <div>
-                        <h3 className="font-semibold text-white mb-4">Navigation</h3>
-                        <nav className="flex flex-col space-y-2">
-                            <Link href="/" className="text-sm hover:text-blue-400 transition-colors">
-                                Accueil
-                            </Link>
-                            <Link href="/l-equipe" className="text-sm hover:text-blue-400 transition-colors">
-                                L'Équipe
-                            </Link>
-                            <Link href="/programme" className="text-sm hover:text-blue-400 transition-colors">
-                                Le Programme
-                            </Link>
-                        </nav>
-                    </div>
-
-                    {/* Legal */}
-                    <div>
-                        <h3 className="font-semibold text-white mb-4">Informations</h3>
-                        <nav className="flex flex-col space-y-2">
-                            <Link href="/mentions-legales" className="text-sm hover:text-blue-400 transition-colors">
-                                Mentions légales
-                            </Link>
-                            <p className="text-sm text-gray-400">
-                                © {new Date().getFullYear()} Tous droits réservés.
-                            </p>
-                        </nav>
-                    </div>
-
-                    {/* Social Share */}
-                    <div>
-                        <h3 className="font-semibold text-white mb-4">Suivez-nous & Partagez</h3>
-                        <div className="flex space-x-3 mb-6">
+                        <div className="flex space-x-4">
                             <a
                                 href="https://www.facebook.com/profile.php?id=61585026020662"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="group flex items-center justify-center w-10 h-10 rounded-lg bg-gray-800 hover:bg-blue-600 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/25"
-                                aria-label="Suivez-nous sur Facebook"
+                                className="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-500 hover:text-[#1877F2] hover:border-[#1877F2] transition-all duration-300 shadow-sm hover:shadow-md"
+                                aria-label="Facebook"
                             >
-                                <Facebook className="h-5 w-5 text-gray-400 group-hover:text-white transition-colors" />
-                            </a>
-                            <a
-                                href="https://www.instagram.com/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="group flex items-center justify-center w-10 h-10 rounded-lg bg-gray-800 hover:bg-gradient-to-br hover:from-purple-600 hover:via-pink-500 hover:to-orange-400 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-pink-500/25"
-                                aria-label="Suivez-nous sur Instagram"
-                            >
-                                <Instagram className="h-5 w-5 text-gray-400 group-hover:text-white transition-colors" />
+                                <Facebook className="h-5 w-5" />
                             </a>
                         </div>
+                    </div>
 
-                        <a
-                            href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(siteUrl)}&quote=${encodeURIComponent(shareMessage)}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-all shadow-lg hover:shadow-blue-500/30 transform hover:-translate-y-0.5 font-medium"
-                        >
-                            <Share2 className="h-4 w-4" />
-                            Partager le site
-                        </a>
-                        <p className="text-xs text-gray-500 mt-2">
-                            Aidez-nous à faire connaître notre projet !
-                        </p>
+                    {/* Links - Col 2 */}
+                    <div className="md:col-span-3 lg:col-span-2">
+                        <h3 className="font-bold text-gray-900 mb-6 uppercase text-xs tracking-wider">Navigation</h3>
+                        <nav className="flex flex-col space-y-4">
+                            <Link href="/" className="text-sm font-medium hover:text-primary transition-colors flex items-center group">
+                                <span className="w-0 group-hover:w-2 h-0.5 bg-primary mr-0 group-hover:mr-2 transition-all duration-300"></span>
+                                Accueil
+                            </Link>
+                            <Link href="/demarche" className="text-sm font-medium hover:text-primary transition-colors flex items-center group">
+                                <span className="w-0 group-hover:w-2 h-0.5 bg-primary mr-0 group-hover:mr-2 transition-all duration-300"></span>
+                                La Démarche
+                            </Link>
+                            <Link href="/l-equipe" className="text-sm font-medium hover:text-primary transition-colors flex items-center group">
+                                <span className="w-0 group-hover:w-2 h-0.5 bg-primary mr-0 group-hover:mr-2 transition-all duration-300"></span>
+                                L'Équipe
+                            </Link>
+                        </nav>
+                    </div>
+
+                    {/* Legal - Col 2 */}
+                    <div className="md:col-span-2 lg:col-span-2">
+                        <h3 className="font-bold text-gray-900 mb-6 uppercase text-xs tracking-wider">Infos</h3>
+                        <nav className="flex flex-col space-y-4">
+                            <Link href="/mentions-legales" className="text-sm font-medium hover:text-primary transition-colors">
+                                Mentions légales
+                            </Link>
+                            <Link href="mailto:contact@dommartin-ensemble.fr" className="text-sm font-medium hover:text-primary transition-colors">
+                                Contact
+                            </Link>
+                        </nav>
+                    </div>
+
+                    {/* CTA - Col 3 */}
+                    <div className="md:col-span-3">
+                        <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                            <h3 className="font-bold text-gray-900 mb-2 text-sm">Soutenez le projet</h3>
+                            <p className="text-xs text-gray-500 mb-4">Partagez le site autour de vous !</p>
+                            <a
+                                href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(siteUrl)}&quote=${encodeURIComponent(shareMessage)}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center justify-center w-full gap-2 px-6 py-3 bg-primary hover:bg-primary-dark text-white text-sm font-bold rounded-xl transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5"
+                            >
+                                <Share2 className="h-4 w-4" />
+                                Partager le site
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                {/* Bottom bar */}
-                <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-500">
-                    <p className="flex items-center justify-center gap-1">
-                        Fait avec <Heart className="h-4 w-4 text-red-500" /> pour Dommartin-Lès-Remiremont
+                <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p className="text-xs text-gray-500">
+                        © {new Date().getFullYear()} Dommartin avec vous.
                     </p>
+                    <div className="flex items-center gap-1 text-xs text-gray-400">
+                        <span>Fait avec</span>
+                        <Heart className="h-3 w-3 text-red-500 fill-red-500 mx-0.5" />
+                        <span>par des citoyens engagés</span>
+                    </div>
                 </div>
             </div>
         </footer>

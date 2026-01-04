@@ -26,12 +26,12 @@ function Navbar() {
             label: "Accueil"
         },
         {
-            href: "/l-equipe",
-            label: "L'Équipe"
+            href: "/demarche",
+            label: "La Démarche"
         },
         {
-            href: "/programme",
-            label: "Le Programme"
+            href: "/l-equipe",
+            label: "L'Équipe"
         }
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
@@ -45,7 +45,7 @@ function Navbar() {
                         className: "flex items-center space-x-2 group",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 to-teal-500 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-blue-500/25 group-hover:shadow-blue-500/40 transition-shadow",
+                                className: "w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-primary/25 group-hover:shadow-primary/40 transition-shadow",
                                 children: "D"
                             }, void 0, false, {
                                 fileName: "[project]/components/navbar.tsx",
@@ -57,7 +57,7 @@ function Navbar() {
                                 children: [
                                     "Dommartin ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-blue-600",
+                                        className: "text-primary",
                                         children: "avec vous"
                                     }, void 0, false, {
                                         fileName: "[project]/components/navbar.tsx",
@@ -80,7 +80,7 @@ function Navbar() {
                         className: "hidden md:flex items-center space-x-1",
                         children: navLinks.map((link)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 href: link.href,
-                                className: "px-4 py-2 text-sm font-medium text-gray-600 rounded-lg transition-all hover:text-blue-600 hover:bg-blue-50",
+                                className: "px-4 py-2 text-sm font-medium text-gray-600 rounded-lg transition-all hover:text-primary hover:bg-primary/5",
                                 children: link.label
                             }, link.href, false, {
                                 fileName: "[project]/components/navbar.tsx",
@@ -126,7 +126,7 @@ function Navbar() {
                     className: "container mx-auto px-4 py-4 space-y-1",
                     children: navLinks.map((link)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             href: link.href,
-                            className: "block px-4 py-3 text-sm font-medium text-gray-600 rounded-lg transition-all hover:text-blue-600 hover:bg-blue-50",
+                            className: "block px-4 py-3 text-sm font-medium text-gray-600 rounded-lg transition-all hover:text-primary hover:bg-primary/5",
                             onClick: ()=>setIsOpen(false),
                             children: link.label
                         }, link.href, false, {

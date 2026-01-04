@@ -43,4 +43,18 @@ export const candidats: Candidate[] = [
         bio: "Développeur web et fondateur d'une startup locale, Thomas veut moderniser les services municipaux et attirer les talents du numérique.",
         photoUrl: "/images/candidats/thomas-petit.jpg",
     },
+    {
+        id: "7",
+        name: "Valérie Virion",
+        role: "Initiatrice de la démarche",
+        bio: "À l'origine de cette dynamique citoyenne, Valérie souhaite redonner la parole aux habitants pour construire ensemble l'avenir de Dommartin.",
+        photoUrl: "/images/candidats/valerie-virion.jpg",
+    },
+    {
+        id: "8",
+        name: "Christophe Impéradori",
+        role: "Initiateur de la démarche",
+        bio: "Convaincu par la force du collectif, Christophe a impulsé ce mouvement pour unir les énergies et les talents de notre commune.",
+        photoUrl: "/images/candidats/christophe-imperadori.jpg",
+    },
 ];

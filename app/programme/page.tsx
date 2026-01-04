@@ -34,7 +34,7 @@ function groupByCategory(points: typeof programme) {
 
 // Category colors
 const categoryColors: Record<string, { bg: string; text: string; border: string }> = {
-    "Sécurité": { bg: "bg-blue-50", text: "text-blue-600", border: "border-blue-200" },
+    "Sécurité": { bg: "bg-primary/5", text: "text-primary", border: "border-primary/20" },
     "Environnement": { bg: "bg-emerald-50", text: "text-emerald-600", border: "border-emerald-200" },
     "Transport": { bg: "bg-amber-50", text: "text-amber-600", border: "border-amber-200" },
     "Éducation": { bg: "bg-purple-50", text: "text-purple-600", border: "border-purple-200" },
@@ -48,9 +48,9 @@ export default function ProgrammePage() {
     return (
         <div className="min-h-screen">
             {/* Hero Section */}
-            <section className="relative py-20 bg-gradient-to-br from-blue-50 via-white to-teal-50 overflow-hidden">
-                <div className="absolute top-0 left-0 w-96 h-96 bg-teal-200/30 rounded-full blur-3xl" />
-                <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-200/30 rounded-full blur-3xl" />
+            <section className="relative py-20 bg-gradient-to-br from-primary/5 via-white to-accent/5 overflow-hidden">
+                <div className="absolute top-0 left-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
+                <div className="absolute bottom-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
 
                 <div className="container mx-auto px-4 relative z-10">
                     <div className="mx-auto max-w-2xl text-center animate-fade-in">
@@ -121,10 +121,10 @@ export default function ProgrammePage() {
             </section>
 
             {/* Summary CTA */}
-            <section className="py-16 bg-gradient-to-r from-blue-600 to-teal-600">
+            <section className="py-16 bg-gradient-to-r from-primary to-accent">
                 <div className="container mx-auto px-4 text-center text-white">
                     <h2 className="text-3xl font-bold mb-4">Un programme ambitieux et réaliste</h2>
-                    <p className="text-blue-100 max-w-2xl mx-auto">
+                    <p className="text-primary-foreground/90 max-w-2xl mx-auto">
                         Chaque engagement a été pensé avec les habitants et pourra être mis en œuvre
                         grâce à une gestion rigoureuse des finances communales.
                     </p>

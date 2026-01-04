@@ -182,9 +182,9 @@ function groupByCategory(points) {
 // Category colors
 const categoryColors = {
     "Sécurité": {
-        bg: "bg-blue-50",
-        text: "text-blue-600",
-        border: "border-blue-200"
+        bg: "bg-primary/5",
+        text: "text-primary",
+        border: "border-primary/20"
     },
     "Environnement": {
         bg: "bg-emerald-50",
@@ -214,17 +214,17 @@ function ProgrammePage() {
         className: "min-h-screen",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "relative py-20 bg-gradient-to-br from-blue-50 via-white to-teal-50 overflow-hidden",
+                className: "relative py-20 bg-gradient-to-br from-primary/5 via-white to-accent/5 overflow-hidden",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "absolute top-0 left-0 w-96 h-96 bg-teal-200/30 rounded-full blur-3xl"
+                        className: "absolute top-0 left-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl"
                     }, void 0, false, {
                         fileName: "[project]/app/programme/page.tsx",
                         lineNumber: 52,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "absolute bottom-0 right-0 w-96 h-96 bg-blue-200/30 rounded-full blur-3xl"
+                        className: "absolute bottom-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl"
                     }, void 0, false, {
                         fileName: "[project]/app/programme/page.tsx",
                         lineNumber: 53,
@@ -418,7 +418,7 @@ function ProgrammePage() {
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "py-16 bg-gradient-to-r from-blue-600 to-teal-600",
+                className: "py-16 bg-gradient-to-r from-primary to-accent",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "container mx-auto px-4 text-center text-white",
                     children: [
@@ -431,7 +431,7 @@ function ProgrammePage() {
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-blue-100 max-w-2xl mx-auto",
+                            className: "text-primary-foreground/90 max-w-2xl mx-auto",
                             children: "Chaque engagement a été pensé avec les habitants et pourra être mis en œuvre grâce à une gestion rigoureuse des finances communales."
                         }, void 0, false, {
                             fileName: "[project]/app/programme/page.tsx",

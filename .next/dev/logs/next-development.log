@@ -1,25 +1,40 @@
-[00:00:01.059] Server  LOG      ✓ Ready in 709ms
-[00:00:30.569] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:57.631] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:01:03.970] Server  LOG      ○ Compiling /programme ...
-[00:03:19.756] Server  LOG      ✓ Compiled in 29ms
-[00:03:22.781] Browser ERROR   ./data/programme.ts:5:17
-Parsing ecmascript source code failed
-  3 | {
-  4 |     id: "1",
-> 5 |         category: "Sécurité",
-    |                 ^
-  6 |             title: "Proximité & Sécurité",
-  7 |                 content: "Renforcement de la présence humaine dans nos rues et nos hameaux. Une police municipale plus proche de vous, à l'écoute et disponible en soirée pour la tranquillité de tous.",
-  8 |                     iconName: "Shield",
-
-Expected ';', '}' or <eof>
-
-Import trace:
-  Server Component:
-    ./data/programme.ts
-    ./app/programme/page.tsx
-[00:03:45.396] Server  LOG      ✓ Compiled in 29ms
-[00:03:51.090] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:04:13.934] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:06:05.989] Server  LOG      ✓ Compiled in 574ms
+[00:00:00.709] Server  LOG      ✓ Ready in 452ms
+[00:00:02.292] Server  WARN    Image with src "/fond-dommartin.png" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:02.530] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:02.647] Browser WARN    Image with src "/fond-dommartin.png" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:08:39.907] Server  LOG      ✓ Compiled in 55ms
+[00:08:40.794] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:09:19.672] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:09:19.688] Server  LOG      ✓ Compiled in 39ms
+[00:09:19.763] Server  WARN    Image with src "/fond-dommartin.png" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:09:19.970] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:20.787] Browser WARN    Image with src "/fond-dommartin.png" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:09:37.761] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:37.878] Browser WARN    Image with src "/fond-dommartin.png" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:09:41.997] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:42.102] Browser WARN    Image with src "/fond-dommartin.png" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:12.103] Server  LOG      ✓ Compiled in 30ms
+[00:10:19.544] Server  WARN    Image with src "/fond-dommartin.png" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:19.704] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:19.704] Browser WARN    Image with src "/fond-dommartin.png" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:56.389] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:56.491] Browser WARN    Image with src "/fond-dommartin.png" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:11:24.939] Server  LOG      ✓ Compiled in 98ms
+[00:11:26.993] Server  LOG      ✓ Compiled in 60ms
+[00:12:35.593] Server  LOG      ✓ Compiled in 40ms
+[00:12:49.113] Server  LOG      ✓ Compiled in 26ms
+[00:14:08.438] Server  LOG      ✓ Compiled in 27ms
+[00:20:01.156] Server  WARN    Image with src "/fond-dommartin.png" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:20:01.392] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:20:01.510] Browser WARN    Image with src "/fond-dommartin.png" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
