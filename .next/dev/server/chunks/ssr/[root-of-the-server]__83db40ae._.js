@@ -61,13 +61,27 @@ const candidats = [
     },
     {
         id: "7",
+        name: "Jean-Jacques Rosaye",
+        role: "Initiateur de la démarche",
+        bio: "À l’initiative de la démarche, Jean-Jacques Rosaye, picosé de souche profondément attaché à son territoire, a souhaité placer au cœur du projet la démocratie locale, la liberté de choix et le respect des picosés, de leurs attentes et de leurs priorités.",
+        photoUrl: "/images/candidats/jean-jacques-rosaye.jpg"
+    },
+    {
+        id: "8",
+        name: "Marie Breton",
+        role: "Initiatrice de la démarche",
+        bio: "Pour Marie Breton, vivre sur un territoire, c’est s’y engager et participer pleinement à la vie locale : dès son arrivée à Dommartin, elle a souhaité s’y investir, contribuer concrètement et apporter sa pierre à l’édifice au service des habitants.",
+        photoUrl: "/images/candidats/marie-breton.jpg"
+    },
+    {
+        id: "9",
         name: "Valérie Virion",
         role: "Initiatrice de la démarche",
         bio: "À l'origine de cette dynamique citoyenne, Valérie souhaite redonner la parole aux habitants pour construire ensemble l'avenir de Dommartin.",
         photoUrl: "/images/candidats/valerie-virion.jpg"
     },
     {
-        id: "8",
+        id: "10",
         name: "Christophe Impéradori",
         role: "Initiateur de la démarche",
         bio: "Convaincu par la force du collectif, Christophe a impulsé ce mouvement pour unir les énergies et les talents de notre commune.",
@@ -194,8 +208,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 ;
 ;
 const metadata = {
-    title: "L'Équipe",
-    description: "Découvrez les candidats de Dommartin-Lès-Remiremont Ensemble pour les élections municipales 2026."
+    title: "L'Équipe des Initiateurs | Dommartin avec vous",
+    description: "Rencontrez les initiateurs de la démarche citoyenne pour Dommartin-lès-Remiremont. Valérie Virion, Christophe Impéradori et bientôt toute l'équipe."
 };
 function LEquipePage() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -244,16 +258,16 @@ function LEquipePage() {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "mt-6 text-lg text-gray-600 leading-relaxed",
                                     children: [
-                                        "Des femmes et des hommes engagés pour Dommartin, de tous les hameaux, pour apporter un ",
+                                        "Une équipe au service de Dommartin,",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "font-semibold text-primary",
-                                            children: "souffle nouveau"
+                                            children: " issue d’une écoute active des habitants, "
                                         }, void 0, false, {
                                             fileName: "[project]/app/l-equipe/page.tsx",
-                                            lineNumber: 33,
-                                            columnNumber: 46
+                                            lineNumber: 32,
+                                            columnNumber: 64
                                         }, this),
-                                        " à notre commune."
+                                        " pour traduire leurs priorités en actions concrètes."
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/l-equipe/page.tsx",
@@ -290,7 +304,7 @@ function LEquipePage() {
                                     children: "La Genèse du Projet"
                                 }, void 0, false, {
                                     fileName: "[project]/app/l-equipe/page.tsx",
-                                    lineNumber: 43,
+                                    lineNumber: 42,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -298,13 +312,13 @@ function LEquipePage() {
                                     children: "Les Initiateurs de la démarche"
                                 }, void 0, false, {
                                     fileName: "[project]/app/l-equipe/page.tsx",
-                                    lineNumber: 46,
+                                    lineNumber: 45,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/l-equipe/page.tsx",
-                            lineNumber: 42,
+                            lineNumber: 41,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -318,12 +332,12 @@ function LEquipePage() {
                                                 className: "h-32 w-32 text-gray-300"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/l-equipe/page.tsx",
-                                                lineNumber: 57,
+                                                lineNumber: 56,
                                                 columnNumber: 37
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/l-equipe/page.tsx",
-                                            lineNumber: 55,
+                                            lineNumber: 54,
                                             columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["CardHeader"], {
@@ -334,7 +348,7 @@ function LEquipePage() {
                                                     children: candidat.name
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/l-equipe/page.tsx",
-                                                    lineNumber: 61,
+                                                    lineNumber: 60,
                                                     columnNumber: 37
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["CardDescription"], {
@@ -342,13 +356,13 @@ function LEquipePage() {
                                                     children: candidat.role
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/l-equipe/page.tsx",
-                                                    lineNumber: 64,
+                                                    lineNumber: 63,
                                                     columnNumber: 37
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/l-equipe/page.tsx",
-                                            lineNumber: 60,
+                                            lineNumber: 59,
                                             columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -362,23 +376,23 @@ function LEquipePage() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/l-equipe/page.tsx",
-                                                lineNumber: 70,
+                                                lineNumber: 69,
                                                 columnNumber: 37
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/l-equipe/page.tsx",
-                                            lineNumber: 69,
+                                            lineNumber: 68,
                                             columnNumber: 33
                                         }, this)
                                     ]
                                 }, candidat.id, true, {
                                     fileName: "[project]/app/l-equipe/page.tsx",
-                                    lineNumber: 51,
+                                    lineNumber: 50,
                                     columnNumber: 29
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/app/l-equipe/page.tsx",
-                            lineNumber: 49,
+                            lineNumber: 48,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -394,17 +408,17 @@ function LEquipePage() {
                                                 className: "w-12 h-12"
                                             }, i, false, {
                                                 fileName: "[project]/app/l-equipe/page.tsx",
-                                                lineNumber: 83,
+                                                lineNumber: 82,
                                                 columnNumber: 37
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/app/l-equipe/page.tsx",
-                                        lineNumber: 81,
+                                        lineNumber: 80,
                                         columnNumber: 29
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/l-equipe/page.tsx",
-                                    lineNumber: 80,
+                                    lineNumber: 79,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -416,42 +430,42 @@ function LEquipePage() {
                                                 className: "w-8 h-8 text-primary"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/l-equipe/page.tsx",
-                                                lineNumber: 90,
+                                                lineNumber: 89,
                                                 columnNumber: 33
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/l-equipe/page.tsx",
-                                            lineNumber: 89,
+                                            lineNumber: 88,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                             className: "text-2xl font-bold text-gray-900 mb-4",
-                                            children: "L'équipe complète arrive bientôt..."
+                                            children: "L’équipe se dévoile très prochainement…"
                                         }, void 0, false, {
                                             fileName: "[project]/app/l-equipe/page.tsx",
-                                            lineNumber: 92,
+                                            lineNumber: 91,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "text-gray-600 text-lg mb-8 leading-relaxed",
                                             children: [
-                                                "Une équipe renouvelée, compétente et représentative de tous les quartiers de Dommartin se constitue.",
+                                                "Nos réunions et temps d’écoute ont permis de construire le projet ; ils ont aussi fait émerger une équipe renouvelée, mobilisée et représentative de tous les hameaux de Dommartin.",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                     fileName: "[project]/app/l-equipe/page.tsx",
-                                                    lineNumber: 97,
+                                                    lineNumber: 96,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
                                                     children: "Rendez-vous très prochainement pour la présentation officielle !"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/l-equipe/page.tsx",
-                                                    lineNumber: 98,
+                                                    lineNumber: 97,
                                                     columnNumber: 33
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/l-equipe/page.tsx",
-                                            lineNumber: 95,
+                                            lineNumber: 94,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -461,37 +475,37 @@ function LEquipePage() {
                                                     className: "w-2 h-2 rounded-full bg-gray-300 animate-pulse"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/l-equipe/page.tsx",
-                                                    lineNumber: 101,
+                                                    lineNumber: 100,
                                                     columnNumber: 33
                                                 }, this),
                                                 "Annonce à venir"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/l-equipe/page.tsx",
-                                            lineNumber: 100,
+                                            lineNumber: 99,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/l-equipe/page.tsx",
-                                    lineNumber: 88,
+                                    lineNumber: 87,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/l-equipe/page.tsx",
-                            lineNumber: 79,
+                            lineNumber: 78,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/l-equipe/page.tsx",
-                    lineNumber: 41,
+                    lineNumber: 40,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/l-equipe/page.tsx",
-                lineNumber: 40,
+                lineNumber: 39,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -504,7 +518,7 @@ function LEquipePage() {
                             children: "Envie de nous rejoindre ?"
                         }, void 0, false, {
                             fileName: "[project]/app/l-equipe/page.tsx",
-                            lineNumber: 112,
+                            lineNumber: 111,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -512,18 +526,18 @@ function LEquipePage() {
                             children: "Notre liste est ouverte à tous les citoyens qui partagent nos valeurs."
                         }, void 0, false, {
                             fileName: "[project]/app/l-equipe/page.tsx",
-                            lineNumber: 113,
+                            lineNumber: 112,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/l-equipe/page.tsx",
-                    lineNumber: 111,
+                    lineNumber: 110,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/l-equipe/page.tsx",
-                lineNumber: 110,
+                lineNumber: 109,
                 columnNumber: 13
             }, this)
         ]

@@ -156,7 +156,9 @@ CardFooter.displayName = "CardFooter";
 
 __turbopack_context__.s([
     "default",
-    ()=>DemarchePage
+    ()=>DemarchePage,
+    "metadata",
+    ()=>metadata
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/badge.tsx [app-rsc] (ecmascript)");
@@ -170,6 +172,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 ;
 ;
 ;
+const metadata = {
+    title: "La Démarche Participative | Dommartin avec vous",
+    description: "Consultez le diagnostic partagé et les comptes-rendus des ateliers citoyens. Construisons ensemble l'avenir de Dommartin-lès-Remiremont."
+};
 function DemarchePage() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "min-h-screen bg-white",
@@ -188,14 +194,14 @@ function DemarchePage() {
                                     children: "citoyenne"
                                 }, void 0, false, {
                                     fileName: "[project]/app/demarche/page.tsx",
-                                    lineNumber: 12,
+                                    lineNumber: 18,
                                     columnNumber: 38
                                 }, this),
                                 " et transparente"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/demarche/page.tsx",
-                            lineNumber: 11,
+                            lineNumber: 17,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -203,18 +209,18 @@ function DemarchePage() {
                             children: "Retrouvez ici les comptes-rendus de nos ateliers participatifs. C'est ensemble, en croisant nos regards, que nous construisons le projet de demain."
                         }, void 0, false, {
                             fileName: "[project]/app/demarche/page.tsx",
-                            lineNumber: 14,
+                            lineNumber: 20,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/demarche/page.tsx",
-                    lineNumber: 10,
+                    lineNumber: 16,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/demarche/page.tsx",
-                lineNumber: 9,
+                lineNumber: 15,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -232,7 +238,7 @@ function DemarchePage() {
                                         children: "Réunion #1"
                                     }, void 0, false, {
                                         fileName: "[project]/app/demarche/page.tsx",
-                                        lineNumber: 26,
+                                        lineNumber: 32,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -240,13 +246,13 @@ function DemarchePage() {
                                         children: "Décembre 2025"
                                     }, void 0, false, {
                                         fileName: "[project]/app/demarche/page.tsx",
-                                        lineNumber: 27,
+                                        lineNumber: 33,
                                         columnNumber: 29
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/demarche/page.tsx",
-                                lineNumber: 25,
+                                lineNumber: 31,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -257,7 +263,7 @@ function DemarchePage() {
                                         children: "Diagnostic Partagé : Nos forces et nos faiblesses"
                                     }, void 0, false, {
                                         fileName: "[project]/app/demarche/page.tsx",
-                                        lineNumber: 31,
+                                        lineNumber: 37,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -268,20 +274,20 @@ function DemarchePage() {
                                                 children: "41 habitants"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/demarche/page.tsx",
-                                                lineNumber: 33,
+                                                lineNumber: 39,
                                                 columnNumber: 81
                                             }, this),
                                             " de tous les quartiers (Centre, Gare, Franould, Poirie, etc.) ont travaillé ensemble. Voici la synthèse de vos échanges sur l'état des lieux de notre commune."
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/demarche/page.tsx",
-                                        lineNumber: 32,
+                                        lineNumber: 38,
                                         columnNumber: 29
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/demarche/page.tsx",
-                                lineNumber: 30,
+                                lineNumber: 36,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -298,19 +304,19 @@ function DemarchePage() {
                                                             className: "w-6 h-6 text-accent"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/demarche/page.tsx",
-                                                            lineNumber: 43,
+                                                            lineNumber: 49,
                                                             columnNumber: 41
                                                         }, this),
                                                         "Les Atouts"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/demarche/page.tsx",
-                                                    lineNumber: 42,
+                                                    lineNumber: 48,
                                                     columnNumber: 37
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/demarche/page.tsx",
-                                                lineNumber: 41,
+                                                lineNumber: 47,
                                                 columnNumber: 33
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -332,30 +338,30 @@ function DemarchePage() {
                                                                     children: i + 1
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/demarche/page.tsx",
-                                                                    lineNumber: 59,
+                                                                    lineNumber: 65,
                                                                     columnNumber: 49
                                                                 }, this),
                                                                 item
                                                             ]
                                                         }, i, true, {
                                                             fileName: "[project]/app/demarche/page.tsx",
-                                                            lineNumber: 58,
+                                                            lineNumber: 64,
                                                             columnNumber: 45
                                                         }, this))
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/demarche/page.tsx",
-                                                    lineNumber: 48,
+                                                    lineNumber: 54,
                                                     columnNumber: 37
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/demarche/page.tsx",
-                                                lineNumber: 47,
+                                                lineNumber: 53,
                                                 columnNumber: 33
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/demarche/page.tsx",
-                                        lineNumber: 40,
+                                        lineNumber: 46,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Card"], {
@@ -369,19 +375,19 @@ function DemarchePage() {
                                                             className: "w-6 h-6"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/demarche/page.tsx",
-                                                            lineNumber: 71,
+                                                            lineNumber: 77,
                                                             columnNumber: 41
                                                         }, this),
                                                         "Les Faiblesses"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/demarche/page.tsx",
-                                                    lineNumber: 70,
+                                                    lineNumber: 76,
                                                     columnNumber: 37
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/demarche/page.tsx",
-                                                lineNumber: 69,
+                                                lineNumber: 75,
                                                 columnNumber: 33
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -404,36 +410,36 @@ function DemarchePage() {
                                                                     children: i + 1
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/demarche/page.tsx",
-                                                                    lineNumber: 88,
+                                                                    lineNumber: 94,
                                                                     columnNumber: 49
                                                                 }, this),
                                                                 item
                                                             ]
                                                         }, i, true, {
                                                             fileName: "[project]/app/demarche/page.tsx",
-                                                            lineNumber: 87,
+                                                            lineNumber: 93,
                                                             columnNumber: 45
                                                         }, this))
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/demarche/page.tsx",
-                                                    lineNumber: 76,
+                                                    lineNumber: 82,
                                                     columnNumber: 37
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/demarche/page.tsx",
-                                                lineNumber: 75,
+                                                lineNumber: 81,
                                                 columnNumber: 33
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/demarche/page.tsx",
-                                        lineNumber: 68,
+                                        lineNumber: 74,
                                         columnNumber: 29
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/demarche/page.tsx",
-                                lineNumber: 38,
+                                lineNumber: 44,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -446,14 +452,14 @@ function DemarchePage() {
                                                 className: "text-accent w-7 h-7"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/demarche/page.tsx",
-                                                lineNumber: 100,
+                                                lineNumber: 106,
                                                 columnNumber: 33
                                             }, this),
                                             "6 Priorités pour l'avenir"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/demarche/page.tsx",
-                                        lineNumber: 99,
+                                        lineNumber: 105,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -469,14 +475,14 @@ function DemarchePage() {
                                                                 className: "w-4 h-4"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/demarche/page.tsx",
-                                                                lineNumber: 106,
+                                                                lineNumber: 112,
                                                                 columnNumber: 106
                                                             }, this),
                                                             " Économie"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/demarche/page.tsx",
-                                                        lineNumber: 106,
+                                                        lineNumber: 112,
                                                         columnNumber: 37
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -484,13 +490,13 @@ function DemarchePage() {
                                                         children: "Soutenir la vie économique locaux et favoriser l’implantation de commerces."
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/demarche/page.tsx",
-                                                        lineNumber: 107,
+                                                        lineNumber: 113,
                                                         columnNumber: 37
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/demarche/page.tsx",
-                                                lineNumber: 105,
+                                                lineNumber: 111,
                                                 columnNumber: 33
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -503,14 +509,14 @@ function DemarchePage() {
                                                                 className: "w-4 h-4"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/demarche/page.tsx",
-                                                                lineNumber: 110,
+                                                                lineNumber: 116,
                                                                 columnNumber: 106
                                                             }, this),
                                                             " Jeunesse & Culture"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/demarche/page.tsx",
-                                                        lineNumber: 110,
+                                                        lineNumber: 116,
                                                         columnNumber: 37
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -518,13 +524,13 @@ function DemarchePage() {
                                                         children: "Espaces pour les jeunes, développement du Centre culturel, équipements sportifs, café solidaire."
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/demarche/page.tsx",
-                                                        lineNumber: 111,
+                                                        lineNumber: 117,
                                                         columnNumber: 37
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/demarche/page.tsx",
-                                                lineNumber: 109,
+                                                lineNumber: 115,
                                                 columnNumber: 33
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -537,14 +543,14 @@ function DemarchePage() {
                                                                 className: "w-4 h-4"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/demarche/page.tsx",
-                                                                lineNumber: 114,
+                                                                lineNumber: 120,
                                                                 columnNumber: 106
                                                             }, this),
                                                             " Mobilités"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/demarche/page.tsx",
-                                                        lineNumber: 114,
+                                                        lineNumber: 120,
                                                         columnNumber: 37
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -552,13 +558,13 @@ function DemarchePage() {
                                                         children: "Circulations sécurisées pour tous (piétons, vélos) reliant les hameaux au centre."
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/demarche/page.tsx",
-                                                        lineNumber: 115,
+                                                        lineNumber: 121,
                                                         columnNumber: 37
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/demarche/page.tsx",
-                                                lineNumber: 113,
+                                                lineNumber: 119,
                                                 columnNumber: 33
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -571,14 +577,14 @@ function DemarchePage() {
                                                                 className: "w-4 h-4"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/demarche/page.tsx",
-                                                                lineNumber: 118,
+                                                                lineNumber: 124,
                                                                 columnNumber: 106
                                                             }, this),
                                                             " Démocratie"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/demarche/page.tsx",
-                                                        lineNumber: 118,
+                                                        lineNumber: 124,
                                                         columnNumber: 37
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -586,13 +592,13 @@ function DemarchePage() {
                                                         children: "Plus de communication directe : réunions publiques régulières, rencontres par quartier."
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/demarche/page.tsx",
-                                                        lineNumber: 119,
+                                                        lineNumber: 125,
                                                         columnNumber: 37
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/demarche/page.tsx",
-                                                lineNumber: 117,
+                                                lineNumber: 123,
                                                 columnNumber: 33
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -605,14 +611,14 @@ function DemarchePage() {
                                                                 className: "w-4 h-4"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/demarche/page.tsx",
-                                                                lineNumber: 122,
+                                                                lineNumber: 128,
                                                                 columnNumber: 106
                                                             }, this),
                                                             " Eau"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/demarche/page.tsx",
-                                                        lineNumber: 122,
+                                                        lineNumber: 128,
                                                         columnNumber: 37
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -620,13 +626,13 @@ function DemarchePage() {
                                                         children: "Sécuriser la ressource en eau et sa qualité."
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/demarche/page.tsx",
-                                                        lineNumber: 123,
+                                                        lineNumber: 129,
                                                         columnNumber: 37
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/demarche/page.tsx",
-                                                lineNumber: 121,
+                                                lineNumber: 127,
                                                 columnNumber: 33
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -639,14 +645,14 @@ function DemarchePage() {
                                                                 className: "w-4 h-4"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/demarche/page.tsx",
-                                                                lineNumber: 126,
+                                                                lineNumber: 132,
                                                                 columnNumber: 106
                                                             }, this),
                                                             " Énergie"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/demarche/page.tsx",
-                                                        lineNumber: 126,
+                                                        lineNumber: 132,
                                                         columnNumber: 37
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -654,41 +660,41 @@ function DemarchePage() {
                                                         children: "Ambition forte sur la production d’énergie renouvelable (réseau de chaleur, solaire...)."
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/demarche/page.tsx",
-                                                        lineNumber: 127,
+                                                        lineNumber: 133,
                                                         columnNumber: 37
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/demarche/page.tsx",
-                                                lineNumber: 125,
+                                                lineNumber: 131,
                                                 columnNumber: 33
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/demarche/page.tsx",
-                                        lineNumber: 104,
+                                        lineNumber: 110,
                                         columnNumber: 29
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/demarche/page.tsx",
-                                lineNumber: 98,
+                                lineNumber: 104,
                                 columnNumber: 25
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/demarche/page.tsx",
-                        lineNumber: 23,
+                        lineNumber: 29,
                         columnNumber: 21
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/demarche/page.tsx",
-                    lineNumber: 22,
+                    lineNumber: 28,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/demarche/page.tsx",
-                lineNumber: 21,
+                lineNumber: 27,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -707,12 +713,12 @@ function DemarchePage() {
                                             className: "w-8 h-8 text-accent"
                                         }, void 0, false, {
                                             fileName: "[project]/app/demarche/page.tsx",
-                                            lineNumber: 142,
+                                            lineNumber: 148,
                                             columnNumber: 33
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/demarche/page.tsx",
-                                        lineNumber: 141,
+                                        lineNumber: 147,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -723,7 +729,7 @@ function DemarchePage() {
                                                 children: "Prochaine étape"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/demarche/page.tsx",
-                                                lineNumber: 145,
+                                                lineNumber: 151,
                                                 columnNumber: 33
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -731,26 +737,26 @@ function DemarchePage() {
                                                 children: "Transformer ces idées en plan d'action"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/demarche/page.tsx",
-                                                lineNumber: 146,
+                                                lineNumber: 152,
                                                 columnNumber: 33
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/demarche/page.tsx",
-                                        lineNumber: 144,
+                                        lineNumber: 150,
                                         columnNumber: 29
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/demarche/page.tsx",
-                                lineNumber: 140,
+                                lineNumber: 146,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "hidden md:block h-12 w-px bg-white/20"
                             }, void 0, false, {
                                 fileName: "[project]/app/demarche/page.tsx",
-                                lineNumber: 149,
+                                lineNumber: 155,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -761,7 +767,7 @@ function DemarchePage() {
                                         children: "Venez participer le Jeudi 8 Janvier"
                                     }, void 0, false, {
                                         fileName: "[project]/app/demarche/page.tsx",
-                                        lineNumber: 151,
+                                        lineNumber: 157,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -769,35 +775,35 @@ function DemarchePage() {
                                         children: "20h30 - Espace Culturel"
                                     }, void 0, false, {
                                         fileName: "[project]/app/demarche/page.tsx",
-                                        lineNumber: 152,
+                                        lineNumber: 158,
                                         columnNumber: 29
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/demarche/page.tsx",
-                                lineNumber: 150,
+                                lineNumber: 156,
                                 columnNumber: 25
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/demarche/page.tsx",
-                        lineNumber: 139,
+                        lineNumber: 145,
                         columnNumber: 21
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/demarche/page.tsx",
-                    lineNumber: 138,
+                    lineNumber: 144,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/demarche/page.tsx",
-                lineNumber: 137,
+                lineNumber: 143,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/demarche/page.tsx",
-        lineNumber: 7,
+        lineNumber: 13,
         columnNumber: 9
     }, this);
 }

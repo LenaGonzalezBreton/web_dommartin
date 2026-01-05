@@ -75,11 +75,9 @@
     --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --color-red-500: #fb2c36;
-    --color-orange-50: #fff7ed;
     --color-amber-50: #fffbeb;
     --color-amber-200: #fee685;
     --color-amber-600: #dd7400;
-    --color-green-500: #00c758;
     --color-emerald-50: #ecfdf5;
     --color-emerald-200: #a4f4cf;
     --color-emerald-600: #009767;
@@ -165,11 +163,9 @@
   @supports (color: lab(0% 0 0)) {
     :root, :host {
       --color-red-500: lab(55.4814% 75.0732 48.8528);
-      --color-orange-50: lab(97.7008% 1.53738 5.90646);
       --color-amber-50: lab(98.6252% -.635982 8.42309);
       --color-amber-200: lab(91.7203% -.505269 49.9084);
       --color-amber-600: lab(60.3514% 40.5624 87.1228);
-      --color-green-500: lab(70.5521% -66.5147 45.8072);
       --color-emerald-50: lab(97.8462% -6.94963 1.85487);
       --color-emerald-200: lab(90.2247% -31.039 9.47084);
       --color-emerald-600: lab(55.0481% -49.9246 15.93);
@@ -684,10 +680,6 @@
     height: calc(var(--spacing) * 1);
   }
 
-  .h-1\.5 {
-    height: calc(var(--spacing) * 1.5);
-  }
-
   .h-2 {
     height: calc(var(--spacing) * 2);
   }
@@ -770,10 +762,6 @@
 
   .w-0 {
     width: calc(var(--spacing) * 0);
-  }
-
-  .w-1\.5 {
-    width: calc(var(--spacing) * 1.5);
   }
 
   .w-2 {
@@ -866,10 +854,6 @@
 
   .max-w-\[500px\] {
     max-width: 500px;
-  }
-
-  .max-w-\[550px\] {
-    max-width: 550px;
   }
 
   .max-w-none {
@@ -1238,18 +1222,6 @@
 
   .bg-gray-300 {
     background-color: var(--color-gray-300);
-  }
-
-  .bg-gray-900 {
-    background-color: var(--color-gray-900);
-  }
-
-  .bg-green-500 {
-    background-color: var(--color-green-500);
-  }
-
-  .bg-orange-50 {
-    background-color: var(--color-orange-50);
   }
 
   .bg-primary {

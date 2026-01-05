@@ -45,13 +45,27 @@ export const candidats: Candidate[] = [
     },
     {
         id: "7",
+        name: "Jean-Jacques Rosaye",
+        role: "Initiateur de la démarche",
+        bio: "À l’initiative de la démarche, Jean-Jacques Rosaye, picosé de souche profondément attaché à son territoire, a souhaité placer au cœur du projet la démocratie locale, la liberté de choix et le respect des picosés, de leurs attentes et de leurs priorités.",
+        photoUrl: "/images/candidats/jean-jacques-rosaye.jpg",
+    },
+    {
+        id: "8",
+        name: "Marie Breton",
+        role: "Initiatrice de la démarche",
+        bio: "Pour Marie Breton, vivre sur un territoire, c’est s’y engager et participer pleinement à la vie locale : dès son arrivée à Dommartin, elle a souhaité s’y investir, contribuer concrètement et apporter sa pierre à l’édifice au service des habitants.",
+        photoUrl: "/images/candidats/marie-breton.jpg",
+    },
+    {
+        id: "9",
         name: "Valérie Virion",
         role: "Initiatrice de la démarche",
         bio: "À l'origine de cette dynamique citoyenne, Valérie souhaite redonner la parole aux habitants pour construire ensemble l'avenir de Dommartin.",
         photoUrl: "/images/candidats/valerie-virion.jpg",
     },
     {
-        id: "8",
+        id: "10",
         name: "Christophe Impéradori",
         role: "Initiateur de la démarche",
         bio: "Convaincu par la force du collectif, Christophe a impulsé ce mouvement pour unir les énergies et les talents de notre commune.",

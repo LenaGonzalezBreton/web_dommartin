@@ -29,8 +29,7 @@ export default function LEquipePage() {
                             Notre <span className="gradient-text">Équipe</span>
                         </h1>
                         <p className="mt-6 text-lg text-gray-600 leading-relaxed">
-                            Des femmes et des hommes engagés pour Dommartin, de tous les hameaux,
-                            pour apporter un <span className="font-semibold text-primary">souffle nouveau</span> à notre commune.
+                            Une équipe au service de Dommartin,<span className="font-semibold text-primary"> issue d’une écoute active des habitants, </span> pour traduire leurs priorités en actions concrètes.
                         </p>
                     </div>
                 </div>
@@ -90,10 +89,10 @@ export default function LEquipePage() {
                                 <Users className="w-8 h-8 text-primary" />
                             </div>
                             <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                                L'équipe complète arrive bientôt...
+                                L’équipe se dévoile très prochainement…
                             </h3>
                             <p className="text-gray-600 text-lg mb-8 leading-relaxed">
-                                Une équipe renouvelée, compétente et représentative de tous les quartiers de Dommartin se constitue.
+                                Nos réunions et temps d’écoute ont permis de construire le projet ; ils ont aussi fait émerger une équipe renouvelée, mobilisée et représentative de tous les hameaux de Dommartin.
                                 <br />
                                 <strong>Rendez-vous très prochainement pour la présentation officielle !</strong>
                             </p>
