@@ -204,7 +204,7 @@ export default function Home() {
                             </p>
 
                             <Button asChild className="w-full bg-primary hover:bg-primary-dark text-white font-bold h-12 text-lg shadow-lg hover:shadow-primary/30 transition-all">
-                                <Link href="mailto:dommartinavecvous88200@proton.me">
+                                <Link href="mailto:dommartinavecvous@proton.me">
                                     <Mail className="mr-2 h-5 w-5" />
                                     Nous contacter
                                 </Link>

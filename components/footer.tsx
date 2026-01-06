@@ -63,7 +63,7 @@ export function Footer() {
                             <Link href="/mentions-legales" className="text-sm font-medium hover:text-primary transition-colors">
                                 Mentions légales
                             </Link>
-                            <Link href="mailto:contact@dommartin-ensemble.fr" className="text-sm font-medium hover:text-primary transition-colors">
+                            <Link href="mailto:dommartinavecvous@proton.me" className="text-sm font-medium hover:text-primary transition-colors">
                                 Contact
                             </Link>
                         </nav>
