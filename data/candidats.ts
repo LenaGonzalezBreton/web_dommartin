@@ -13,7 +13,7 @@ export const candidats: Candidate[] = [
         name: "Marie Breton",
         role: "Initiatrice de la démarche",
         bio: "Pour Marie Breton, vivre sur un territoire, c’est s’y engager et participer pleinement à la vie locale : dès son arrivée à Dommartin, elle a souhaité s’y investir, contribuer concrètement et apporter sa pierre à l’édifice au service des habitants.",
-        photoUrl: "/MarieBreton.png",
+        photoUrl: "/MarieBreton.jpg",
     },
     {
         id: "9",
