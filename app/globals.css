@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@config "./../tailwind.config.ts";
+@config "../tailwind.config.ts";
 
 @theme {
   /* Custom campaign colors - Rust/Gold theme for warmth and proximity */

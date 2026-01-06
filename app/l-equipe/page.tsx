@@ -1,18 +1,12 @@
 import { Metadata } from "next";
 import { candidats } from "@/data/candidats";
-import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardHeader,
-    CardTitle,
-} from "@/components/ui/card";
-import { User, Users, Quote } from "lucide-react";
+import { CandidateCard } from "@/components/candidate-card";
+import { Users } from "lucide-react";
 
 export const metadata: Metadata = {
-    title: "L'Équipe des Initiateurs | Dommartin avec vous",
+    title: "L'Équipe | Dommartin avec vous",
     description:
-        "Rencontrez les initiateurs de la démarche citoyenne pour Dommartin-lès-Remiremont. Valérie Virion, Christophe Impéradori et bientôt toute l'équipe.",
+        "Rencontrez l'équipe engagée pour Dommartin-lès-Remiremont. Une équipe renouvelée et à l'écoute.",
 };
 
 export default function LEquipePage() {
@@ -35,42 +29,20 @@ export default function LEquipePage() {
                 </div>
             </section>
 
-            {/* Initiators Section */}
+            {/* Initiators & Team Section */}
             <section className="py-16 bg-white">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12">
                         <span className="bg-accent/10 text-accent px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase mb-4 inline-block">
                             La Genèse du Projet
                         </span>
-                        <h2 className="text-3xl font-bold text-gray-900">Les Initiateurs de la démarche</h2>
+                        <h2 className="text-3xl font-bold text-gray-900">Les Visages de l'équipe</h2>
                     </div>
 
+                    {/* Grid displaying initiators and Claude Grivel (IDs >= 7) */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-20">
-                        {candidats.filter(c => c.role.includes("Initiat")).map((candidat, index) => (
-                            <Card
-                                key={candidat.id}
-                                className="group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-500 card-hover bg-white ring-1 ring-gray-100"
-                            >
-                                <div className="aspect-[4/3] relative bg-gradient-to-br from-gray-100 to-gray-50 flex items-center justify-center overflow-hidden">
-                                    {/* Placeholder if no real image */}
-                                    <User className="h-32 w-32 text-gray-300" />
-                                </div>
-
-                                <CardHeader className="pb-2 text-center">
-                                    <CardTitle className="text-2xl font-bold text-gray-900">
-                                        {candidat.name}
-                                    </CardTitle>
-                                    <CardDescription className="text-accent font-semibold text-lg">
-                                        {candidat.role}
-                                    </CardDescription>
-                                </CardHeader>
-
-                                <CardContent className="text-center pb-8 px-8">
-                                    <p className="text-gray-600 italic leading-relaxed">
-                                        "{candidat.bio}"
-                                    </p>
-                                </CardContent>
-                            </Card>
+                        {candidats.filter(c => parseInt(c.id) >= 7).map((candidat) => (
+                            <CandidateCard key={candidat.id} candidate={candidat} />
                         ))}
                     </div>
 
@@ -79,7 +51,7 @@ export default function LEquipePage() {
                         <div className="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none">
                             <div className="grid grid-cols-6 gap-4 p-4 transform -rotate-12 scale-110">
                                 {[...Array(24)].map((_, i) => (
-                                    <User key={i} className="w-12 h-12" />
+                                    <UserIcon key={i} className="w-12 h-12" />
                                 ))}
                             </div>
                         </div>
@@ -116,4 +88,23 @@ export default function LEquipePage() {
             </section>
         </div>
     );
+}
+
+// Helper component for background pattern
+function UserIcon({ className }: { className?: string }) {
+    return (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className={className}
+        >
+            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+        </svg>
+    )
 }

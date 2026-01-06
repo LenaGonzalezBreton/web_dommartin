@@ -79,15 +79,15 @@ export default function Home() {
                                     <Calendar className="w-8 h-8 text-primary" />
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold text-gray-900 mb-2 font-heading">Réunion Publique</h3>
+                                    <h3 className="text-xl font-bold text-gray-900 mb-2 font-heading">Soyez acteurs avec nous de la démarche</h3>
                                     <p className="text-gray-600 mb-1">
-                                        Venez échanger avec nous et découvrir la démarche.
+                                        Rejoignez-nous le :
                                     </p>
                                     <div className="flex items-center gap-2 text-primary font-bold mt-2">
                                         <MapPin className="w-5 h-5" />
-                                        <span>Jeudi 8 Janvier à 20h00</span>
+                                        <span>JEUDI 8 JANVIER 2026 à 20h30</span>
                                     </div>
-                                    <p className="text-sm text-gray-500 mt-1 ml-7">Salle des Fêtes de Dommartin</p>
+                                    <p className="text-sm text-gray-500 mt-1 ml-7">Centre Culturel</p>
                                 </div>
                             </div>
                         </div>
@@ -179,10 +179,10 @@ export default function Home() {
                                 Prochaine réunion
                             </div>
 
-                            <h3 className="text-2xl font-bold text-primary mb-6">Après la réussite de la 1ère réunion...</h3>
+                            <h3 className="text-2xl font-bold text-primary mb-6">Soyez acteurs avec nous de la démarche</h3>
 
                             <p className="text-gray-600 mb-6">
-                                L'étape suivante : enrichir et transformer les idées en priorités et en plan d’action.
+                                Rejoignez-nous le jeudi 8 janvier pour construire ensemble l'avenir de Dommartin.
                             </p>
 
                             <div className="bg-primary/5 rounded-xl p-6 mb-8 border border-primary/10">
@@ -194,7 +194,7 @@ export default function Home() {
                                     </div>
                                     <div className="flex items-center gap-3 text-gray-700 justify-center">
                                         <MapPin className="w-5 h-5 shrink-0" />
-                                        <span>20h30 - Espace Culturel</span>
+                                        <span>20h30 - Centre Culturel</span>
                                     </div>
                                 </div>
                             </div>
@@ -221,24 +221,18 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* FACEBOOK FEED SECTION */}
+            {/* FACEBOOK CTA SECTION */}
             <section className="py-16 bg-[#fcfaf8]">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-10">
                         <h2 className="text-3xl font-bold text-gray-900 mb-4 font-heading">Suivez notre actualité</h2>
-                        <p className="text-gray-600 max-w-2xl mx-auto">
+                        <p className="text-gray-600 max-w-2xl mx-auto mb-8">
                             Retrouvez nos dernières publications, photos et échanges sur notre page Facebook officielle.
                         </p>
-                    </div>
-
-                    <div className="flex justify-center">
-                        <FacebookFeed />
-                    </div>
-
-                    <div className="text-center mt-8">
-                        <Button variant="outline" asChild className="border-primary text-primary hover:bg-primary hover:text-white transition-colors">
+                        <Button asChild size="lg" className="bg-[#1877F2] hover:bg-[#1864D9] text-white shadow-lg shadow-blue-200">
                             <Link href="https://www.facebook.com/profile.php?id=61585026020662" target="_blank" rel="noopener noreferrer">
-                                Voir la page Facebook
+                                <span className="mr-2 text-xl font-bold">f</span>
+                                Rejoignez-nous sur Facebook
                             </Link>
                         </Button>
                     </div>

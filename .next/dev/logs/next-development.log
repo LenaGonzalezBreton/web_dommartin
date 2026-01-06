@@ -1,173 +1,87 @@
-[00:00:00.972] Server  LOG      ✓ Ready in 627ms
-[02:39:06.144] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\shared\lib\turbopack\manifest-loader.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:06.144] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\dev\turbopack-utils.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:06.146] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\dev\hot-reloader-turbopack.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:06.146] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:06.147] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\lib\dev-bundler-service.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:06.147] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:06.147] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\route-matcher-managers\dev-route-matcher-manager.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:06.147] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\route-matcher-managers\default-route-matcher-manager.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:06.147] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:06.147] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:06.148] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:06.148] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:06.148] Server  ERROR    ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Didou\develop\Web_Marie\.next\dev\server\app\page\build-manifest.json'
-[02:39:06.175] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\shared\lib\turbopack\manifest-loader.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:06.175] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\dev\turbopack-utils.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:06.176] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\dev\hot-reloader-turbopack.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:06.176] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:06.176] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\lib\dev-bundler-service.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:06.177] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:06.177] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\route-matcher-managers\dev-route-matcher-manager.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:06.177] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\route-matcher-managers\default-route-matcher-manager.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:06.178] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:06.178] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:06.178] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:06.178] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:06.178] Server  ERROR    ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Didou\develop\Web_Marie\.next\dev\server\app\page\build-manifest.json'
-[02:39:07.199] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\shared\lib\turbopack\manifest-loader.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:07.200] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\dev\turbopack-utils.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:07.202] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\dev\hot-reloader-turbopack.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:07.204] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:07.205] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\lib\dev-bundler-service.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:07.206] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:07.206] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\route-matcher-managers\dev-route-matcher-manager.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:07.207] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\route-matcher-managers\default-route-matcher-manager.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:07.207] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:07.208] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:07.210] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:07.211] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:07.212] Server  ERROR    ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Didou\develop\Web_Marie\.next\dev\server\app\page\build-manifest.json'
-[02:39:08.794] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\shared\lib\turbopack\manifest-loader.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:08.794] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\dev\turbopack-utils.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:08.794] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\dev\hot-reloader-turbopack.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:08.795] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:08.795] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\lib\dev-bundler-service.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:08.795] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:08.795] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\route-matcher-managers\dev-route-matcher-manager.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:08.795] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\route-matcher-managers\default-route-matcher-manager.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:08.796] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:08.796] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:08.796] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:08.797] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:08.797] Server  ERROR    ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Didou\develop\Web_Marie\.next\dev\server\app\page\build-manifest.json'
-[02:39:10.805] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\shared\lib\turbopack\manifest-loader.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:10.805] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\dev\turbopack-utils.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:10.806] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\dev\hot-reloader-turbopack.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:10.806] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:10.807] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\lib\dev-bundler-service.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:10.807] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:10.807] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\route-matcher-managers\dev-route-matcher-manager.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:10.807] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\route-matcher-managers\default-route-matcher-manager.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:10.808] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:10.808] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:10.808] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:10.808] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:10.808] Server  ERROR    ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Didou\develop\Web_Marie\.next\dev\server\app\page\build-manifest.json'
-[02:39:12.803] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\shared\lib\turbopack\manifest-loader.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:12.803] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\dev\turbopack-utils.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:12.803] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\dev\hot-reloader-turbopack.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:12.803] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:12.804] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\lib\dev-bundler-service.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:12.804] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:12.804] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\route-matcher-managers\dev-route-matcher-manager.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:12.804] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\route-matcher-managers\default-route-matcher-manager.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:12.804] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:12.804] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:12.804] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:12.805] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:12.805] Server  ERROR    ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Didou\develop\Web_Marie\.next\dev\server\app\page\build-manifest.json'
-[02:39:14.456] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\shared\lib\turbopack\manifest-loader.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:14.456] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\dev\turbopack-utils.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:14.457] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\dev\hot-reloader-turbopack.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:14.458] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:14.458] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\lib\dev-bundler-service.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:14.458] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:14.459] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\route-matcher-managers\dev-route-matcher-manager.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:14.459] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\route-matcher-managers\default-route-matcher-manager.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:14.460] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:14.460] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:14.460] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:14.460] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:14.461] Server  ERROR    ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Didou\develop\Web_Marie\.next\dev\server\app\page\build-manifest.json'
-[02:39:15.491] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\shared\lib\turbopack\manifest-loader.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:15.493] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\dev\turbopack-utils.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:15.495] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\dev\hot-reloader-turbopack.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:15.496] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:15.497] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\lib\dev-bundler-service.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:15.498] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:15.499] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\route-matcher-managers\dev-route-matcher-manager.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:15.500] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\route-matcher-managers\default-route-matcher-manager.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:15.502] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:15.503] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:15.504] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:15.505] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:15.506] Server  ERROR    ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Didou\develop\Web_Marie\.next\dev\server\app\page\build-manifest.json'
-[02:39:16.534] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\shared\lib\turbopack\manifest-loader.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:16.535] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\dev\turbopack-utils.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:16.535] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\dev\hot-reloader-turbopack.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:16.535] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:16.536] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\lib\dev-bundler-service.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:16.536] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:16.536] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\route-matcher-managers\dev-route-matcher-manager.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:16.536] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\route-matcher-managers\default-route-matcher-manager.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:16.536] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:16.536] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:16.536] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:16.537] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:16.537] Server  ERROR    ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Didou\develop\Web_Marie\.next\dev\server\app\page\build-manifest.json'
-[02:39:17.565] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\shared\lib\turbopack\manifest-loader.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:17.566] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\dev\turbopack-utils.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:17.570] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\dev\hot-reloader-turbopack.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:17.571] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:17.571] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\lib\dev-bundler-service.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:17.572] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:17.572] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\route-matcher-managers\dev-route-matcher-manager.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:17.578] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\route-matcher-managers\default-route-matcher-manager.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:17.579] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:17.579] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:17.580] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:17.585] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:17.585] Server  ERROR    ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Didou\develop\Web_Marie\.next\dev\server\app\page\build-manifest.json'
-[02:39:18.632] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\shared\lib\turbopack\manifest-loader.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:18.633] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\dev\turbopack-utils.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:18.633] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\dev\hot-reloader-turbopack.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:18.633] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:18.634] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\lib\dev-bundler-service.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:18.634] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:18.635] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\route-matcher-managers\dev-route-matcher-manager.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:18.636] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\route-matcher-managers\default-route-matcher-manager.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:18.637] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:18.637] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:18.638] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:18.638] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:18.639] Server  ERROR    ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Didou\develop\Web_Marie\.next\dev\server\app\page\build-manifest.json'
-[02:39:19.658] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\shared\lib\turbopack\manifest-loader.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:19.658] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\dev\turbopack-utils.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:19.658] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\dev\hot-reloader-turbopack.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:19.659] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:19.659] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\lib\dev-bundler-service.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:19.659] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:19.660] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\route-matcher-managers\dev-route-matcher-manager.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:19.660] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\route-matcher-managers\default-route-matcher-manager.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:19.660] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:19.661] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:19.661] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:19.661] Server  ERROR   C:\Users\Didou\develop\Web_Marie\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:39:19.661] Server  ERROR    ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Didou\develop\Web_Marie\.next\dev\server\app\page\build-manifest.json'
-[00:02:45.336] Server  WARN    Image with src "/fond-dommartin.png" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+[00:00:01.154] Server  LOG      ✓ Ready in 746ms
+[00:00:20.637] Server  LOG      ○ Compiling / ...
+[00:00:21.319] Server  WARN    Image with src "/fond-dommartin.png" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:02:45.842] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:45.964] Browser WARN    Image with src "/fond-dommartin.png" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+[00:00:21.808] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:21.957] Browser WARN    Image with src "/fond-dommartin.png" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:02:57.511] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[15:58:38.172] Server  LOG      ✓ Compiled in 76ms
-[15:58:41.284] Server  LOG      ✓ Compiled in 44ms
-[15:58:43.281] Server  LOG      ✓ Compiled in 34ms
-[13:22:52.554] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[13:22:52.679] Browser WARN    Image with src "/fond-dommartin.png" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[13:23:02.003] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[16:00:17.290] Server  LOG      ✓ Compiled in 48ms
-[16:03:33.594] Server  LOG      ✓ Compiled in 32ms
-[16:03:40.743] Server  LOG      ✓ Compiled in 26ms
+[00:00:21.958] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="fr"
+-                         data-jetski-tab-id="1248223555"
+                        >
+                  ...
+
+[00:00:31.016] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:31.201] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/l-equipe" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="fr"
+-                         data-jetski-tab-id="1248223557"
+                        >
+                          <body
++                           className="montserrat_c5a0b145-module__19wr9q__variable outfit_9f4f9187-module__4LtYgq__va..."
+-                           className="montserrat_c5a0b145-module__19wr9q__variable outfit_9f4f9187-module__4LtYgq__va..."
+                          >
+                  ...
+
+[00:00:31.201] Browser WARN    Image with src "/MarieBreton.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:31.201] Browser WARN    Image with src "/ClaudeGrivel.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:31.922] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/candidats/valerie-virion.jpg" "received" null
+[00:00:31.924] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/candidats/jean-jacques-rosaye.jpg" "received" null
+[00:00:31.925] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/candidats/christophe-imperadori.jpg" "received" null
