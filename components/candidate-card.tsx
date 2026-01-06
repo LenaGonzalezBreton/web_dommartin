@@ -31,7 +31,10 @@ export function CandidateCard({ candidate }: CandidateCardProps) {
                             src={candidate.photoUrl}
                             alt={candidate.name}
                             fill
-                            className="object-cover transition-transform duration-500 group-hover:scale-105"
+                            className={cn(
+                                "object-cover transition-transform duration-500 group-hover:scale-105",
+                                candidate.imagePosition || "object-center" // Default to center, allow override
+                            )}
                             onError={() => setImgError(true)}
                         />
                     ) : (

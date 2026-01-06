@@ -4,6 +4,7 @@ export interface Candidate {
     role: string;
     bio: string;
     photoUrl: string;
+    imagePosition?: string;
 }
 
 export interface ProgrammePoint {

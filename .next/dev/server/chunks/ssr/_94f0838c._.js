@@ -195,7 +195,8 @@ function CandidateCard({ candidate }) {
                         src: candidate.photoUrl,
                         alt: candidate.name,
                         fill: true,
-                        className: "object-cover transition-transform duration-500 group-hover:scale-105",
+                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("object-cover transition-transform duration-500 group-hover:scale-105", candidate.imagePosition || "object-center" // Default to center, allow override
+                        ),
                         onError: ()=>setImgError(true)
                     }, void 0, false, {
                         fileName: "[project]/components/candidate-card.tsx",
@@ -205,7 +206,7 @@ function CandidateCard({ candidate }) {
                         className: "h-32 w-32 text-gray-300"
                     }, void 0, false, {
                         fileName: "[project]/components/candidate-card.tsx",
-                        lineNumber: 38,
+                        lineNumber: 41,
                         columnNumber: 25
                     }, this)
                 }, void 0, false, {
@@ -221,7 +222,7 @@ function CandidateCard({ candidate }) {
                             children: candidate.name
                         }, void 0, false, {
                             fileName: "[project]/components/candidate-card.tsx",
-                            lineNumber: 43,
+                            lineNumber: 46,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardDescription"], {
@@ -229,13 +230,13 @@ function CandidateCard({ candidate }) {
                             children: candidate.role
                         }, void 0, false, {
                             fileName: "[project]/components/candidate-card.tsx",
-                            lineNumber: 46,
+                            lineNumber: 49,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/candidate-card.tsx",
-                    lineNumber: 42,
+                    lineNumber: 45,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -248,12 +249,12 @@ function CandidateCard({ candidate }) {
                                     children: paragraph
                                 }, i, false, {
                                     fileName: "[project]/components/candidate-card.tsx",
-                                    lineNumber: 58,
+                                    lineNumber: 61,
                                     columnNumber: 33
                                 }, this)) : `"${candidate.bio}"`
                         }, void 0, false, {
                             fileName: "[project]/components/candidate-card.tsx",
-                            lineNumber: 52,
+                            lineNumber: 55,
                             columnNumber: 21
                         }, this),
                         isLongBio && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -266,18 +267,18 @@ function CandidateCard({ candidate }) {
                                 children: isExpanded ? "Réduire" : "Lire la suite"
                             }, void 0, false, {
                                 fileName: "[project]/components/candidate-card.tsx",
-                                lineNumber: 69,
+                                lineNumber: 72,
                                 columnNumber: 29
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/candidate-card.tsx",
-                            lineNumber: 68,
+                            lineNumber: 71,
                             columnNumber: 25
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/candidate-card.tsx",
-                    lineNumber: 51,
+                    lineNumber: 54,
                     columnNumber: 17
                 }, this)
             ]

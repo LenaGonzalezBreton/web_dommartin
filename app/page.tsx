@@ -6,7 +6,9 @@ import { FacebookFeed } from "@/components/facebook-feed";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "L'Équipe des Initiateurs | Dommartin avec vous",
+    title: {
+        absolute: "Dommartin avec vous",
+    },
     description:
         "Rencontrez les initiateurs de la démarche citoyenne pour Dommartin-lès-Remiremont. Valérie Virion, Christophe Impéradori et bientôt toute l'équipe.",
 };
