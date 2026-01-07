@@ -21,7 +21,7 @@ export function Navbar() {
                         D
                     </div>
                     <span className="text-lg font-bold text-gray-900 hidden sm:block">
-                        Dommartin <span className="text-primary">avec vous</span>
+                        Dommartin <span className="text-primary">avec vous</span> <span className="text-gray-400 font-light mx-2">|</span> <span className="text-gray-600">88200</span>
                     </span>
                 </Link>
 
@@ -31,7 +31,7 @@ export function Navbar() {
                         <Link
                             key={link.href}
                             href={link.href}
-                            className="px-4 py-2 text-sm font-medium text-gray-600 rounded-lg transition-all hover:text-primary hover:bg-primary/5"
+                            className="px-4 py-2 text-sm font-medium text-black rounded-lg transition-all hover:text-primary hover:bg-primary/5"
                         >
                             {link.label}
                         </Link>
@@ -56,7 +56,7 @@ export function Navbar() {
                             <Link
                                 key={link.href}
                                 href={link.href}
-                                className="block px-4 py-3 text-sm font-medium text-gray-600 rounded-lg transition-all hover:text-primary hover:bg-primary/5"
+                                className="block px-4 py-3 text-sm font-medium text-black rounded-lg transition-all hover:text-primary hover:bg-primary/5"
                                 onClick={() => setIsOpen(false)}
                             >
                                 {link.label}

@@ -6,7 +6,7 @@ export const candidats: Candidate[] = [
         name: "Jean-Jacques Rosaye",
         role: "Initiateur de la démarche",
         bio: "À l’initiative de la démarche, Jean-Jacques Rosaye, picosé de souche profondément attaché à son territoire, a souhaité placer au cœur du projet la démocratie locale, la liberté de choix et le respect des picosés, de leurs attentes et de leurs priorités.",
-        photoUrl: "/images/candidats/jean-jacques-rosaye.jpg",
+        photoUrl: "/JeanJacquesRosaye.JPG",
     },
     {
         id: "8",
@@ -28,7 +28,7 @@ export const candidats: Candidate[] = [
         name: "Christophe Impéradori",
         role: "Initiateur de la démarche",
         bio: "Convaincu par la force du collectif, Christophe a impulsé ce mouvement pour unir les énergies et les talents de notre commune.",
-        photoUrl: "/images/candidats/christophe-imperadori.jpg",
+        photoUrl: "/ChristopheImperadori.jpeg",
     },
     {
         id: "11",

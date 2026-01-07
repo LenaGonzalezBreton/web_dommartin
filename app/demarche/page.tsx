@@ -34,7 +34,7 @@ export default function DemarchePage() {
                         </div>
 
                         <div className="prose max-w-none mb-12">
-                            <h2 className="text-3xl font-bold text-gray-900 mb-6">Diagnostic Partagé : Nos forces et nos faiblesses</h2>
+                            <h2 className="text-3xl font-bold text-gray-900 mb-6">Diagnostic Partagé : les forces et les faiblesses de la commune</h2>
                             <p className="text-gray-700">
                                 Lors de notre première grande réunion publique, <strong>41 habitants</strong> de tous les quartiers (Centre, Gare, Franould, Poirie, etc.) ont travaillé ensemble.
                                 Voici la synthèse de vos échanges sur l'état des lieux de notre commune.
@@ -114,7 +114,7 @@ export default function DemarchePage() {
                                 </div>
                                 <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                                     <div className="font-bold text-primary mb-2 flex items-center gap-2"><ArrowRight className="w-4 h-4" /> Jeunesse & Culture</div>
-                                    <p className="text-sm text-gray-600">Espaces pour les jeunes, développement du Centre culturel, équipements sportifs, café solidaire.</p>
+                                    <p className="text-sm text-gray-600">Espaces pour les jeunes, développement de l'Espace culturel, équipements sportifs, café solidaire.</p>
                                 </div>
                                 <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                                     <div className="font-bold text-primary mb-2 flex items-center gap-2"><ArrowRight className="w-4 h-4" /> Mobilités</div>

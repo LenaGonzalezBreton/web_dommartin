@@ -42,6 +42,14 @@ export const metadata: Metadata = {
         title: "Dommartin avec vous | Le projet citoyen pour 2026",
         description:
             "Rejoignez la dynamique citoyenne pour Dommartin-lès-Remiremont. Un projet participatif construit avec vous, pour vous.",
+        images: [
+            {
+                url: "/fond-dommartin.png", // Default share image
+                width: 1200,
+                height: 630,
+                alt: "Dommartin avec vous - Village",
+            },
+        ],
     },
     twitter: {
         card: "summary_large_image",

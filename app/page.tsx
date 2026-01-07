@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Calendar, Mail, MapPin, Users, Heart, Shield, CheckCircle, ArrowRight, Leaf } from "lucide-react";
-import { FacebookFeed } from "@/components/facebook-feed";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -12,16 +11,12 @@ export const metadata: Metadata = {
     description:
         "Rencontrez les initiateurs de la démarche citoyenne pour Dommartin-lès-Remiremont. Valérie Virion, Christophe Impéradori et bientôt toute l'équipe.",
 };
-// The following line was part of the instruction but appears to be a copy-paste error and is syntactically incorrect.
-// It has been commented out to maintain valid JavaScript syntax.
-// de Dommartin avec vous. Découvrez notre projet participatif pour les élections municipales de 2026 à Dommartin-lès-Remiremont.",
-// };
 
 export default function Home() {
     return (
         <div className="flex flex-col min-h-screen font-sans">
             {/* HER SELECTION: Not full screen, impactful image */}
-            <section className="relative h-[600px] flex items-center justify-center">
+            <section className="relative min-h-[80vh] md:h-[600px] flex items-center justify-center">
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
                     <Image
@@ -38,7 +33,7 @@ export default function Home() {
 
                 <div className="container mx-auto px-4 relative z-10 text-center">
                     <div className="animate-fade-in">
-                        <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-white mb-6 drop-shadow-lg font-heading">
+                        <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 drop-shadow-lg font-heading">
                             Dommartin <span className="text-accent">avec vous</span>
                         </h1>
                         <p className="text-xl md:text-3xl font-bold text-gray-100 tracking-wide max-w-3xl mx-auto drop-shadow-md">
@@ -55,7 +50,7 @@ export default function Home() {
             </section>
 
             {/* VISION SECTION: White background, clean text */}
-            <section className="py-20 bg-white">
+            <section className="py-12 md:py-20 bg-white">
                 <div className="container mx-auto px-4">
                     <div className="max-w-4xl mx-auto text-center">
                         <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8 animate-slide-up font-heading">
@@ -89,7 +84,7 @@ export default function Home() {
                                         <MapPin className="w-5 h-5" />
                                         <span>JEUDI 8 JANVIER 2026 à 20h30</span>
                                     </div>
-                                    <p className="text-sm text-gray-500 mt-1 ml-7">Centre Culturel</p>
+                                    <p className="text-sm text-gray-500 mt-1 ml-7">Espace Culturel</p>
                                 </div>
                             </div>
                         </div>
@@ -196,7 +191,7 @@ export default function Home() {
                                     </div>
                                     <div className="flex items-center gap-3 text-gray-700 justify-center">
                                         <MapPin className="w-5 h-5 shrink-0" />
-                                        <span>20h30 - Centre Culturel</span>
+                                        <span>20h30 - Espace Culturel</span>
                                     </div>
                                 </div>
                             </div>
@@ -217,7 +212,7 @@ export default function Home() {
 
                     <div className="mt-20 text-center">
                         <p className="text-2xl font-handwriting text-accent font-bold">
-                            "Belles année 2026 et pleine santé aux Picosé.e.s !"
+                            "Belle année 2026 et pleine santé aux picosé.e.s. !"
                         </p>
                     </div>
                 </div>
