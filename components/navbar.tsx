@@ -31,7 +31,7 @@ export function Navbar() {
                         <Link
                             key={link.href}
                             href={link.href}
-                            className="px-4 py-2 text-sm font-medium text-black rounded-lg transition-all hover:text-primary hover:bg-primary/5"
+                            className="px-4 py-2 text-sm font-bold text-black rounded-lg transition-all hover:text-primary hover:bg-primary/5"
                         >
                             {link.label}
                         </Link>
@@ -56,7 +56,7 @@ export function Navbar() {
                             <Link
                                 key={link.href}
                                 href={link.href}
-                                className="block px-4 py-3 text-sm font-medium text-black rounded-lg transition-all hover:text-primary hover:bg-primary/5"
+                                className="block px-4 py-3 text-sm font-bold text-black rounded-lg transition-all hover:text-primary hover:bg-primary/5"
                                 onClick={() => setIsOpen(false)}
                             >
                                 {link.label}

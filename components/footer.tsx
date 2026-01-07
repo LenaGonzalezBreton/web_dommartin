@@ -41,15 +41,15 @@ export function Footer() {
                     <div className="md:col-span-3 lg:col-span-2">
                         <h3 className="font-bold text-gray-900 mb-6 uppercase text-xs tracking-wider">Navigation</h3>
                         <nav className="flex flex-col space-y-4">
-                            <Link href="/" className="text-sm font-medium hover:text-primary transition-colors flex items-center group">
+                            <Link href="/" className="text-sm font-bold hover:text-primary transition-colors flex items-center group">
                                 <span className="w-0 group-hover:w-2 h-0.5 bg-primary mr-0 group-hover:mr-2 transition-all duration-300"></span>
                                 Accueil
                             </Link>
-                            <Link href="/demarche" className="text-sm font-medium hover:text-primary transition-colors flex items-center group">
+                            <Link href="/demarche" className="text-sm font-bold hover:text-primary transition-colors flex items-center group">
                                 <span className="w-0 group-hover:w-2 h-0.5 bg-primary mr-0 group-hover:mr-2 transition-all duration-300"></span>
                                 La Démarche
                             </Link>
-                            <Link href="/l-equipe" className="text-sm font-medium hover:text-primary transition-colors flex items-center group">
+                            <Link href="/l-equipe" className="text-sm font-bold hover:text-primary transition-colors flex items-center group">
                                 <span className="w-0 group-hover:w-2 h-0.5 bg-primary mr-0 group-hover:mr-2 transition-all duration-300"></span>
                                 L'Équipe
                             </Link>
@@ -60,10 +60,10 @@ export function Footer() {
                     <div className="md:col-span-2 lg:col-span-2">
                         <h3 className="font-bold text-gray-900 mb-6 uppercase text-xs tracking-wider">Infos</h3>
                         <nav className="flex flex-col space-y-4">
-                            <Link href="/mentions-legales" className="text-sm font-medium hover:text-primary transition-colors">
+                            <Link href="/mentions-legales" className="text-sm font-bold hover:text-primary transition-colors">
                                 Mentions légales
                             </Link>
-                            <Link href="mailto:dommartinavecvous@proton.me" className="text-sm font-medium hover:text-primary transition-colors">
+                            <Link href="mailto:dommartinavecvous@proton.me" className="text-sm font-bold hover:text-primary transition-colors">
                                 Contact
                             </Link>
                         </nav>
