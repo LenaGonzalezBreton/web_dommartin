@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Heart, Facebook, Instagram, Share2 } from "lucide-react";
 
 export function Footer() {
-    const siteUrl = "https://dommartin-ensemble.fr";
+    const siteUrl = "https://dommartinavecvous.fr";
     const shareMessage = "Découvrez Dommartin avec vous - Élections Municipales 2026 !";
 
     return (
