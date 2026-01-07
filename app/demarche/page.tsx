@@ -110,7 +110,7 @@ export default function DemarchePage() {
                             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                                 <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                                     <div className="font-bold text-primary mb-2 flex items-center gap-2"><ArrowRight className="w-4 h-4" /> Économie</div>
-                                    <p className="text-sm text-gray-600">Soutenir la vie économique locaux et favoriser l’implantation de commerces.</p>
+                                    <p className="text-sm text-gray-600">Soutenir la vie économique locale et favoriser l’implantation de commerces.</p>
                                 </div>
                                 <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                                     <div className="font-bold text-primary mb-2 flex items-center gap-2"><ArrowRight className="w-4 h-4" /> Jeunesse & Culture</div>
