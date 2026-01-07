@@ -21,7 +21,7 @@ export const candidats: Candidate[] = [
         name: "Valérie Virion",
         role: "Initiatrice de la démarche",
         bio: "À l'origine de cette dynamique citoyenne, Valérie souhaite redonner la parole aux habitants pour construire ensemble l'avenir de Dommartin.",
-        photoUrl: "/images/candidats/valerie-virion.jpg",
+        photoUrl: "/ValerieVirion.jpg",
     },
     {
         id: "10",
