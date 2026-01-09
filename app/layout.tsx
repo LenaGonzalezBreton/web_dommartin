@@ -3,7 +3,7 @@ import { Montserrat, Outfit } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
-import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const montserrat = Montserrat({
     subsets: ["latin"],
@@ -67,16 +67,8 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="fr">
-            <GoogleTagManager gtmId="GTM-PR8RFC7K" />
+            <GoogleAnalytics gaId="G-VL1J9S3QSD" />
             <body className={`${montserrat.variable} ${outfit.variable} font-sans`}>
-                <noscript>
-                    <iframe
-                        src="https://www.googletagmanager.com/ns.html?id=GTM-PR8RFC7K"
-                        height="0"
-                        width="0"
-                        style={{ display: "none", visibility: "hidden" }}
-                    />
-                </noscript>
                 <div className="flex min-h-screen flex-col">
                     <Navbar />
                     <main className="flex-1">{children}</main>
