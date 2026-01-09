@@ -36,6 +36,7 @@ export function CandidateCard({ candidate }: CandidateCardProps) {
                                 candidate.imagePosition || "object-center" // Default to center, allow override
                             )}
                             onError={() => setImgError(true)}
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         />
                     ) : (
                         <User className="h-32 w-32 text-gray-300" />

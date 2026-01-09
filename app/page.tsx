@@ -25,7 +25,7 @@ export default function Home() {
                         fill
                         className="object-cover"
                         priority
-                        quality={100}
+                        sizes="100vw"
                     />
                     {/* Darker overlay for text readability on the image */}
                     <div className="absolute inset-0 bg-black/40 backdrop-blur-[1px]" />
