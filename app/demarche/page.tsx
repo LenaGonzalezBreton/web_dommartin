@@ -14,7 +14,7 @@ export default function DemarchePage() {
         <div className="min-h-screen bg-white">
             {/* Hero Video Component */}
             <VideoHero
-                videoSrc="/videos/Dommartin%20avec%20vous%2088200.MP4"
+                videoSrc="/videos/dommartin-video.mp4"
                 title={
                     <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 animate-fade-in shadow-sm">
                         Une démarche <span className="text-accent">citoyenne</span> et transparente
