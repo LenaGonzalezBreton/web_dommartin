@@ -66,27 +66,57 @@ export default function Home() {
                             </p>
                         </div>
 
-                        {/* Jan 8 Meeting Card */}
-                        <div className="bg-white p-8 rounded-2xl border-2 border-primary shadow-lg text-left relative mx-auto max-w-3xl transform hover:-translate-y-1 transition-all duration-300">
-                            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-sm font-bold shadow-md">
-                                Prochain Rendez-vous
-                            </div>
-                            <div className="flex flex-col md:flex-row items-center gap-6">
-                                <div className="bg-primary/10 p-4 rounded-xl shrink-0">
-                                    <Calendar className="w-8 h-8 text-primary" />
+                        {/* Grid for Meetings */}
+                        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+
+                            {/* Prochain Rendez-vous (Left) */}
+                            <div className="bg-white p-8 rounded-2xl border-2 border-primary shadow-lg text-left relative transform hover:-translate-y-1 transition-all duration-300 h-full flex flex-col justify-between">
+                                <div className="absolute -top-4 left-8 bg-primary text-white px-4 py-1 rounded-full text-sm font-bold shadow-md">
+                                    Prochain Rendez-vous
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold text-gray-900 mb-2 font-heading">Soyez acteurs avec nous de la démarche</h3>
-                                    <p className="text-gray-600 mb-1">
-                                        Rejoignez-nous le :
-                                    </p>
-                                    <div className="flex items-center gap-2 text-primary font-bold mt-2">
-                                        <MapPin className="w-5 h-5" />
-                                        <span>JEUDI 12 FÉVRIER 2026 à 20h00</span>
+                                    <div className="bg-primary/10 p-3 rounded-xl w-fit mb-4">
+                                        <Calendar className="w-6 h-6 text-primary" />
                                     </div>
-                                    <p className="text-sm text-gray-500 mt-1 ml-7">Espace Culturel</p>
+                                    <h3 className="text-xl font-bold text-gray-900 mb-2 font-heading">Soyez acteurs avec nous de la démarche</h3>
+                                    <p className="text-gray-600 mb-4">
+                                        Rejoignez-nous pour la présentation du programme :
+                                    </p>
+                                    <div className="space-y-2">
+                                        <div className="flex items-center gap-2 text-primary font-bold">
+                                            <Calendar className="w-5 h-5" />
+                                            <span>JEUDI 12 FÉVRIER 2026</span>
+                                        </div>
+                                        <div className="flex items-center gap-2 text-gray-700">
+                                            <MapPin className="w-5 h-5" />
+                                            <span>20h00 - Espace Culturel</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+
+                            {/* Précédents Rendez-vous (Right) */}
+                            <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-md text-left relative transform hover:-translate-y-1 transition-all duration-300 h-full flex flex-col justify-between">
+                                <div className="absolute -top-4 left-8 bg-gray-600 text-white px-4 py-1 rounded-full text-sm font-bold shadow-md">
+                                    Précédents Rendez-vous
+                                </div>
+                                <div>
+                                    <div className="bg-gray-100 p-3 rounded-xl w-fit mb-4">
+                                        <CheckCircle className="w-6 h-6 text-gray-600" />
+                                    </div>
+                                    <h3 className="text-xl font-bold text-gray-900 mb-2 font-heading">Retour sur nos échanges</h3>
+                                    <p className="text-gray-600 mb-6">
+                                        Retrouvez les comptes-rendus des ateliers participatifs, notamment la réunion du 8 Janvier.
+                                    </p>
+                                </div>
+                                <Button asChild variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-white transition-colors">
+                                    <Link href="/demarche">
+                                        Voir la démarche
+                                        <ArrowRight className="ml-2 w-4 h-4" />
+                                    </Link>
+                                </Button>
+                            </div>
+
                         </div>
                     </div>
                 </div>
