@@ -82,7 +82,7 @@ export default function Home() {
                                     </p>
                                     <div className="flex items-center gap-2 text-primary font-bold mt-2">
                                         <MapPin className="w-5 h-5" />
-                                        <span>JEUDI 8 JANVIER 2026 à 20h30</span>
+                                        <span>JEUDI 12 FÉVRIER 2026 à 20h00</span>
                                     </div>
                                     <p className="text-sm text-gray-500 mt-1 ml-7">Espace Culturel</p>
                                 </div>
@@ -179,7 +179,7 @@ export default function Home() {
                             <h3 className="text-2xl font-bold text-primary mb-6">Soyez acteurs avec nous de la démarche</h3>
 
                             <p className="text-gray-600 mb-6">
-                                Rejoignez-nous le jeudi 8 janvier pour construire ensemble l'avenir de Dommartin.
+                                Rejoignez-nous le jeudi 12 février pour construire ensemble l'avenir de Dommartin.
                             </p>
 
                             <div className="bg-primary/5 rounded-xl p-6 mb-8 border border-primary/10">
@@ -187,11 +187,11 @@ export default function Home() {
                                 <div className="flex flex-col gap-3">
                                     <div className="flex items-center gap-3 text-primary text-lg justify-center">
                                         <Calendar className="w-6 h-6" />
-                                        <span className="font-bold">JEUDI 8 JANVIER 2026</span>
+                                        <span className="font-bold">JEUDI 12 FÉVRIER 2026</span>
                                     </div>
                                     <div className="flex items-center gap-3 text-gray-700 justify-center">
                                         <MapPin className="w-5 h-5 shrink-0" />
-                                        <span>20h30 - Espace Culturel</span>
+                                        <span>20h00 - Espace Culturel</span>
                                     </div>
                                 </div>
                             </div>

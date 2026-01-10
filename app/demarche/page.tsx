@@ -23,6 +23,58 @@ export default function DemarchePage() {
                 </div>
             </section>
 
+            {/* Compte-rendu Réunion 2 */}
+            <section className="py-16 bg-gray-50/50">
+                <div className="container mx-auto px-4">
+                    <div className="max-w-4xl mx-auto">
+                        <div className="flex items-center gap-4 mb-8">
+                            <Badge className="bg-primary text-white hover:bg-primary px-3 py-1 text-sm">Réunion #2</Badge>
+                            <span className="text-gray-500 font-medium">8 Janvier 2026</span>
+                        </div>
+
+                        <div className="prose max-w-none">
+                            <h2 className="text-3xl font-bold text-gray-900 mb-6">Retour sur la réunion du 8 Janvier</h2>
+
+                            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 mb-8">
+                                <p className="text-xl text-primary font-medium italic">
+                                    "Une dynamique forte : une participation active et envieuse de construire ensemble un projet municipal citoyen."
+                                </p>
+                            </div>
+
+                            <div className="space-y-6 text-gray-700 leading-relaxed">
+                                <p>
+                                    La réunion du jeudi 8 a confirmé une dynamique forte : une participation active et nombreuse, malgré les intempéries, et une envie partagée de construire ensemble un projet municipal citoyen, non partisan et participatif. Les échanges ont permis de clarifier la feuille de route, de mieux faire ressortir les attentes prioritaires des picosés, et d’avancer concrètement vers un programme qui sera présenté lors de la prochaine réunion du 12 février 2026.
+                                </p>
+
+                                <h3 className="text-xl font-bold text-gray-900 mt-8 mb-4 flex items-center gap-2">
+                                    <Users className="w-5 h-5 text-accent" />
+                                    Une intelligence collective en action
+                                </h3>
+                                <p>
+                                    Belle réunion ce jeudi soir pour construire un projet municipal participatif qui rassemble et propose de nouvelles méthodes de travail en intelligence collective. Il se dégage un besoin marqué de dialogue, de s’écouter, et d’être davantage associé à la gestion communale, y compris dans les sujets qui se jouent à l’échelle de l’intercommunalité.
+                                </p>
+
+                                <h3 className="text-xl font-bold text-gray-900 mt-8 mb-4 flex items-center gap-2">
+                                    <Lightbulb className="w-5 h-5 text-accent" />
+                                    Des attentes claires
+                                </h3>
+                                <p>
+                                    Les participants ("picosés") ont poursuivi le travail engagé lors de la première rencontre : identifier, hiérarchiser et préciser les attentes, puis les traduire en actions. Les échanges ont confirmé des demandes fortes : davantage de dialogue, une information plus claire, une transparence assumée, et une commune qui s’organise avec une méthode plus collective, plus proche du quotidien, et plus efficace dans la mise en œuvre.
+                                </p>
+
+                                <h3 className="text-xl font-bold text-gray-900 mt-8 mb-4 flex items-center gap-2">
+                                    <Target className="w-5 h-5 text-accent" />
+                                    Le collectif grandit
+                                </h3>
+                                <p>
+                                    La participation, dynamique et constructive, montre que beaucoup souhaitent être acteurs d’une démarche citoyenne : proposer, débattre, améliorer, et co-construire un projet réaliste. La feuille de route se clarifie et l’organisation de la liste se structure. Des picosés s’engagent dès maintenant pour faire vivre le programme, et d’autres se proposent pour suivre des sujets, apporter leurs compétences, et participer aux commissions consultatives.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* Compte-rendu Réunion 1 */}
             <section className="py-16">
                 <div className="container mx-auto px-4">
@@ -140,22 +192,41 @@ export default function DemarchePage() {
             </section>
 
             {/* Next Steps Banner */}
-            <section className="py-12 bg-primary text-white">
-                <div className="container mx-auto px-4 text-center">
-                    <div className="flex flex-col md:flex-row items-center justify-center gap-6">
-                        <div className="flex items-center gap-4">
-                            <div className="bg-white/10 p-3 rounded-full">
-                                <Users className="w-8 h-8 text-accent" />
+            <section className="py-16 bg-primary text-white relative overflow-hidden">
+                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop')] opacity-10 bg-cover bg-center mix-blend-overlay"></div>
+                <div className="container mx-auto px-4 text-center relative z-10">
+                    <div className="max-w-3xl mx-auto">
+                        <h2 className="text-3xl md:text-4xl font-bold mb-6">Prochaine Échéance</h2>
+
+                        <div className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 mb-8 transform hover:scale-105 transition-transform duration-300">
+                            <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-6">
+                                <div className="text-center md:text-right">
+                                    <p className="text-lg opacity-90">Rendez-vous le</p>
+                                    <p className="text-3xl font-bold text-accent">Jeudi 12 Février 2026</p>
+                                </div>
+                                <div className="hidden md:block h-12 w-px bg-white/30"></div>
+                                <div className="text-center md:text-left">
+                                    <p className="text-3xl font-bold">20h00</p>
+                                    <p className="text-lg opacity-90">Espace Culturel</p>
+                                </div>
                             </div>
-                            <div className="text-left">
-                                <h4 className="text-xl font-bold">Prochaine étape</h4>
-                                <p className="text-primary-foreground/80">Transformer ces idées en plan d'action</p>
-                            </div>
+
+                            <p className="text-lg leading-relaxed opacity-90 mb-6">
+                                Nous y présenterons un programme construit à partir de vos attentes et de vos propositions, puis travaillé au regard des réalités réglementaires et des contraintes budgétaires, afin de proposer un projet sérieux, applicable et financé.
+                            </p>
+
+                            <Badge variant="secondary" className="bg-white text-primary hover:bg-white/90 text-sm py-1 px-4">
+                                Présentation du programme & des candidats
+                            </Badge>
                         </div>
-                        <div className="hidden md:block h-12 w-px bg-white/20"></div>
-                        <div className="text-left">
-                            <p className="text-lg font-semibold">Venez participer le Jeudi 8 Janvier</p>
-                            <p className="text-sm text-accent font-bold">20h30 - Espace Culturel</p>
+
+                        <div className="space-y-4">
+                            <p className="text-lg opacity-90">
+                                D’ici le 12 février, on continue d’échanger et de recueillir vos idées. Si vous avez envie de faire avancer Dommartin, votre énergie est la bienvenue.
+                            </p>
+                            <a href="mailto:dommartinavecvous@proton.me" className="inline-flex items-center gap-2 text-accent hover:text-accent/80 font-bold transition-colors">
+                                <span className="underline decoration-2 underline-offset-4">dommartinavecvous@proton.me</span>
+                            </a>
                         </div>
                     </div>
                 </div>
