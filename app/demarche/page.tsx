@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle, AlertTriangle, ArrowRight, Target, Users, Lightbulb } from "lucide-react";
 import { Metadata } from "next";
+import { VideoHero } from "@/components/video-hero";
 
 export const metadata: Metadata = {
     title: "La Démarche Participative | Dommartin avec vous",
@@ -11,17 +12,16 @@ export const metadata: Metadata = {
 export default function DemarchePage() {
     return (
         <div className="min-h-screen bg-white">
-            {/* Hero */}
-            <section className="relative py-20 bg-gradient-to-br from-primary/5 via-white to-accent/5 overflow-hidden">
-                <div className="container mx-auto px-4 text-center">
-                    <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6 animate-fade-in">
+            {/* Hero Video Component */}
+            <VideoHero
+                videoSrc="/videos/Dommartin%20avec%20vous%2088200.MP4"
+                title={
+                    <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 animate-fade-in shadow-sm">
                         Une démarche <span className="text-accent">citoyenne</span> et transparente
                     </h1>
-                    <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed animate-slide-up">
-                        Retrouvez ici les comptes-rendus de nos ateliers participatifs. C'est ensemble, en croisant nos regards, que nous construisons le projet de demain.
-                    </p>
-                </div>
-            </section>
+                }
+                description="Retrouvez ici les comptes-rendus de nos ateliers participatifs. C'est ensemble, en croisant nos regards, que nous construisons le projet de demain."
+            />
 
             {/* Compte-rendu Réunion 2 */}
             <section className="py-16 bg-gray-50/50">
