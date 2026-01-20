@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Calendar, Mail, MapPin, Users, Heart, Shield, CheckCircle, ArrowRight, Leaf } from "lucide-react";
+import { Calendar, Mail, MapPin, Users, Heart, Shield, CheckCircle, ArrowRight, Leaf, FileText, Newspaper } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
         absolute: "Dommartin avec vous",
     },
     description:
-        "Rencontrez les initiateurs de la démarche citoyenne pour Dommartin-lès-Remiremont. Valérie Virion, Christophe Impéradori et bientôt toute l'équipe.",
+        "Suivez la construction du programme et de l'équipe Dommartin avec Vous. Une démarche participative pour les municipales 2026.",
 };
 
 export default function Home() {
@@ -33,11 +33,11 @@ export default function Home() {
 
                 <div className="container mx-auto px-4 relative z-10 text-center">
                     <div className="animate-fade-in">
-                        <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 drop-shadow-lg font-heading">
+                        <h1 className="text-3xl md:text-5xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 drop-shadow-lg font-heading">
                             Dommartin <span className="text-accent">avec vous</span>
                         </h1>
-                        <p className="text-xl md:text-3xl font-bold text-gray-100 tracking-wide max-w-3xl mx-auto drop-shadow-md">
-                            Et si les élections municipales étaient une bonne occasion de se parler ?
+                        <p className="text-xl md:text-3xl font-bold text-gray-100 tracking-wide max-w-4xl mx-auto drop-shadow-md leading-relaxed">
+                            Ici, vous suivez la construction du programme et de l’équipe.
                         </p>
                         <div className="mt-10">
                             <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/10 backdrop-blur-md border border-white/30 text-white font-medium tracking-wide shadow-lg hover:bg-white/20 transition-all cursor-default group">
@@ -49,81 +49,125 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* VISION SECTION: White background, clean text */}
-            <section className="py-12 md:py-20 bg-white">
+            {/* A LA UNE SECTION */}
+            <section className="py-12 md:py-20 bg-white -mt-10 md:-mt-20 relative z-20">
                 <div className="container mx-auto px-4">
-                    <div className="max-w-4xl mx-auto text-center">
-                        <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8 animate-slide-up font-heading">
-                            Construire un projet, une équipe et une dynamique avec vous
-                        </h2>
+                    <div className="text-center mb-10">
+                        <span className="bg-primary text-white text-sm font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-2 inline-block">À la une</span>
+                    </div>
 
-                        <div className="prose prose-lg mx-auto text-gray-700 leading-relaxed mb-12">
-                            <p className="text-xl font-medium text-gray-800">
-                                « Ici, vous découvrez les toutes premières pierres de notre programme, avant même la liste. »
+                    <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+
+                        {/* Carte 1: Charte */}
+                        <div className="bg-white p-6 md:p-8 rounded-3xl shadow-xl border border-gray-100 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+                            <div className="bg-primary/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                                <FileText className="w-8 h-8 text-primary" />
+                            </div>
+                            <h3 className="text-2xl font-bold text-gray-900 mb-4 font-heading">Charte d’engagement</h3>
+                            <p className="text-gray-600 mb-8 text-lg">
+                                Transparence, vote éclairé, consultation citoyenne... Découvrez les 4 engagements signés par nos candidats.
                             </p>
-                            <p className="font-semibold text-primary text-lg mt-4">
-                                Parce qu’avant tout, ce qui nous motive, c’est Dommartin… avec vous !
-                            </p>
+                            <Button asChild className="w-full md:w-auto" size="lg">
+                                <Link href="/charte">
+                                    Lire la charte
+                                    <ArrowRight className="ml-2 w-4 h-4" />
+                                </Link>
+                            </Button>
                         </div>
 
-                        {/* Grid for Meetings */}
-                        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                        {/* Carte 2: Communiqué */}
+                        <div className="bg-white p-6 md:p-8 rounded-3xl shadow-xl border border-gray-100 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+                            <div className="bg-accent/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                                <Newspaper className="w-8 h-8 text-accent" />
+                            </div>
+                            <h3 className="text-2xl font-bold text-gray-900 mb-4 font-heading">L’équipe se présente</h3>
+                            <p className="text-gray-600 mb-8 text-lg">
+                                <span className="font-semibold text-gray-800">Municipales 2026 :</span> la liste « Dommartin avec Vous » se présente, menée par Jean-Jacques Rosaye.
+                            </p>
+                            <Button asChild className="w-full md:w-auto" variant="outline" size="lg">
+                                <Link href="/communique">
+                                    Lire le communiqué
+                                    <ArrowRight className="ml-2 w-4 h-4" />
+                                </Link>
+                            </Button>
+                        </div>
 
-                            {/* Prochain Rendez-vous (Left) */}
-                            <div className="bg-white p-8 rounded-2xl border-2 border-primary shadow-lg text-left relative transform hover:-translate-y-1 transition-all duration-300 h-full flex flex-col justify-between">
-                                <div className="absolute -top-4 left-8 bg-primary text-white px-4 py-1 rounded-full text-sm font-bold shadow-md">
-                                    Prochain Rendez-vous
+                    </div>
+                </div>
+            </section>
+
+            {/* PROCHAIN RENDEZ-VOUS SECTION */}
+            <section className="py-12 bg-gray-50 border-y border-gray-200">
+                <div className="container mx-auto px-4">
+                    <div className="max-w-4xl mx-auto bg-white rounded-2xl p-6 md:p-10 shadow-lg flex flex-col md:flex-row items-center gap-8 md:gap-12 relative overflow-hidden">
+
+                        {/* Decorative Strip */}
+                        <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-primary to-accent" />
+
+                        <div className="flex-1 text-center md:text-left">
+                            <h2 className="text-xl font-bold text-primary mb-2 uppercase tracking-wide">Prochain Rendez-vous</h2>
+                            <h3 className="text-3xl font-bold text-gray-900 mb-4 font-heading">Programme & Équipe</h3>
+                            <p className="text-gray-600 mb-6 text-lg">
+                                Venez découvrir notre programme et échanger avec l’équipe au complet.
+                            </p>
+
+                            <div className="space-y-3 inline-block text-left bg-gray-50 p-4 rounded-xl w-full md:w-auto">
+                                <div className="flex items-center gap-3 text-gray-900 font-bold text-lg">
+                                    <Calendar className="w-6 h-6 text-accent" />
+                                    <span>JEUDI 12 FÉVRIER 2026</span>
                                 </div>
-                                <div>
-                                    <div className="bg-primary/10 p-3 rounded-xl w-fit mb-4">
-                                        <Calendar className="w-6 h-6 text-primary" />
-                                    </div>
-                                    <h3 className="text-xl font-bold text-gray-900 mb-2 font-heading">Soyez acteurs avec nous de la démarche</h3>
-                                    <p className="text-gray-600 mb-4">
-                                        Rejoignez-nous pour la présentation du programme :
-                                    </p>
-                                    <div className="space-y-2">
-                                        <div className="flex items-center gap-2 text-primary font-bold">
-                                            <Calendar className="w-5 h-5" />
-                                            <span>JEUDI 12 FÉVRIER 2026</span>
-                                        </div>
-                                        <div className="flex items-center gap-2 text-gray-700">
-                                            <MapPin className="w-5 h-5" />
-                                            <span>20h00 - Espace Culturel</span>
-                                        </div>
-                                    </div>
+                                <div className="flex items-center gap-3 text-gray-700">
+                                    <MapPin className="w-6 h-6 text-gray-400" />
+                                    <span>20h00 - Espace Culturel</span>
                                 </div>
                             </div>
+                        </div>
 
-                            {/* Précédents Rendez-vous (Right) */}
-                            <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-md text-left relative transform hover:-translate-y-1 transition-all duration-300 h-full flex flex-col justify-between">
-                                <div className="absolute -top-4 left-8 bg-gray-600 text-white px-4 py-1 rounded-full text-sm font-bold shadow-md">
-                                    Précédents Rendez-vous
-                                </div>
-                                <div>
-                                    <div className="bg-gray-100 p-3 rounded-xl w-fit mb-4">
-                                        <CheckCircle className="w-6 h-6 text-gray-600" />
-                                    </div>
-                                    <h3 className="text-xl font-bold text-gray-900 mb-2 font-heading">Retour sur nos échanges</h3>
-                                    <p className="text-gray-600 mb-6">
-                                        Retrouvez les comptes-rendus des ateliers participatifs, notamment la réunion du 8 Janvier.
-                                    </p>
-                                </div>
-                                <Button asChild variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-white transition-colors">
-                                    <Link href="/demarche">
-                                        Voir la démarche
-                                        <ArrowRight className="ml-2 w-4 h-4" />
-                                    </Link>
-                                </Button>
+
+
+                    </div>
+                </div>
+            </section>
+
+            {/* TEAM SECTION (NEW) */}
+            <section className="py-20 bg-white">
+                <div className="container mx-auto px-4">
+                    <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+                        <div className="order-2 md:order-1 relative aspect-video md:aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
+                            <Image
+                                src="/equipe-groupe.jpg"
+                                alt="Équipe Dommartin avec Vous"
+                                fill
+                                className="object-cover"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-60" />
+                        </div>
+                        <div className="order-1 md:order-2">
+                            <div className="inline-block bg-accent/10 px-4 py-2 rounded-full mb-4">
+                                <span className="text-accent font-bold uppercase tracking-wider text-sm">Une équipe soudée</span>
                             </div>
-
+                            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 font-heading">
+                                Une équipe à votre image
+                            </h2>
+                            <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                                Venus de tous les hameaux, engagés dans la vie associative et locale, nous unissons nos forces pour Dommartin.
+                                <br />
+                                <span className="font-semibold text-primary">Découvrez les visages de ceux qui s'engagent pour vous.</span>
+                            </p>
+                            <Button asChild size="lg" className="bg-primary hover:bg-primary-dark text-white shadow-xl shadow-primary/20 h-14 px-8 text-lg rounded-full">
+                                <Link href="/l-equipe">
+                                    Découvrir notre liste
+                                    <ArrowRight className="ml-2 w-5 h-5" />
+                                </Link>
+                            </Button>
                         </div>
                     </div>
                 </div>
             </section>
 
+
             {/* CHANTIERS SECTION: Light background for contrast */}
-            <section className="py-20 bg-gray-50">
+            <section className="py-20 bg-white">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-16">
                         <span className="bg-primary text-white rounded-full w-10 h-10 flex items-center justify-center mx-auto mb-4 text-xl font-bold shadow-lg shadow-primary/20">1</span>
@@ -133,7 +177,7 @@ export default function Home() {
 
                     <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                         {/* Card 1 */}
-                        <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                        <div className="bg-gray-50 p-6 md:p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
                             <div className="bg-primary/10 w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
                                 <Shield className="w-7 h-7 text-primary group-hover:text-white transition-colors" />
                             </div>
@@ -142,7 +186,7 @@ export default function Home() {
                         </div>
 
                         {/* Card 2 */}
-                        <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                        <div className="bg-gray-50 p-6 md:p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
                             <div className="bg-accent/10 w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:bg-accent group-hover:text-white transition-colors">
                                 <Leaf className="w-7 h-7 text-accent group-hover:text-white transition-colors" />
                             </div>
@@ -151,7 +195,7 @@ export default function Home() {
                         </div>
 
                         {/* Card 3 */}
-                        <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                        <div className="bg-gray-50 p-6 md:p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
                             <div className="bg-primary-light/10 w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary-light group-hover:text-white transition-colors">
                                 <Users className="w-7 h-7 text-primary-light group-hover:text-white transition-colors" />
                             </div>
@@ -162,75 +206,50 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* METHOD & CTA SECTION */}
-            <section className="py-20 bg-white relative overflow-hidden">
+            {/* DEMARCHE & VISION SECTION */}
+            <section className="py-20 bg-gray-50 relative overflow-hidden">
                 {/* Decorative background blobs */}
                 <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                 <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
 
                 <div className="container mx-auto px-4 relative z-10">
-                    <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-
-                        {/* Method Column */}
-                        <div>
-                            <div className="flex items-center gap-4 mb-8">
-                                <span className="bg-primary text-white rounded-full w-10 h-10 flex items-center justify-center text-xl font-bold shadow-lg shadow-primary/20 shrink-0">2</span>
-                                <h2 className="text-3xl font-bold text-gray-900 font-heading">Engagements de méthode</h2>
-                            </div>
-
-                            <div className="space-y-6">
-                                <div className="flex gap-4">
-                                    <div className="bg-primary/10 p-2 rounded-lg h-fit">
-                                        <CheckCircle className="w-6 h-6 text-primary" />
-                                    </div>
-                                    <div>
-                                        <h4 className="font-bold text-xl text-gray-900 mb-2">Participation & Transparence</h4>
-                                        <p className="text-gray-600">Associer les habitant.e.s aux décisions d’investissement et créer des temps d’échanges réguliers.</p>
-                                    </div>
-                                </div>
-                                <div className="flex gap-4">
-                                    <div className="bg-primary/10 p-2 rounded-lg h-fit">
-                                        <Heart className="w-6 h-6 text-primary" />
-                                    </div>
-                                    <div>
-                                        <h4 className="font-bold text-xl text-gray-900 mb-2">Intérêt Général</h4>
-                                        <p className="text-gray-600">Choisir ce qui rassemble, refuser ce qui divise, et agir efficacement au niveau intercommunal.</p>
-                                    </div>
-                                </div>
-                            </div>
+                    <div className="text-center mb-16">
+                        <span className="bg-primary text-white rounded-full w-10 h-10 flex items-center justify-center mx-auto mb-4 text-xl font-bold shadow-lg shadow-primary/20">2</span>
+                        <h2 className="text-3xl font-bold text-gray-900 mb-8 animate-slide-up font-heading">
+                            Notre Démarche
+                        </h2>
+                        <div className="prose prose-lg mx-auto text-gray-700 leading-relaxed max-w-3xl">
+                            <p className="text-xl font-medium text-gray-800">
+                                La liste « Dommartin avec Vous » se présente pour les municipales 2026, menée par Jean-Jacques Rosaye.
+                            </p>
+                            <p className="font-semibold text-primary text-lg mt-4">
+                                Découvrez notre démarche, nos engagements et rejoignez-nous pour construire ensemble l'avenir de Dommartin.
+                            </p>
                         </div>
+                        <div className="mt-8 flex justify-center gap-4">
+                            <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white">
+                                <Link href="/demarche">
+                                    En savoir plus sur la démarche
+                                    <ArrowRight className="ml-2 w-4 h-4" />
+                                </Link>
+                            </Button>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-                        {/* CTA / Meeting Column */}
-                        <div className="bg-gradient-to-br from-white to-gray-50 p-8 rounded-3xl shadow-xl border border-gray-100 relative">
-                            <div className="absolute top-0 right-0 bg-accent text-white text-xs font-bold px-3 py-1 rounded-bl-xl rounded-tr-3xl uppercase tracking-wider">
-                                Prochaine réunion
-                            </div>
+            {/* CTA SECTION */}
+            <section className="py-20 bg-white">
+                <div className="container mx-auto px-4">
+                    <div className="max-w-4xl mx-auto bg-gradient-to-br from-white to-gray-50 p-6 md:p-8 rounded-3xl shadow-xl border border-gray-100 text-center">
+                        <h3 className="text-2xl font-bold text-primary mb-6">Soyez acteurs avec nous</h3>
 
-                            <h3 className="text-2xl font-bold text-primary mb-6">Soyez acteurs avec nous de la démarche</h3>
+                        <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
+                            Votre participation, votre soutien, et vos idées sont les bienvenus pour enrichir notre projet.
+                        </p>
 
-                            <p className="text-gray-600 mb-6">
-                                Rejoignez-nous le jeudi 12 février pour construire ensemble l'avenir de Dommartin.
-                            </p>
-
-                            <div className="bg-primary/5 rounded-xl p-6 mb-8 border border-primary/10">
-                                <p className="font-bold text-center text-gray-900 mb-2">REJOIGNEZ-NOUS</p>
-                                <div className="flex flex-col gap-3">
-                                    <div className="flex items-center gap-3 text-primary text-lg justify-center">
-                                        <Calendar className="w-6 h-6" />
-                                        <span className="font-bold">JEUDI 12 FÉVRIER 2026</span>
-                                    </div>
-                                    <div className="flex items-center gap-3 text-gray-700 justify-center">
-                                        <MapPin className="w-5 h-5 shrink-0" />
-                                        <span>20h00 - Espace Culturel</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <p className="text-gray-600 text-sm mb-8 text-center">
-                                Votre participation, votre candidature peut-être, sont les bienvenues.
-                            </p>
-
-                            <Button asChild className="w-full bg-primary hover:bg-primary-dark text-white font-bold h-12 text-lg shadow-lg hover:shadow-primary/30 transition-all">
+                        <div className="flex flex-col sm:flex-row justify-center gap-4">
+                            <Button asChild className="bg-primary hover:bg-primary-dark text-white font-bold h-12 px-8 text-lg shadow-lg hover:shadow-primary/30 transition-all">
                                 <Link href="mailto:dommartinavecvous@proton.me">
                                     <Mail className="mr-2 h-5 w-5" />
                                     Nous contacter
@@ -238,12 +257,11 @@ export default function Home() {
                             </Button>
                         </div>
 
-                    </div>
-
-                    <div className="mt-20 text-center">
-                        <p className="text-2xl font-handwriting text-accent font-bold">
-                            "Belle année 2026 et pleine santé aux picosé.e.s. !"
-                        </p>
+                        <div className="mt-12">
+                            <p className="text-2xl font-handwriting text-accent font-bold">
+                                "Belle année 2026 et pleine santé aux picosé.e.s. !"
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>

@@ -39,38 +39,49 @@ export default function LEquipePage() {
                         <h2 className="text-3xl font-bold text-gray-900">Les Visages de l'équipe</h2>
                     </div>
 
-                    {/* Grid displaying initiators and Claude Grivel (IDs >= 7) */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-20">
-                        {candidats.filter(c => parseInt(c.id) >= 7).map((candidat) => (
-                            <CandidateCard key={candidat.id} candidate={candidat} />
-                        ))}
-                    </div>
-
-                    {/* Teaser Section */}
-                    <div className="max-w-3xl mx-auto text-center bg-gray-50 rounded-3xl p-12 border border-gray-100 relative overflow-hidden">
-                        <div className="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none">
-                            <div className="grid grid-cols-6 gap-4 p-4 transform -rotate-12 scale-110">
-                                {[...Array(24)].map((_, i) => (
-                                    <UserIcon key={i} className="w-12 h-12" />
-                                ))}
-                            </div>
+                    <div className="relative">
+                        {/* Grid displaying initiators and Claude Grivel (IDs >= 7) */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-20 filter blur-xl opacity-40 select-none pointer-events-none grayscale">
+                            {[
+                                ...candidats.filter(c => parseInt(c.id) >= 7),
+                                // Dummy candidates to create volume behind blur
+                                { id: "fake-1", name: "Membre de l'équipe", role: "Co-listier", bio: "Engagé pour Dommartin", photoUrl: "" },
+                                { id: "fake-2", name: "Membre de l'équipe", role: "Co-listier", bio: "Engagé pour Dommartin", photoUrl: "" },
+                                { id: "fake-3", name: "Membre de l'équipe", role: "Co-listier", bio: "Engagé pour Dommartin", photoUrl: "" },
+                                { id: "fake-4", name: "Membre de l'équipe", role: "Co-listier", bio: "Engagé pour Dommartin", photoUrl: "" },
+                            ].map((candidat) => (
+                                <CandidateCard key={candidat.id} candidate={candidat} />
+                            ))}
                         </div>
 
-                        <div className="relative z-10">
-                            <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-md">
-                                <Users className="w-8 h-8 text-primary" />
-                            </div>
-                            <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                                L’équipe se dévoile très prochainement…
-                            </h3>
-                            <p className="text-gray-600 text-lg mb-8 leading-relaxed">
-                                Nos réunions et temps d’écoute ont permis de construire le projet ; ils ont aussi fait émerger une équipe renouvelée, mobilisée et représentative de tous les hameaux de Dommartin.
-                                <br />
-                                <strong>Rendez-vous très prochainement pour la présentation officielle !</strong>
-                            </p>
-                            <div className="inline-flex items-center gap-2 text-gray-400 text-sm font-medium bg-white px-4 py-2 rounded-full border border-gray-200">
-                                <span className="w-2 h-2 rounded-full bg-gray-300 animate-pulse"></span>
-                                Annonce à venir
+                        {/* Teaser Section Overlay */}
+                        <div className="absolute inset-0 flex items-start justify-center z-10 pt-10 md:pt-20">
+                            <div className="max-w-3xl w-full mx-4 text-center bg-white/90 backdrop-blur-sm shadow-2xl rounded-3xl p-6 md:p-12 border border-gray-100 relative overflow-hidden">
+                                <div className="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none">
+                                    <div className="grid grid-cols-6 gap-4 p-4 transform -rotate-12 scale-110">
+                                        {[...Array(24)].map((_, i) => (
+                                            <UserIcon key={i} className="w-12 h-12" />
+                                        ))}
+                                    </div>
+                                </div>
+
+                                <div className="relative z-10">
+                                    <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-md">
+                                        <Users className="w-8 h-8 text-primary" />
+                                    </div>
+                                    <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                                        L’équipe se dévoile très prochainement…
+                                    </h3>
+                                    <p className="text-gray-600 text-lg mb-8 leading-relaxed">
+                                        Nos réunions et temps d’écoute ont permis de construire le projet ; ils ont aussi fait émerger une équipe renouvelée, mobilisée et représentative de tous les hameaux de Dommartin.
+                                        <br />
+                                        <strong>Rendez-vous très prochainement pour la présentation officielle !</strong>
+                                    </p>
+                                    <div className="inline-flex items-center gap-2 text-gray-400 text-sm font-medium bg-white px-4 py-2 rounded-full border border-gray-200">
+                                        <span className="w-2 h-2 rounded-full bg-gray-300 animate-pulse"></span>
+                                        Annonce à venir
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

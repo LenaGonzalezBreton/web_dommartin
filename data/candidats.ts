@@ -4,7 +4,7 @@ export const candidats: Candidate[] = [
     {
         id: "7",
         name: "Jean-Jacques Rosaye",
-        role: "Initiateur de la démarche",
+        role: "Tête de liste",
         bio: "À l’initiative de la démarche, Jean-Jacques Rosaye, picosé de souche profondément attaché à son territoire, a souhaité placer au cœur du projet la démocratie locale, la liberté de choix et le respect des picosés, de leurs attentes et de leurs priorités.",
         photoUrl: "/JeanJacquesRosaye.JPG",
     },
