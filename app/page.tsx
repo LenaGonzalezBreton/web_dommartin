@@ -133,14 +133,19 @@ export default function Home() {
             <section className="py-20 bg-white">
                 <div className="container mx-auto px-4">
                     <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-                        <div className="order-2 md:order-1 relative aspect-video md:aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
+                        <div className="order-2 md:order-1 relative aspect-video md:aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl group">
                             <Image
                                 src="/equipe-groupe.jpg"
                                 alt="Équipe Dommartin avec Vous"
                                 fill
-                                className="object-cover"
+                                className="object-cover blur-xl scale-105"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-60" />
+                            <div className="absolute inset-0 bg-black/20" />
+                            <div className="absolute inset-0 flex items-center justify-center z-10">
+                                <span className="bg-white/20 backdrop-blur-md border border-white/30 text-white text-2xl md:text-4xl font-bold font-heading uppercase tracking-[0.2em] px-10 py-4 rounded-full shadow-lg">
+                                    Prochainement
+                                </span>
+                            </div>
                         </div>
                         <div className="order-1 md:order-2">
                             <div className="inline-block bg-accent/10 px-4 py-2 rounded-full mb-4">
