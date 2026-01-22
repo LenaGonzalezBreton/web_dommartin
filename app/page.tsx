@@ -200,7 +200,7 @@ export default function Home() {
                                 La liste « Dommartin avec Vous » se présente pour les municipales 2026, menée par Jean-Jacques Rosaye.
                             </p>
                             <p className="font-semibold text-primary text-lg mt-4">
-                                Découvrez notre démarche, nos engagements et rejoignez-nous pour construire ensemble l'avenir de Dommartin.
+                                Découvrez notre démarche, nos engagements et soutenez-nous pour construire ensemble l'avenir de Dommartin.
                             </p>
                         </div>
                         <div className="mt-8 flex justify-center gap-4">
@@ -215,6 +215,7 @@ export default function Home() {
                 </div>
             </section>
 
+            {/* CTA SECTION */}
             {/* CTA SECTION */}
             <section className="py-20 bg-white">
                 <div className="container mx-auto px-4">
@@ -270,6 +271,6 @@ export default function Home() {
             </section>
 
 
-        </div>
+        </div >
     );
 }

@@ -5,6 +5,7 @@ export interface Candidate {
     bio: string;
     photoUrl: string;
     imagePosition?: string;
+    isVisible: boolean;
 }
 
 export interface ProgrammePoint {
