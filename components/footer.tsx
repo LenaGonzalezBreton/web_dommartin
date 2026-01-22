@@ -34,6 +34,15 @@ export function Footer() {
                             >
                                 <Facebook className="h-5 w-5" />
                             </a>
+                            <a
+                                href="https://www.instagram.com/dommartinavecvous88200"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-500 hover:text-[#E1306C] hover:border-[#E1306C] transition-all duration-300 shadow-sm hover:shadow-md"
+                                aria-label="Instagram"
+                            >
+                                <Instagram className="h-5 w-5" />
+                            </a>
                         </div>
                     </div>
 

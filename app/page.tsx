@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Calendar, Mail, MapPin, Users, Heart, Shield, CheckCircle, ArrowRight, Leaf, FileText, Newspaper } from "lucide-react";
+import { Calendar, Mail, MapPin, Users, Heart, Shield, CheckCircle, ArrowRight, Leaf, FileText, Newspaper, Instagram } from "lucide-react";
 import { Metadata } from "next";
 
 import { UpcomingEvents } from "@/components/UpcomingEvents";
@@ -243,20 +243,28 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* FACEBOOK CTA SECTION */}
+            {/* SOCIAL MEDIA CTA SECTION */}
             <section className="py-16 bg-[#fcfaf8]">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-10">
                         <h2 className="text-3xl font-bold text-gray-900 mb-4 font-heading">Suivez notre actualité</h2>
                         <p className="text-gray-600 max-w-2xl mx-auto mb-8">
-                            Retrouvez nos dernières publications, photos et échanges sur notre page Facebook officielle.
+                            Retrouvez nos dernières publications, photos et échanges sur nos réseaux sociaux.
                         </p>
-                        <Button asChild size="lg" className="bg-[#1877F2] hover:bg-[#1864D9] text-white shadow-lg shadow-blue-200">
-                            <Link href="https://www.facebook.com/profile.php?id=61585026020662" target="_blank" rel="noopener noreferrer">
-                                <span className="mr-2 text-xl font-bold">f</span>
-                                Rejoignez-nous sur Facebook
-                            </Link>
-                        </Button>
+                        <div className="flex flex-col sm:flex-row justify-center gap-4">
+                            <Button asChild size="lg" className="bg-[#1877F2] hover:bg-[#1864D9] text-white shadow-lg shadow-blue-200">
+                                <Link href="https://www.facebook.com/profile.php?id=61585026020662" target="_blank" rel="noopener noreferrer">
+                                    <span className="mr-2 text-xl font-bold">f</span>
+                                    Rejoignez-nous sur Facebook
+                                </Link>
+                            </Button>
+                            <Button asChild size="lg" className="bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#FCAF45] hover:opacity-90 text-white shadow-lg shadow-pink-200 border-0">
+                                <Link href="https://www.instagram.com/dommartinavecvous88200" target="_blank" rel="noopener noreferrer">
+                                    <Instagram className="mr-2 w-6 h-6" />
+                                    Suivez-nous sur Instagram
+                                </Link>
+                            </Button>
+                        </div>
                     </div>
                 </div>
             </section>
