@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Calendar, Mail, MapPin, Users, Heart, Shield, CheckCircle, ArrowRight, Leaf, FileText, Newspaper } from "lucide-react";
 import { Metadata } from "next";
 
+import { UpcomingEvents } from "@/components/UpcomingEvents";
+
 export const metadata: Metadata = {
     title: {
         absolute: "Dommartin avec vous",
@@ -96,38 +98,8 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* PROCHAIN RENDEZ-VOUS SECTION */}
-            <section className="py-12 bg-gray-50 border-y border-gray-200">
-                <div className="container mx-auto px-4">
-                    <div className="max-w-4xl mx-auto bg-white rounded-2xl p-6 md:p-10 shadow-lg flex flex-col md:flex-row items-center gap-8 md:gap-12 relative overflow-hidden">
-
-                        {/* Decorative Strip */}
-                        <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-primary to-accent" />
-
-                        <div className="flex-1 text-center md:text-left">
-                            <h2 className="text-xl font-bold text-primary mb-2 uppercase tracking-wide">Prochain Rendez-vous</h2>
-                            <h3 className="text-3xl font-bold text-gray-900 mb-4 font-heading">Programme & Équipe</h3>
-                            <p className="text-gray-600 mb-6 text-lg">
-                                Venez découvrir notre programme et échanger avec l’équipe au complet.
-                            </p>
-
-                            <div className="space-y-3 inline-block text-left bg-gray-50 p-4 rounded-xl w-full md:w-auto">
-                                <div className="flex items-center gap-3 text-gray-900 font-bold text-lg">
-                                    <Calendar className="w-6 h-6 text-accent" />
-                                    <span>JEUDI 12 FÉVRIER 2026</span>
-                                </div>
-                                <div className="flex items-center gap-3 text-gray-700">
-                                    <MapPin className="w-6 h-6 text-gray-400" />
-                                    <span>20h00 - Espace Culturel</span>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                    </div>
-                </div>
-            </section>
+            {/* PROCHAINS RENDEZ-VOUS SECTION */}
+            <UpcomingEvents />
 
             {/* TEAM SECTION (NEW) */}
             <section className="py-20 bg-white">
