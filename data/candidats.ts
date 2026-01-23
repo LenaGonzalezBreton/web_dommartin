@@ -109,6 +109,72 @@ Installée depuis un an à Dommartin-lès-Remiremont, dans le hameau de La Poiri
 
 M’impliquer dans la vie du village, c’est pour moi écouter, agir et partager avec les habitants. C’est soutenir les projets qui comptent pour notre quotidien, échanger avec chacun et découvrir le village sous toutes ses facettes, tout en prenant part à sa vie et à son développement.`,
         photoUrl: "/caroline-moret.jpg",
-        isVisible: false,
+        isVisible: true,
+    },
+    {
+        id: "7",
+        name: "Régis Colin",
+        role: "Co-listier",
+        bio: `« Mon métier, mes passions, me rendent sensible au cadre de vie. »
+
+MON PARCOURS EN BREF
+Picosé depuis 1995, je vis et travaille rue de Pont. Marié et papa de quatre enfants qui ont tous fréquenté l’école communale. Par le passé, j’ai donné un coup de pouce au club de foot (un fils gardien de but !) et fut l’instigateur de la renaissance de l’association des parents d’élèves, devenue Couleurs récré.
+
+POURQUOI JE M’ENGAGE
+Je souhaite participer aux débats liés à la vie quotidienne du village et apporter, dans la mesure de mes compétences, une contribution constructive au bien vivre local.
+
+A l’écoute des habitants, je veux faire avancer des solutions simples et utiles au quotidien. Je m’investis pour une mairie accessible, qui répond et agit tout simplement. Je m’engage pour améliorer le quotidien : service, cadre de vie et vie du village. Avancer ensemble avec méthode : écouter, décider, réaliser, rendre compte. Je m’engage pour une gestion rigoureuse et des choix expliqués à tous. Je m’engage pour un village où chacun trouve sa place, à chaque âge.
+
+MES PRIORITÉS POUR DOMMARTIN
+• Développer et valoriser la mobilité douce comme rapprocher les arrêts de bus
+• Accueillir les entreprises et valoriser les existantes (village agricole mais pas que ! )
+• Café multiservices / la classe / repas de quartiers sont autant de moyens créant du lien
+
+UNE ANECDOTE / UN TRAIT PERSONNEL
+La bienveillance, l’écoute et le respect envers les autres me semblent être les ciments de liens qui doivent nous unir pour le bien vivre au village. Commencer par connaître ses voisins et se rendre disponible. A pied, à vélo, je parcours les sentiers balisés, la voie verte et autres routes de la commune. Préservons ces richesses.`,
+        photoUrl: "/regis-colin.jpg",
+        isVisible: true,
+    },
+    {
+        id: "8",
+        name: "Patricia Claudel",
+        role: "Co-listière",
+        bio: `« La bienveillance, l’écoute et l’empathie, je les ai apprises sur le terrain : c’est ce qui me guide, avec l’envie d’être utile et d’agir concrètement. »
+
+CE QUE JE VEUX POUR DOMMARTIN
+J’aime notre village car il y fait bon vivre, et je veux contribuer à préserver cela, en proposant des décisions de bon sens et de transparence. Mon objectif : des actions concrètes, mesurables et visibles dès le début du mandat.
+
+MON PARCOURS EN BREF
+Mariée, maman de 4 enfants et mamy de 4 petits-enfants, j’habite à Dommartin depuis 40 ans. Je suis retraitée aujourd’hui. J’ai été secrétaire puis auxiliaire de vie sociale aux ADMR pendant 20 ans. Mon métier m’a demandé de développer des qualités de bienveillance, d’écoute des besoins d’un public vulnérable, en grand âge, et d’empathie. J’aime le relationnel.
+Je me suis aussi investie comme bénévole au club de foot de Dommartin (FCD) pendant des années.
+
+POURQUOI JE M’ENGAGE
+Le dialogue et le partage d’idées avec tous les citoyens sont mes priorités. Je veux défendre une commune qui facilite la vie des familles et accompagne mieux les aînés. C’est pour toutes ces raisons que je souhaite m’investir dans une équipe avec des profils différents, pour soutenir les projets à venir et faire avancer les choses avec sérieux et bienveillance.
+
+MES PRIORITÉS POUR DOMMARTIN
+• Des actions concrètes, mesurables et visibles dès le début du mandat.
+• Une commune à l’écoute : dialogue, partage d’idées et transparence.
+• Faciliter la vie des familles et mieux accompagner les aînés au quotidien.`,
+        photoUrl: "/patricia-claudel.jpg",
+        isVisible: true,
+    },
+    {
+        id: "9",
+        name: "Adam Etienne",
+        role: "Co-listier",
+        bio: `« J’aime m’investir dans ce genre d’associations pour apprendre de nos ainés. Je m’intéresse à l’histoire locale et je souhaite pouvoir partager mes connaissances que ce soit associatives ou professionnelles. »
+
+Je m’appelle Adam ETIENNE j’ai 30 ans, je suis originaire de Gerbamont. J’habite Dommartin les Remiremont, rue de Pont depuis 2 ans et demi.
+Je suis Artisan Menuisier à mon compte depuis bientôt 6 ans.
+
+Sapeur-pompier volontaire depuis mes 16 ans, je suis investi dans le monde associatif autour des pompiers.
+En parallèle je suis engagé au sein de nombreuses associations notamment les associations patriotiques :
+- En tant que porte drapeaux de la Légion Vosgienne des anciens combattants.
+- En tant que président de l’association Nos Vosges en noir et blanc qui a initié le projet du film « Résiste » sur le maquis de la Piquante Pierre.
+- Je suis aussi réserviste volontaire dans l’armée de terre depuis 6 ans.
+
+Aujourd’hui j’ai fait le choix de m’engager pour la commune de Dommartin les Remiremont car je m’y sens bien, et pour que chacun s’y sente bien. Ensemble, unissons nos énergies pour tisser des liens sociaux, créer des évènements qui pourront permettre des grands moments de convivialité avec nos ainés et les plus jeunes dans la vie de tous les jours !`,
+        photoUrl: "/adam-etienne.jpg",
+        isVisible: true,
     },
 ];
