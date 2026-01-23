@@ -58,86 +58,85 @@ export default function Home() {
                         <span className="bg-primary text-white text-sm font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-2 inline-block">À la une</span>
                     </div>
 
-                    <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-
-                        {/* Carte 1: Charte */}
-                        <div className="bg-white p-6 md:p-8 rounded-3xl shadow-xl border border-gray-100 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
-                            <div className="bg-primary/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
-                                <FileText className="w-8 h-8 text-primary" />
+                    <div className="max-w-6xl mx-auto space-y-8">
+                        {/* Top Row: Charte & Communiqué */}
+                        <div className="grid md:grid-cols-2 gap-8">
+                            {/* Carte 1: Charte */}
+                            <div className="bg-white p-6 md:p-8 rounded-3xl shadow-xl border border-gray-100 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col">
+                                <div className="bg-primary/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                                    <FileText className="w-8 h-8 text-primary" />
+                                </div>
+                                <h3 className="text-2xl font-bold text-gray-900 mb-4 font-heading">Charte d’engagement</h3>
+                                <p className="text-gray-600 mb-8 text-lg flex-grow">
+                                    Transparence, vote éclairé... Découvrez les 4 engagements signés par nos candidats.
+                                </p>
+                                <Button asChild className="w-full md:w-auto mt-auto" size="lg">
+                                    <Link href="/charte">
+                                        Lire la charte
+                                        <ArrowRight className="ml-2 w-4 h-4" />
+                                    </Link>
+                                </Button>
                             </div>
-                            <h3 className="text-2xl font-bold text-gray-900 mb-4 font-heading">Charte d’engagement</h3>
-                            <p className="text-gray-600 mb-8 text-lg">
-                                Transparence, vote éclairé, consultation citoyenne... Découvrez les 4 engagements signés par nos candidats.
-                            </p>
-                            <Button asChild className="w-full md:w-auto" size="lg">
-                                <Link href="/charte">
-                                    Lire la charte
-                                    <ArrowRight className="ml-2 w-4 h-4" />
-                                </Link>
-                            </Button>
-                        </div>
 
-                        {/* Carte 2: Communiqué */}
-                        <div className="bg-white p-6 md:p-8 rounded-3xl shadow-xl border border-gray-100 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
-                            <div className="bg-accent/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
-                                <Newspaper className="w-8 h-8 text-accent" />
-                            </div>
-                            <h3 className="text-2xl font-bold text-gray-900 mb-4 font-heading">L’équipe se présente</h3>
-                            <p className="text-gray-600 mb-8 text-lg">
-                                <span className="font-semibold text-gray-800">Municipales 2026 :</span> la liste « Dommartin avec Vous » se présente, menée par Jean-Jacques Rosaye.
-                            </p>
-                            <Button asChild className="w-full md:w-auto" variant="outline" size="lg">
-                                <Link href="/communique">
-                                    Lire le communiqué
-                                    <ArrowRight className="ml-2 w-4 h-4" />
-                                </Link>
-                            </Button>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            {/* PROCHAINS RENDEZ-VOUS SECTION */}
-            <UpcomingEvents />
-
-            {/* TEAM SECTION (NEW) */}
-            <section className="py-20 bg-white">
-                <div className="container mx-auto px-4">
-                    <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-                        <div className="order-2 md:order-1 relative aspect-video md:aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl group">
-                            <Image
-                                src="/equipe-groupe.jpg"
-                                alt="Équipe Dommartin avec Vous"
-                                fill
-                                className="object-cover blur-xl scale-105"
-                            />
-                            <div className="absolute inset-0 bg-black/20" />
-                            <div className="absolute inset-0 flex items-center justify-center z-10">
-                                <span className="bg-white/20 backdrop-blur-md border border-white/30 text-white text-2xl md:text-4xl font-bold font-heading uppercase tracking-[0.2em] px-10 py-4 rounded-full shadow-lg">
-                                    Prochainement
-                                </span>
+                            {/* Carte 2: Communiqué */}
+                            <div className="bg-white p-6 md:p-8 rounded-3xl shadow-xl border border-gray-100 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col">
+                                <div className="bg-accent/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                                    <Newspaper className="w-8 h-8 text-accent" />
+                                </div>
+                                <h3 className="text-2xl font-bold text-gray-900 mb-4 font-heading">Communiqué de presse</h3>
+                                <p className="text-gray-600 mb-8 text-lg flex-grow">
+                                    <span className="font-semibold text-gray-800">Municipales 2026 :</span> la liste « Dommartin avec Vous » se présente.
+                                </p>
+                                <Button asChild className="w-full md:w-auto mt-auto" variant="outline" size="lg">
+                                    <Link href="/communique">
+                                        Lire le communiqué
+                                        <ArrowRight className="ml-2 w-4 h-4" />
+                                    </Link>
+                                </Button>
                             </div>
                         </div>
-                        <div className="order-1 md:order-2">
-                            <div className="inline-block bg-accent/10 px-4 py-2 rounded-full mb-4">
-                                <span className="text-accent font-bold uppercase tracking-wider text-sm">Une équipe soudée</span>
+
+                        {/* Bottom Row: L'équipe (Featured) */}
+                        <div className="bg-gray-50 p-6 md:p-10 rounded-3xl shadow-xl border border-gray-100 relative overflow-hidden group">
+                            {/* Decorative background */}
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 transition-transform duration-700 group-hover:scale-110" />
+
+                            <div className="relative z-10 grid md:grid-cols-5 gap-8 items-center">
+                                <div className="md:col-span-2 relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
+                                    <Image
+                                        src="/equipe-groupe.jpg"
+                                        alt="L'équipe se présente"
+                                        fill
+                                        className="object-cover blur-md scale-105"
+                                    />
+                                    <div className="absolute inset-0 bg-black/10" />
+                                    <div className="absolute inset-0 flex items-center justify-center">
+                                        <span className="bg-white/80 backdrop-blur-sm text-gray-900 text-sm font-bold px-4 py-2 rounded-full shadow-md uppercase tracking-wider">
+                                            À découvrir
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div className="md:col-span-3">
+                                    <div className="inline-block bg-primary/10 px-4 py-2 rounded-full mb-4">
+                                        <span className="text-primary font-bold uppercase tracking-wider text-sm">L'événement</span>
+                                    </div>
+                                    <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-heading">L'équipe se présente</h3>
+                                    <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+                                        Chaque jour, nous levons le voile sur votre future équipe municipale.
+                                        <br />
+                                        <span className="font-semibold text-primary">Nous dévoilons 4 co-listiers par jour.</span> Venez découvrir leurs visages et leurs engagements pour Dommartin.
+                                    </p>
+                                    <Button asChild size="lg" className="bg-primary hover:bg-primary-dark text-white px-8 h-12 text-lg shadow-lg shadow-primary/20">
+                                        <Link href="/l-equipe">
+                                            Découvrir les candidats
+                                            <ArrowRight className="ml-2 w-5 h-5" />
+                                        </Link>
+                                    </Button>
+                                </div>
                             </div>
-                            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 font-heading">
-                                Une équipe à votre image
-                            </h2>
-                            <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                                Venus de tous les hameaux, engagés dans la vie associative et locale, nous unissons nos forces pour Dommartin.
-                                <br />
-                                <span className="font-semibold text-primary">Découvrez les visages de ceux qui s'engagent pour vous.</span>
-                            </p>
-                            <Button asChild size="lg" className="bg-primary hover:bg-primary-dark text-white shadow-xl shadow-primary/20 h-14 px-8 text-lg rounded-full">
-                                <Link href="/l-equipe">
-                                    Découvrir notre liste
-                                    <ArrowRight className="ml-2 w-5 h-5" />
-                                </Link>
-                            </Button>
                         </div>
+
                     </div>
                 </div>
             </section>
