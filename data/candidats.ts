@@ -178,4 +178,72 @@ En parallèle je suis engagé au sein de nombreuses associations notamment les a
         photoUrl: "/adam-etienne.jpg",
         isVisible: true,
     },
+    {
+        id: "10",
+        name: "Florence Clause",
+        role: "Co-listière",
+        bio: `« S’engager pour sa commune, c’est se rendre disponible, savoir écouter et apprendre, proposer et débattre dès aujourd’hui afin d’améliorer le quotidien et construire durablement le futur. »
+
+C’est dans cet état d’esprit que je souhaite m’impliquer au service de notre collectivité.
+
+Je suis Florence CLAUSE, mariée, je réside à Dommartin depuis 1997 où nos 2 enfants ont fréquenté les 2 écoles, cantine et garderie.
+
+Je travaille dans le logement social en tant qu’assistante maîtrise d’ouvrage. Ce secteur d’activité, au service de la population, nécessite un partenariat avec les communes afin de répondre à leurs attentes, dans le respect réglementaire et budgétaires des besoins exprimés. 
+
+A l’échelle de notre commune, je souhaite mettre à disposition mon expérience et apporter ma contribution à la mise en œuvre du projet municipal avec bienveillance et dans le respect de l’intérêt général.
+
+Consciente de l’excellent cadre de vie de notre village, j’ai à cœur de me ressourcer régulièrement dans nos forêts et profiter de la voie verte qui est un réel atout. 
+
+Partageant les valeurs portées par le collectif Dommartinavecvous, j’ai souhaité m’engager auprès de cette équipe, afin : d’écouter, décider, réaliser et rendre compte.`,
+        photoUrl: "/florence-clause.jpg",
+        isVisible: true,
+    },
+    {
+        id: "11",
+        name: "Thomas Duval",
+        role: "Co-listier",
+        bio: `« Je m’engage pour faire vivre une commune solidaire et à taille humaine, attentive aux besoins de ses habitants et fidèle aux réalités du terrain. »
+
+Pour le village, je souhaite avant tout veiller à la qualité et à la sécurité de l’eau, en lien avec une gestion responsable de nos forêts. L’entretien des routes et la sécurité de tous les usagers, automobilistes comme piétons, sont également essentiels. Enfin, je veux rendre le village attractif pour les jeunes parents afin de renouveler notre jeunesse et préparer l’avenir de la commune.
+
+Installé en reconversion professionnelle sur la commune depuis 2017, j’ai rejoint ma femme sur la ferme où elle s’était installée auparavant. Elle a été mise à l’honneur dans le très beau documentaire de JP Valentin, « Envers et contre tout, éleveuse ». Notre fille, âgée d’un an, donne déjà des biberons aux jeunes agneaux, et c’est un vrai bonheur de partager cette vie familiale et agricole avec elle.
+
+Après avoir été compagnon couvreur ardoisier, je suis aujourd’hui éleveur de brebis et de chevaux en agriculture biologique. Passionné par mon métier, je l’exerce avec respect du vivant et du territoire. Dans ma jeunesse, j’ai également fait partie du conseil municipal des jeunes sur la commune du Val-d’Ajol, une première expérience qui m’a donné le goût de l’engagement local.
+
+Nous louons également un gîte de grande capacité situé sur la ferme, et j’ai toujours plaisir à accueillir les locataires et à leur faire visiter la ferme, dans un esprit de partage et de convivialité.
+
+M’investir pour ma commune me semble essentiel. J’aime être à l’écoute des gens, échanger, aider quand je le peux, et participer à des projets collectifs qui renforcent le lien et la qualité de vie au village.`,
+        photoUrl: "/thomas-duval.jpg",
+        isVisible: true,
+    },
+    {
+        id: "12",
+        name: "Florence Duchêne",
+        role: "Co-listière",
+        bio: `« J’aime Dommartin et je souhaite m’engager pour contribuer à des décisions prises avec bon sens, en toute transparence, et au plus près des besoins des habitants. »
+
+Je me présente, je m’appelle Florence Duchêne, j’ai 58 ans. J’habite à Dommartin-lès-Remiremont, au Cuchot, plus précisément rue du Chêne, dans un lotissement où, depuis plus de 30 ans, mes voisins sont devenus des amis.
+
+Je suis maman de deux grands enfants, qui ont grandi à Dommartin, et grand-mère de quatre petits-enfants.
+
+Sur le plan professionnel, je suis employée de banque. Au sein de mon entreprise, qui compte environ 1 500 salariés, j’ai été élue représentante CSE pendant plus de 25 ans, une expérience qui m’a appris la responsabilité, le dialogue et la défense de l’intérêt collectif.
+
+Les valeurs qui me guident sont la proximité, l’écoute et le respect d’autrui.`,
+        photoUrl: "/florence-duchene.jpg",
+        isVisible: true,
+    },
+    {
+        id: "13",
+        name: "William Menuge",
+        role: "Co-listier",
+        bio: `« Convaincu que l’action municipale doit être proche des citoyens et fondée sur l’écoute et le dialogue, je m’engage à être disponible, à l’écoute des habitants et à travailler collectivement pour accompagner des projets utiles, concrets et durables, répondant aux besoins quotidiens des habitants et préparant l’avenir de notre commune avec sérieux et bon sens. »
+
+William MENUGE, 51 ans, marié et père de 2 fils de 24 et 20 ans. J’habite rue de la Roche, je suis dirigeant de MBJ Assainissement.
+
+Je vis et travaille depuis toujours au cœur de notre commune rurale. Mon activité professionnelle m’a permis d’acquérir une bonne connaissance des réalités du terrain, des enjeux liés aux services essentiels et de l’importance d’une gestion sérieuse et pragmatique au service des habitants.
+
+Attaché à notre commune et à son cadre de vie, j’ai choisi de m’engager sur cette liste municipale avec la volonté de participer activement aux décisions locales. Je souhaite mettre mon expérience, mon sens des responsabilités et mon esprit d’initiative au service de l’intérêt général, dans le respect des valeurs de proximité, d’écoute et de solidarité.`,
+        photoUrl: "/william-menuge.jpg",
+        isVisible: true,
+    },
 ];
