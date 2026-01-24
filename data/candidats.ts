@@ -162,7 +162,7 @@ MES PRIORITÉS POUR DOMMARTIN
         id: "9",
         name: "Adam Etienne",
         role: "Co-listier",
-        bio: `« J’aime m’investir dans ce genre d’associations pour apprendre de nos ainés. Je m’intéresse à l’histoire locale et je souhaite pouvoir partager mes connaissances que ce soit associatives ou professionnelles. »
+        bio: `«Aujourd’hui j’ai fait le choix de m’engager pour la commune de Dommartin les Remiremont car je m’y sens bien, et pour que chacun s’y sente bien. Ensemble, unissons nos énergies pour tisser des liens sociaux, créer des évènements qui pourront permettre des grands moments de convivialité avec nos ainés et les plus jeunes dans la vie de tous les jours !»
 
 Je m’appelle Adam ETIENNE j’ai 30 ans, je suis originaire de Gerbamont. J’habite Dommartin les Remiremont, rue de Pont depuis 2 ans et demi.
 Je suis Artisan Menuisier à mon compte depuis bientôt 6 ans.
@@ -173,7 +173,8 @@ En parallèle je suis engagé au sein de nombreuses associations notamment les a
 - En tant que président de l’association Nos Vosges en noir et blanc qui a initié le projet du film « Résiste » sur le maquis de la Piquante Pierre.
 - Je suis aussi réserviste volontaire dans l’armée de terre depuis 6 ans.
 
-Aujourd’hui j’ai fait le choix de m’engager pour la commune de Dommartin les Remiremont car je m’y sens bien, et pour que chacun s’y sente bien. Ensemble, unissons nos énergies pour tisser des liens sociaux, créer des évènements qui pourront permettre des grands moments de convivialité avec nos ainés et les plus jeunes dans la vie de tous les jours !`,
+ J’aime m’investir dans ce genre d’associations pour apprendre de nos ainés. Je m’intéresse à l’histoire locale et je souhaite pouvoir partager mes connaissances que ce soit associatives ou professionnelles. 
+`,
         photoUrl: "/adam-etienne.jpg",
         isVisible: true,
     },

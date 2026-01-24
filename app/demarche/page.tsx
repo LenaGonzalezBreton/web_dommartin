@@ -15,6 +15,7 @@ export default function DemarchePage() {
             {/* Hero Video Component */}
             <VideoHero
                 videoSrc="/videos/dommartin-video.mp4"
+                className="h-[80vh] min-h-[700px]"
                 title={
                     <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 animate-fade-in shadow-sm">
                         Une démarche <span className="text-accent">citoyenne</span> et transparente
@@ -23,11 +24,142 @@ export default function DemarchePage() {
                 description="Retrouvez ici les comptes-rendus de nos ateliers participatifs. C'est ensemble, en croisant nos regards, que nous construisons le projet de demain."
             />
 
-            {/* Compte-rendu Réunion 2 */}
+            {/* SECTION 1: PROCHAIN RENDEZ-VOUS (Feb 12) */}
+            <section id="agendas" className="py-16 bg-primary text-white relative overflow-hidden">
+                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop')] opacity-10 bg-cover bg-center mix-blend-overlay"></div>
+                <div className="container mx-auto px-4 text-center relative z-10">
+                    <div className="max-w-3xl mx-auto">
+                        <div className="inline-block bg-accent text-white font-bold px-4 py-1 rounded-full text-sm mb-6 uppercase tracking-wider animate-pulse">
+                            À venir
+                        </div>
+                        <h2 className="text-3xl md:text-4xl font-bold mb-8">Prochaines Rencontres</h2>
+
+                        <div className="grid md:grid-cols-2 gap-6 mb-8">
+                            {/* Event 1: Associations */}
+                            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20 transform hover:scale-105 transition-transform duration-300">
+                                <div className="mb-4">
+                                    <span className="bg-accent text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Associations</span>
+                                </div>
+                                <p className="text-2xl font-bold text-white mb-1">Vendredi 30 Janvier</p>
+                                <p className="text-xl font-bold text-accent mb-4">20h00</p>
+                                <p className="text-lg font-medium opacity-90 mb-2">Rencontre Associations</p>
+                                <p className="text-sm opacity-75 mb-4">Maison des Associations</p>
+                                <p className="text-sm leading-relaxed opacity-80">
+                                    Un temps d’échange pour construire le projet municipal avec le tissu associatif.
+                                </p>
+                            </div>
+
+                            {/* Event 2: Public */}
+                            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20 transform hover:scale-105 transition-transform duration-300">
+                                <div className="mb-4">
+                                    <span className="bg-white text-primary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Tous publics</span>
+                                </div>
+                                <p className="text-2xl font-bold text-white mb-1">Jeudi 12 Février</p>
+                                <p className="text-xl font-bold text-accent mb-4">20h00</p>
+                                <p className="text-lg font-medium opacity-90 mb-2">Réunion Publique</p>
+                                <p className="text-sm opacity-75 mb-4">Espace Culturel</p>
+                                <p className="text-sm leading-relaxed opacity-80">
+                                    Présentation du programme et de l'équipe complète. Venez échanger avec nous !
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="space-y-4">
+                            <p className="text-lg opacity-90">
+                                D’ici là, on continue d’échanger et de recueillir vos idées.
+                            </p>
+                            <a href="mailto:dommartinavecvous@proton.me" className="inline-flex items-center gap-2 text-accent hover:text-accent/80 font-bold transition-colors">
+                                <span className="underline decoration-2 underline-offset-4">dommartinavecvous@proton.me</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* SECTION 2: CHARTE D'ENGAGEMENT (Imported) */}
+            <section className="py-16 bg-white">
+                <div className="container mx-auto px-4">
+                    <div className="max-w-4xl mx-auto">
+                        <div className="text-center mb-12">
+                            <h2 className="text-3xl font-bold text-gray-900 mb-4">Notre Charte d’Engagement</h2>
+                            <p className="text-gray-600 text-lg">
+                                Les colistiers de « <strong className="text-primary">Dommartin avec Vous</strong> » s’engagent, pour toute la durée du mandat,
+                                à agir dans l’intérêt général, à décider de manière collégiale et à associer les habitants aux décisions importantes.
+                            </p>
+                        </div>
+
+                        <div className="grid gap-6 md:grid-cols-2 mb-12">
+                            {/* Engagement 1 */}
+                            <div className="bg-gray-50 p-6 rounded-2xl shadow-sm border-l-4 border-primary hover:bg-gray-100 transition-colors">
+                                <div className="flex items-start gap-4">
+                                    <CheckCircle className="w-6 h-6 text-primary shrink-0 mt-1" />
+                                    <div>
+                                        <h3 className="font-bold text-lg text-gray-900 mb-2">Transparence</h3>
+                                        <p className="text-gray-600">Sur nos décisions et nos actions au quotidien.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Engagement 2 */}
+                            <div className="bg-gray-50 p-6 rounded-2xl shadow-sm border-l-4 border-primary hover:bg-gray-100 transition-colors">
+                                <div className="flex items-start gap-4">
+                                    <AlertTriangle className="w-6 h-6 text-primary shrink-0 mt-1" /> {/* Using AlertTriangle as Scale replacement if Scale not imported, but Scale is better if available. Checking imports... */}
+                                    <div>
+                                        <h3 className="font-bold text-lg text-gray-900 mb-2">Vote éclairé</h3>
+                                        <p className="text-gray-600">Si les informations sont insuffisantes, la décision est reportée.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Engagement 3 */}
+                            <div className="bg-gray-50 p-6 rounded-2xl shadow-sm border-l-4 border-primary hover:bg-gray-100 transition-colors">
+                                <div className="flex items-start gap-4">
+                                    <Users className="w-6 h-6 text-primary shrink-0 mt-1" />
+                                    <div>
+                                        <h3 className="font-bold text-lg text-gray-900 mb-2">Consultation citoyenne</h3>
+                                        <p className="text-gray-600">Systématique pour les investissements structurants.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Engagement 4 */}
+                            <div className="bg-gray-50 p-6 rounded-2xl shadow-sm border-l-4 border-primary hover:bg-gray-100 transition-colors">
+                                <div className="flex items-start gap-4">
+                                    <Target className="w-6 h-6 text-primary shrink-0 mt-1" />
+                                    <div>
+                                        <h3 className="font-bold text-lg text-gray-900 mb-2">Respect des principes</h3>
+                                        <p className="text-gray-600">Conformité à la Charte de l’élu local.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="bg-gradient-to-r from-primary/5 to-accent/5 rounded-3xl p-8 text-center border border-gray-200 dashed-border relative overflow-hidden">
+                            <h3 className="text-xl font-bold text-gray-800 mb-2 font-handwriting">
+                                “ Signée par les candidat·e·s de la liste Dommartin avec vous ”
+                            </h3>
+                            <div className="mt-6">
+                                <a
+                                    href="/charte.pdf"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center gap-2 px-6 py-3 bg-white text-primary border border-primary/20 rounded-full font-bold shadow-sm hover:bg-primary hover:text-white transition-all"
+                                >
+                                    Télécharger la Charte (PDF)
+                                    <ArrowRight className="w-4 h-4" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* SECTION 3: Compte-rendu Réunion 2 (Jan 8) */}
             <section className="py-16 bg-gray-50/50">
                 <div className="container mx-auto px-4">
                     <div className="max-w-4xl mx-auto">
                         <div className="flex items-center gap-4 mb-8">
+                            <Badge className="bg-gray-200 text-gray-700 hover:bg-gray-300 px-3 py-1 text-sm">Passé</Badge>
                             <Badge className="bg-primary text-white hover:bg-primary px-3 py-1 text-sm">Réunion #2</Badge>
                             <span className="text-gray-500 font-medium">8 Janvier 2026</span>
                         </div>
@@ -75,12 +207,13 @@ export default function DemarchePage() {
                 </div>
             </section>
 
-            {/* Compte-rendu Réunion 1 */}
+            {/* SECTION 4: Compte-rendu Réunion 1 (Dec) */}
             <section className="py-16">
                 <div className="container mx-auto px-4">
                     <div className="max-w-5xl mx-auto">
 
                         <div className="flex items-center gap-4 mb-8">
+                            <Badge className="bg-gray-200 text-gray-700 hover:bg-gray-300 px-3 py-1 text-sm">Passé</Badge>
                             <Badge className="bg-primary text-white hover:bg-primary px-3 py-1 text-sm">Réunion #1</Badge>
                             <span className="text-gray-500 font-medium">Décembre 2025</span>
                         </div>
@@ -187,47 +320,6 @@ export default function DemarchePage() {
                             </div>
                         </div>
 
-                    </div>
-                </div>
-            </section>
-
-            {/* Next Steps Banner */}
-            <section className="py-16 bg-primary text-white relative overflow-hidden">
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop')] opacity-10 bg-cover bg-center mix-blend-overlay"></div>
-                <div className="container mx-auto px-4 text-center relative z-10">
-                    <div className="max-w-3xl mx-auto">
-                        <h2 className="text-3xl md:text-4xl font-bold mb-6">Prochaine Échéance</h2>
-
-                        <div className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 mb-8 transform hover:scale-105 transition-transform duration-300">
-                            <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-6">
-                                <div className="text-center md:text-right">
-                                    <p className="text-lg opacity-90">Rendez-vous le</p>
-                                    <p className="text-3xl font-bold text-accent">Jeudi 12 Février 2026</p>
-                                </div>
-                                <div className="hidden md:block h-12 w-px bg-white/30"></div>
-                                <div className="text-center md:text-left">
-                                    <p className="text-3xl font-bold">20h00</p>
-                                    <p className="text-lg opacity-90">Espace Culturel</p>
-                                </div>
-                            </div>
-
-                            <p className="text-lg leading-relaxed opacity-90 mb-6">
-                                Nous y présenterons un programme construit à partir de vos attentes et de vos propositions, puis travaillé au regard des réalités réglementaires et des contraintes budgétaires, afin de proposer un projet sérieux, applicable et financé.
-                            </p>
-
-                            <Badge variant="secondary" className="bg-white text-primary hover:bg-white/90 text-sm py-1 px-4">
-                                Présentation du programme & des candidats
-                            </Badge>
-                        </div>
-
-                        <div className="space-y-4">
-                            <p className="text-lg opacity-90">
-                                D’ici le 12 février, on continue d’échanger et de recueillir vos idées. Si vous avez envie de faire avancer Dommartin, votre énergie est la bienvenue.
-                            </p>
-                            <a href="mailto:dommartinavecvous@proton.me" className="inline-flex items-center gap-2 text-accent hover:text-accent/80 font-bold transition-colors">
-                                <span className="underline decoration-2 underline-offset-4">dommartinavecvous@proton.me</span>
-                            </a>
-                        </div>
                     </div>
                 </div>
             </section>

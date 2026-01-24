@@ -18,7 +18,7 @@ export default function Home() {
     return (
         <div className="flex flex-col min-h-screen font-sans">
             {/* HER SELECTION: Not full screen, impactful image */}
-            <section className="relative min-h-[80vh] md:h-[600px] flex items-center justify-center">
+            <section className="relative min-h-[70vh] md:h-[80vh] min-h-[600px] flex items-center justify-center">
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
                     <Image
@@ -42,9 +42,12 @@ export default function Home() {
                             Ici, vous suivez la construction du programme et de l’équipe.
                         </p>
                         <div className="mt-10">
-                            <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/10 backdrop-blur-md border border-white/30 text-white font-medium tracking-wide shadow-lg hover:bg-white/20 transition-all cursor-default group">
-                                <span className="w-2 h-2 rounded-full bg-accent animate-pulse shadow-[0_0_8px_rgba(224,160,93,0.8)]" />
-                                Élections municipales des 15 et 22 mars 2026
+                            <div className="inline-flex flex-row items-center justify-center md:gap-3 px-6 py-3 md:px-5 md:py-2.5 rounded-xl md:rounded-full bg-white/10 backdrop-blur-md border border-white/30 text-white text-sm md:text-base font-medium tracking-wide shadow-lg hover:bg-white/20 transition-all cursor-default group max-w-full text-center">
+                                <span className="w-2 h-2 rounded-full bg-accent animate-pulse shadow-[0_0_8px_rgba(224,160,93,0.8)] shrink-0 hidden md:block" />
+                                <div className="flex flex-col md:flex-row md:items-center gap-1.5 md:gap-1.5">
+                                    <span className="opacity-90">Élections municipales</span>
+                                    <span className="font-bold text-base md:text-base md:font-medium">des 15 et 22 mars 2026</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -61,18 +64,26 @@ export default function Home() {
                     <div className="max-w-6xl mx-auto space-y-8">
                         {/* Top Row: Charte & Communiqué */}
                         <div className="grid md:grid-cols-2 gap-8">
-                            {/* Carte 1: Charte */}
+                            {/* Carte 1: Prochains Rendez-vous */}
                             <div className="bg-white p-6 md:p-8 rounded-3xl shadow-xl border border-gray-100 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col">
                                 <div className="bg-primary/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
-                                    <FileText className="w-8 h-8 text-primary" />
+                                    <Calendar className="w-8 h-8 text-primary" />
                                 </div>
-                                <h3 className="text-2xl font-bold text-gray-900 mb-4 font-heading">Charte d’engagement</h3>
-                                <p className="text-gray-600 mb-8 text-lg flex-grow">
-                                    Transparence, vote éclairé... Découvrez les 4 engagements signés par nos candidats.
-                                </p>
+                                <h3 className="text-2xl font-bold text-gray-900 mb-4 font-heading">Prochains Rendez-vous</h3>
+                                <div className="text-gray-600 mb-8 flex-grow space-y-4">
+                                    <div>
+                                        <span className="font-bold text-gray-900 block text-lg">Vendredi 30 Janvier</span>
+                                        <span className="text-primary font-medium">Rencontre Associations</span>
+                                    </div>
+                                    <div className="w-full h-px bg-gray-100" />
+                                    <div>
+                                        <span className="font-bold text-gray-900 block text-lg">Jeudi 12 Février</span>
+                                        <span className="text-primary font-medium">Réunion Publique</span>
+                                    </div>
+                                </div>
                                 <Button asChild className="w-full md:w-auto mt-auto" size="lg">
-                                    <Link href="/charte">
-                                        Lire la charte
+                                    <Link href="/demarche#agendas">
+                                        En savoir plus
                                         <ArrowRight className="ml-2 w-4 h-4" />
                                     </Link>
                                 </Button>
@@ -83,13 +94,13 @@ export default function Home() {
                                 <div className="bg-accent/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
                                     <Newspaper className="w-8 h-8 text-accent" />
                                 </div>
-                                <h3 className="text-2xl font-bold text-gray-900 mb-4 font-heading">Communiqué de presse</h3>
+                                <h3 className="text-2xl font-bold text-gray-900 mb-4 font-heading">Dans les médias</h3>
                                 <p className="text-gray-600 mb-8 text-lg flex-grow">
                                     <span className="font-semibold text-gray-800">Municipales 2026 :</span> la liste « Dommartin avec Vous » se présente.
                                 </p>
                                 <Button asChild className="w-full md:w-auto mt-auto" variant="outline" size="lg">
                                     <Link href="/communique">
-                                        Lire le communiqué
+                                        Lire les articles
                                         <ArrowRight className="ml-2 w-4 h-4" />
                                     </Link>
                                 </Button>
@@ -234,11 +245,7 @@ export default function Home() {
                             </Button>
                         </div>
 
-                        <div className="mt-12">
-                            <p className="text-2xl font-handwriting text-accent font-bold">
-                                "Belle année 2026 et pleine santé aux picosé.e.s. !"
-                            </p>
-                        </div>
+
                     </div>
                 </div>
             </section>

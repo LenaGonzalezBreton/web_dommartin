@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, Calendar, ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
-    title: "Communiqué de Presse | Dommartin avec vous",
+    title: "Dans les médias | Dommartin avec vous",
     description: "Municipales 2026 : la liste « Dommartin avec Vous » se présente, menée par Jean-Jacques Rosaye.",
 };
 
@@ -23,7 +23,7 @@ export default function CommuniquePage() {
                     </Button>
                     <div className="max-w-4xl mx-auto">
                         <span className="bg-primary/10 text-primary font-bold px-4 py-1.5 rounded-full text-sm inline-block mb-4">
-                            COMMUNIQUÉ DE PRESSE
+                            DANS LES MÉDIAS
                         </span>
                         <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 font-heading leading-tight mb-4">
                             Municipales 2026 : la liste « Dommartin avec Vous » se présente
@@ -81,16 +81,31 @@ export default function CommuniquePage() {
 
                     {/* External Link */}
                     <div className="mt-12 flex flex-col md:flex-row gap-4 items-center justify-between bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
-                        <div>
-                            <h4 className="font-bold text-lg text-gray-900">Lire l'article complet</h4>
-                            <p className="text-gray-600">Retrouvez la couverture presse sur RemiremontVallées.com</p>
+                        <div className="space-y-4">
+                            <div>
+                                <h4 className="font-bold text-lg text-gray-900">Lire l'article complet</h4>
+                                <p className="text-gray-600">Retrouvez la couverture presse sur RemiremontVallées.com</p>
+                            </div>
+                            <Button asChild className="shrink-0 w-full md:w-auto" variant="outline">
+                                <Link href="https://remiremontvallees.com/2026/01/19/dommartin-les-remiremont-municipales-2026-la-liste-dommartin-avec-vous-se-presente-menee-par-jean-jacques-rosaye/" target="_blank" rel="noopener noreferrer">
+                                    Lire sur le site média
+                                    <ExternalLink className="ml-2 w-4 h-4" />
+                                </Link>
+                            </Button>
                         </div>
-                        <Button asChild className="shrink-0" variant="outline">
-                            <Link href="https://remiremontvallees.com/2026/01/19/dommartin-les-remiremont-municipales-2026-la-liste-dommartin-avec-vous-se-presente-menee-par-jean-jacques-rosaye/" target="_blank" rel="noopener noreferrer">
-                                Lire sur le site média
-                                <ExternalLink className="ml-2 w-4 h-4" />
-                            </Link>
-                        </Button>
+
+                        <div className="space-y-4 md:border-l md:pl-6 md:border-gray-100">
+                            <div>
+                                <h4 className="font-bold text-lg text-gray-900">Sur les réseaux</h4>
+                                <p className="text-gray-600">Voir la publication sur Facebook (Aveu 88)</p>
+                            </div>
+                            <Button asChild className="shrink-0 w-full md:w-auto" variant="secondary">
+                                <Link href="https://www.facebook.com/share/1BsfkAgXqk/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
+                                    Voir sur Facebook
+                                    <ExternalLink className="ml-2 w-4 h-4" />
+                                </Link>
+                            </Button>
+                        </div>
                     </div>
 
                 </div>

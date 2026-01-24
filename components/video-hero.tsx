@@ -2,21 +2,26 @@
 
 import { useState } from "react";
 import { Play, X } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 interface VideoHeroProps {
     videoSrc: string;
     title: React.ReactNode;
     description: string;
+    className?: string;
 }
 
-export function VideoHero({ videoSrc, title, description }: VideoHeroProps) {
+export function VideoHero({ videoSrc, title, description, className }: VideoHeroProps) {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
         <>
             {/* Hero Section */}
             <section
-                className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden cursor-pointer group"
+                className={cn(
+                    "relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden cursor-pointer group",
+                    className
+                )}
                 onClick={() => setIsOpen(true)}
             >
                 {/* Video Background (Muted Loop) */}
