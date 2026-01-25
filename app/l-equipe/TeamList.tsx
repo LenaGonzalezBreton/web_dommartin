@@ -26,21 +26,30 @@ export function TeamList() {
     return (
         <div className="min-h-screen bg-gray-50">
             {/* Hero Section */}
-            <section className="relative py-12 md:py-20 bg-gradient-to-br from-primary/5 via-white to-accent/5 overflow-hidden">
-                <div className="absolute top-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
-                <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
+            {/* Hero Section */}
+            <section className="relative py-20 md:py-32 overflow-hidden flex items-center justify-center min-h-[50vh]">
+                {/* Background Image */}
+                <div className="absolute inset-0 z-0">
+                    <img
+                        src="/equipe-complete.jpg"
+                        alt="Equipe Dommartin avec Vous"
+                        className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-black/50" />
+                </div>
 
                 <div className="container mx-auto px-4 relative z-10">
-                    <div className="mx-auto max-w-2xl text-center animate-fade-in">
-                        <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
-                            Notre <span className="gradient-text">Équipe</span>
+                    <div className="mx-auto max-w-4xl text-center animate-fade-in">
+                        <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl text-white mb-6 font-heading drop-shadow-lg">
+                            Notre Équipe
                         </h1>
-                        <p className="mt-6 text-lg text-gray-600 leading-relaxed">
-                            Une équipe au service de Dommartin,<span className="font-semibold text-primary"> issue d’une écoute active des habitants, </span> pour traduire leurs priorités en actions concrètes.
+                        <p className="text-lg md:text-xl text-gray-100 leading-relaxed font-medium drop-shadow-md max-w-2xl mx-auto">
+                            Une équipe au service de Dommartin, issue d’une écoute active des habitants, pour traduire leurs priorités en actions concrètes.
                         </p>
                     </div>
                 </div>
             </section>
+
 
             {/* Team Section */}
             <section className="py-12 md:py-16 bg-white">

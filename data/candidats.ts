@@ -246,4 +246,109 @@ Attaché à notre commune et à son cadre de vie, j’ai choisi de m’engager s
         photoUrl: "/william-menuge.jpg",
         isVisible: true,
     },
+    {
+        id: "14",
+        name: "Christine Martin",
+        role: "Co-listière",
+        bio: `« Très attachée à mon village, je veux encourager sa vie associative et développer son attractivité. Je souhaite un village plus proche et à l’écoute de ses habitants, qui renforce les liens intergénérationnels. »
+
+MON PARCOURS EN BREF
+Maman de trois enfants, j’ai toujours vécu à Franould. Je suis handicapée visuelle et moteur, ce qui ne m’empêche pas de faire beaucoup de bénévolat. Je suis investie dans le monde associatif : vice-présidente de l’association Voir Ensemble, membre de l’association ALE Vosges, et prochainement bénévole pour Les Blouses Roses. Je suis également adhérente de plusieurs associations picosées.
+
+POURQUOI JE M’ENGAGE
+Je veux mettre mon énergie et mon expérience au service de notre commune. Mon vécu peut être un atout pour faire de notre village un lieu accessible pour tous, où chacun se sent écouté et considéré.
+
+MES PRIORITÉS POUR DOMMARTIN
+• Soutenir la vie associative et renforcer l’attractivité du village.
+• Développer les liens intergénérationnels et une commune plus proche, plus à l’écoute.
+• Aménager les voiries pour une accessibilité pour tous et une circulation en toute sécurité.
+
+UNE ANECDOTE / UN TRAIT PERSONNEL
+Vous pourrez me croiser et échanger avec moi lors des événements et activités du village : je suis fréquemment présente, et j’aime ces moments de rencontre et de partage.`,
+        photoUrl: "/christine-martin.jpg",
+        isVisible: true,
+    },
+    {
+        id: "15",
+        name: "Eric Mallem",
+        role: "Co-listier",
+        bio: `« Attaché à Dommartin et à l’énergie de sa jeunesse, je souhaite m’investir au sein du conseil municipal pour renforcer la place des jeunes dans la vie locale. »
+
+MON PARCOURS
+Formation DEAES (Diplôme d’État d’Accompagnant Éducatif et Social).
+Cuisinier pendant 15 ans.
+Dirigeant et trésorier d’un club de football pendant 12 ans.
+Aujourd’hui entrepreneur / éducateur, j’interviens auprès de structures telles que lieux de vie, MEX, foyers, etc.
+
+MES PRIORITÉS POUR DOMMARTIN
+Je veux développer des initiatives concrètes pour renforcer l’engagement des jeunes, notamment autour :
+• de la culture
+• de l’entrepreneuriat
+• de la participation à la vie publique
+
+MA MÉTHODE
+Mon expérience m’a permis d’acquérir une approche globale, alliant gestion, montage de projets, partenariats locaux et implication des jeunes. Je suis convaincu que cette mission demande une démarche pragmatique, fondée sur une écoute active, afin d’ouvrir des opportunités réelles d’engagement.
+
+Je suis heureux de rejoindre cette liste : l’inclusion des jeunes n’est pas seulement une exigence éthique, c’est aussi un choix stratégique pour l’avenir de Dommartin.`,
+        photoUrl: "/eric-mallem.png",
+        isVisible: true,
+    },
+    {
+        id: "16",
+        name: "Élisabeth Perrin",
+        role: "Co-listière",
+        bio: `« Aujourd’hui, c’est pour mon village, pour ses habitants et pour l’intérêt collectif que je veux m’investir. »
+
+Mariée et maman d’un petit garçon, je suis co-gérante d’une entreprise de la commune depuis plusieurs années. J’habite Dommartin depuis toujours.
+
+Jeune femme dynamique, curieuse et avec l’envie d’apprendre, je souhaite aujourd’hui m’engager pour contribuer à faire avancer notre village. Investie bénévolement dans plusieurs associations, j’ai à cœur de mettre cette énergie au service de Dommartin.
+
+Passionnée de nature, je pratique l’équitation d’extérieur, une activité qui nourrit mon attachement à notre cadre de vie et à la richesse de nos paysages.
+
+Ma connaissance de la commune, à la fois en tant qu’habitante et en tant qu’entrepreneure, constitue un apport concret pour la liste : une vision de terrain, des réalités du quotidien, et une attention particulière aux besoins des habitants comme à la vitalité locale.`,
+        photoUrl: "/elisabeth-perrin.jpg",
+        isVisible: true,
+    },
+    {
+        id: "17",
+        name: "Jean-Baptiste Mansuy",
+        role: "Co-listier",
+        bio: `« J’aime Dommartin et je souhaite que les habitants soient associés aux décisions prises, avec bon sens et transparence ; une commune qui informe davantage. »
+
+J’ai 45 ans, je suis marié, j’ai une enfant et réside actuellement à la Brasserie à Franould.
+
+Je suis un enfant du village, j’y ai grandi et ai aujourd’hui choisi de m’engager au service de l’intérêt général au côté des colistiers de « Dommartin avec Vous », pour un village où il fait bon grandir, travailler et vieillir.
+
+Durant une douzaine d’années à l’étranger dans le développement touristique, j’ai parallèlement participé bénévolement aux travaux de différentes organisations au service des français établis hors de France à Madagascar (Conseil Consulaire, Association des parents d'élèves, Alliance Française, Association de bienfaisance,…).
+
+Après une expérience riche, intense et variée à l’international, c’est tout naturellement que nous sommes revenus en famille dans cette belle commune où nous nous sommes installés depuis 8 ans maintenant.
+
+Je souhaite aujourd’hui m’engager pour aider et faire avancer avec sérieux et bienveillance la démarche citoyenne et transparente engagée depuis plusieurs semaines AVEC et POUR les Picosé.es.
+
+MES PRIORITÉS POUR DOMMARTIN
+
+1. Jeunesse & Familles
+Renforcer les actions pour les jeunes (activités, projets, espaces…)
+
+2. Développement économique
+Redynamisation du centre bourg par la facilitation à l’installation de nouveaux commerces
+
+3. Valorisation du patrimoine architectural, culturel et touristique
+
+Je suis prêt à recevoir de la part des habitants un mandat pour conduire la commune pour un mieux vivre ensemble Picosé et intercommunal.`,
+        photoUrl: "/jean-baptiste-mansuy.jpg",
+        isVisible: true,
+    },
+    {
+        id: "18",
+        name: "Isabelle Georges",
+        role: "Co-listière",
+        bio: `« Je pense que c’est en confrontant nos idées, nos expériences et nos envies d’agir avec et pour les habitants, que pourront se créer des projets adaptés à Dommartin. Ceux-ci se devront d’être à la hauteur des attentes des tous en respectant au mieux l’environnement et le cadre de vie. »
+
+Directrice d’école à la retraite, je me suis reconvertie en tant qu’infirmière. Je suis passée de l’éducation des enfants aux soins des plus anciens-nes, avec la même attention au bien être pour tous et toutes : du bien grandir au bien vieillir.
+J’habite à La Poirie depuis quarante ans (un retour au sources, mon grand-père y a exploité une scierie). Présidente de l’association de cavaliers pendant plus de 10 ans et investie au comité des Fêtes depuis sa création, je participe depuis de nombreuses années à la dynamique associative du village.
+J’ ai fait partie du conseil municipal en 2014, d’abord en tant que conseillère puis au poste d’adjointe aux ressources humaines, loisirs et culture. Ne me sentant pas totalement en accord avec le mode de fonctionnement de l’équipe municipale en place, je n’avais pas souhaité renouveler cette expérience. C’est la démarche participative et citoyenne de notre liste qui m’a convaincue de m’investir à nouveau pour le village pour que les décisions soient prises avec bon sens et transparence.`,
+        photoUrl: "/isabelle-georges.jpg",
+        isVisible: false,
+    },
 ];

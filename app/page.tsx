@@ -115,17 +115,11 @@ export default function Home() {
                             <div className="relative z-10 grid md:grid-cols-5 gap-8 items-center">
                                 <div className="md:col-span-2 relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
                                     <Image
-                                        src="/equipe-groupe.jpg"
+                                        src="/equipe-complete.jpg"
                                         alt="L'équipe se présente"
                                         fill
-                                        className="object-cover blur-md scale-105"
+                                        className="object-cover"
                                     />
-                                    <div className="absolute inset-0 bg-black/10" />
-                                    <div className="absolute inset-0 flex items-center justify-center">
-                                        <span className="bg-white/80 backdrop-blur-sm text-gray-900 text-sm font-bold px-4 py-2 rounded-full shadow-md uppercase tracking-wider">
-                                            À découvrir
-                                        </span>
-                                    </div>
                                 </div>
 
                                 <div className="md:col-span-3">
