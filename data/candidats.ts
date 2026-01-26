@@ -349,6 +349,48 @@ Directrice d’école à la retraite, je me suis reconvertie en tant qu’infirm
 J’habite à La Poirie depuis quarante ans (un retour au sources, mon grand-père y a exploité une scierie). Présidente de l’association de cavaliers pendant plus de 10 ans et investie au comité des Fêtes depuis sa création, je participe depuis de nombreuses années à la dynamique associative du village.
 J’ ai fait partie du conseil municipal en 2014, d’abord en tant que conseillère puis au poste d’adjointe aux ressources humaines, loisirs et culture. Ne me sentant pas totalement en accord avec le mode de fonctionnement de l’équipe municipale en place, je n’avais pas souhaité renouveler cette expérience. C’est la démarche participative et citoyenne de notre liste qui m’a convaincue de m’investir à nouveau pour le village pour que les décisions soient prises avec bon sens et transparence.`,
         photoUrl: "/isabelle-georges.jpg",
-        isVisible: false,
+        isVisible: true,
+    },
+    {
+        id: "19",
+        name: "Frédéric Jacquot",
+        role: "Co-listier",
+        bio: `« Je souhaite aujourd'hui apporter mon bon sens et mes compétences, professionnelles comme bénévoles, à la liste Dommartin avec vous. »
+
+Depuis 3 ans, grâce à mon autoentreprise, je partage cette expérience industrielle en intervenant dans la formation d'apprentis (Bachelors et Masters) issus de plusieurs écoles de Bourgogne et du Grand Est.
+
+Au niveau local, je suis également investi depuis 8 ans au sein du Club Nautique Romarimontain, où je mets bénévolement mes compétences d'entraîneur et de juge-arbitre au service des entraînements et des compétitions départementales et régionales.
+
+Je suis particulièrement attaché à l'amélioration de l'éclairage public dans notre village : sa modernisation permettrait à la fois de réduire les coûts et de renforcer la sécurité, en améliorant la visibilité dans certaines zones difficiles, voire dangereuses. Je souhaite également contribuer au développement des associations, en particulier celles à vocation sportive, tant au sein de la commune que de l'intercommunalité.
+
+En dehors de l'équipe de foot et de l'équitation, les jeunes n'ont pas un accès facile à la pratique sportive. Ils doivent se rendre soit sur Remiremont soit sur St Amé : difficulté de connaitre les activités existantes, les horaires, difficultés de se rendre aux entrainements. Après nos échanges, j'en ressens une nécessité pour le développement de notre village et son attractivité. Pourquoi pas un "bla-bla car" local pour organiser le covoiturage des enfants vers les différentes activités ? À réfléchir avec les organismes concernés/impactés.`,
+        photoUrl: "/frederic-jacquot.jpg",
+        isVisible: true,
+    },
+    {
+        id: "20",
+        name: "Marion Boissenin",
+        role: "Co-listière",
+        bio: `« C'est avec sérieux, pragmatisme et sens des responsabilités que je souhaite m'investir au service de l'intérêt collectif et contribuer, à mon niveau, à la continuité et au bon fonctionnement de la vie communale. »
+
+Je suis maman d'un garçon de 9 ans, issue d'une première union, et je suis aujourd'hui pacsée.
+
+J'exerce le métier de chauffeur-livreur, assurant l'approvisionnement des fleuristes dans l'ensemble du Grand Est. En parallèle, je suis gérante de deux meublés de tourisme sur la commune, une activité qui m'implique pleinement dans l'accueil, l'entretien et le respect du cadre de vie local.
+
+Ancrée dans la commune et attachée à ses valeurs, je connais les réalités du travail, de la vie familiale et de l'engagement quotidien.`,
+        photoUrl: "/marion-boissenin.jpg",
+        isVisible: true,
+    },
+    {
+        id: "21",
+        name: "Michel Etienne",
+        role: "Co-listier",
+        bio: `« Mon métier d'enseignant a pour vocation certes de transmettre mais nécessite surtout de l'écoute et de l'attention.
+
+C'est pourquoi, le projet participatif de « Dommartin avec vous » me séduit et me conduit à m'engager pour contribuer à la mise en place du programme élaboré ensemble. »
+
+Issu d'une vieille famille de Dommartin, j'ai une bonne connaissance de son territoire et de son histoire. Même si j'ai dû quitter mon village pendant plus de vingt ans pour raisons professionnelles, j'ai toujours suivi sa vie et encore plus depuis mon retour.`,
+        photoUrl: "/michel-etienne.jpg",
+        isVisible: true,
     },
 ];
