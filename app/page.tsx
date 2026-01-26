@@ -124,17 +124,17 @@ export default function Home() {
 
                                 <div className="md:col-span-3">
                                     <div className="inline-block bg-primary/10 px-4 py-2 rounded-full mb-4">
-                                        <span className="text-primary font-bold uppercase tracking-wider text-sm">L'événement</span>
+                                        <span className="text-primary font-bold uppercase tracking-wider text-sm">Notre équipe</span>
                                     </div>
-                                    <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-heading">L'équipe se présente</h3>
+                                    <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-heading">21 candidats engagés</h3>
                                     <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                                        Chaque jour, nous levons le voile sur votre future équipe municipale.
+                                        Découvrez les 21 candidats qui composent la liste « Dommartin avec Vous ».
                                         <br />
-                                        <span className="font-semibold text-primary">Nous dévoilons 4 co-listiers par jour.</span> Venez découvrir leurs visages et leurs engagements pour Dommartin.
+                                        <span className="font-semibold text-primary">Des profils variés, unis par l'envie d'agir</span> pour notre commune.
                                     </p>
                                     <Button asChild size="lg" className="bg-primary hover:bg-primary-dark text-white px-8 h-12 text-lg shadow-lg shadow-primary/20">
                                         <Link href="/l-equipe">
-                                            Découvrir les candidats
+                                            Découvrir l'équipe
                                             <ArrowRight className="ml-2 w-5 h-5" />
                                         </Link>
                                     </Button>
