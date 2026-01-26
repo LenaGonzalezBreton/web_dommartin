@@ -113,12 +113,12 @@ export default function Home() {
                             <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 transition-transform duration-700 group-hover:scale-110" />
 
                             <div className="relative z-10 grid md:grid-cols-5 gap-8 items-center">
-                                <div className="md:col-span-2 relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
+                                <div className="md:col-span-2 relative aspect-[16/9] rounded-2xl overflow-hidden shadow-lg">
                                     <Image
-                                        src="/equipe-complete.jpg"
-                                        alt="L'équipe se présente"
+                                        src="/equipe-accueil.jpg"
+                                        alt="L'équipe Dommartin avec Vous"
                                         fill
-                                        className="object-cover"
+                                        className="object-cover object-[15%_center]"
                                     />
                                 </div>
 
