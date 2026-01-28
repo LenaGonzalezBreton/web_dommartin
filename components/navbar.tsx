@@ -9,6 +9,7 @@ export function Navbar() {
 
     const navLinks = [
         { href: "/", label: "Accueil" },
+        { href: "/nos-projets", label: "Nos Projets" },
         { href: "/demarche", label: "La Démarche" },
         { href: "/l-equipe", label: "L'Équipe" },
     ];

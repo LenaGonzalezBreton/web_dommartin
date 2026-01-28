@@ -158,31 +158,40 @@ export default function Home() {
 
                     <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                         {/* Card 1 */}
-                        <div className="bg-gray-50 p-6 md:p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                        <Link href="/nos-projets#cadre-de-vie" className="bg-gray-50 p-6 md:p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group block">
                             <div className="bg-primary/10 w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
                                 <Shield className="w-7 h-7 text-primary group-hover:text-white transition-colors" />
                             </div>
                             <h3 className="text-xl font-bold text-gray-900 mb-3">Cadre de vie & sécurité</h3>
-                            <p className="text-gray-600">Relier en sécurité les hameaux, les équipements et les services pour un quotidien apaisé.</p>
-                        </div>
+                            <p className="text-gray-600 mb-4">Relier en sécurité les hameaux, les équipements et les services pour un quotidien apaisé.</p>
+                            <span className="text-primary font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                                En savoir plus <ArrowRight className="w-4 h-4" />
+                            </span>
+                        </Link>
 
                         {/* Card 2 */}
-                        <div className="bg-gray-50 p-6 md:p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                        <Link href="/nos-projets#vitalite" className="bg-gray-50 p-6 md:p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group block">
                             <div className="bg-accent/10 w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:bg-accent group-hover:text-white transition-colors">
                                 <Leaf className="w-7 h-7 text-accent group-hover:text-white transition-colors" />
                             </div>
                             <h3 className="text-xl font-bold text-gray-900 mb-3">Vitalité & services</h3>
-                            <p className="text-gray-600">Soutenir les commerces, l'emploi local et relever le défi énergétique de nos bâtiments.</p>
-                        </div>
+                            <p className="text-gray-600 mb-4">Soutenir les commerces, l'emploi local et relever le défi énergétique de nos bâtiments.</p>
+                            <span className="text-accent font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                                En savoir plus <ArrowRight className="w-4 h-4" />
+                            </span>
+                        </Link>
 
                         {/* Card 3 */}
-                        <div className="bg-gray-50 p-6 md:p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                        <Link href="/nos-projets#lien-social" className="bg-gray-50 p-6 md:p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group block">
                             <div className="bg-primary-light/10 w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary-light group-hover:text-white transition-colors">
                                 <Users className="w-7 h-7 text-primary-light group-hover:text-white transition-colors" />
                             </div>
                             <h3 className="text-xl font-bold text-gray-900 mb-3">Lien social & jeunesse</h3>
-                            <p className="text-gray-600">Créer des lieux de rencontre et dynamiser la vie associative pour toutes les générations.</p>
-                        </div>
+                            <p className="text-gray-600 mb-4">Créer des lieux de rencontre et dynamiser la vie associative pour toutes les générations.</p>
+                            <span className="text-primary-light font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                                En savoir plus <ArrowRight className="w-4 h-4" />
+                            </span>
+                        </Link>
                     </div>
                 </div>
             </section>
