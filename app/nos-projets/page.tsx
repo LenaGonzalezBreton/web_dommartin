@@ -34,26 +34,26 @@ export default function NosProjects() {
             </section>
 
             {/* Navigation entre sections */}
-            <section className="py-8 bg-white border-b sticky top-16 z-40">
+            <section className="py-4 bg-white border-b sticky top-16 z-40">
                 <div className="container mx-auto px-4">
-                    <div className="flex flex-wrap justify-center gap-4">
+                    <div className="flex flex-nowrap justify-start md:justify-center gap-3 overflow-x-auto scrollbar-hide pb-2 -mb-2">
                         <a
                             href="#cadre-de-vie"
-                            className="flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary font-semibold hover:bg-primary hover:text-white transition-all"
+                            className="flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary font-semibold hover:bg-primary hover:text-white transition-all whitespace-nowrap shrink-0"
                         >
                             <Shield className="w-4 h-4" />
                             Cadre de vie
                         </a>
                         <a
                             href="#vitalite"
-                            className="flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent font-semibold hover:bg-accent hover:text-white transition-all"
+                            className="flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent font-semibold hover:bg-accent hover:text-white transition-all whitespace-nowrap shrink-0"
                         >
                             <Leaf className="w-4 h-4" />
                             Vitalité
                         </a>
                         <a
                             href="#lien-social"
-                            className="flex items-center gap-2 px-4 py-2 rounded-full bg-primary-light/10 text-primary-light font-semibold hover:bg-primary-light hover:text-white transition-all"
+                            className="flex items-center gap-2 px-4 py-2 rounded-full bg-primary-light/10 text-primary-light font-semibold hover:bg-primary-light hover:text-white transition-all whitespace-nowrap shrink-0"
                         >
                             <Users className="w-4 h-4" />
                             Lien social
