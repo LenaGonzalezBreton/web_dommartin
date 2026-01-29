@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { TerrainMultisport } from "@/components/terrain-multisport";
 import { HalleMarche } from "@/components/halle-marche";
+import { DeplacementsSecurises } from "@/components/deplacements-securises";
 
 export const metadata: Metadata = {
     title: "Nos Projets | Dommartin avec vous",
@@ -100,6 +101,9 @@ export default function NosProjects() {
                                     </li>
                                 </ul>
                             </div>
+
+                            {/* Projet Déplacements sécurisés */}
+                            <DeplacementsSecurises />
                         </div>
                     </div>
                 </div>
