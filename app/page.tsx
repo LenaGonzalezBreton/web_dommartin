@@ -64,26 +64,37 @@ export default function Home() {
                     <div className="max-w-6xl mx-auto space-y-8">
                         {/* Top Row: Charte & Communiqué */}
                         <div className="grid md:grid-cols-2 gap-8">
-                            {/* Carte 1: Prochains Rendez-vous */}
+                            {/* Carte 1: Rendez-vous & Comptes-rendus */}
                             <div className="bg-white p-6 md:p-8 rounded-3xl shadow-xl border border-gray-100 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col">
                                 <div className="bg-primary/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
                                     <Calendar className="w-8 h-8 text-primary" />
                                 </div>
-                                <h3 className="text-2xl font-bold text-gray-900 mb-4 font-heading">Prochains Rendez-vous</h3>
-                                <div className="text-gray-600 mb-8 flex-grow space-y-4">
-                                    <div>
-                                        <span className="font-bold text-gray-900 block text-lg">Vendredi 30 Janvier</span>
-                                        <span className="text-primary font-medium">Rencontre Associations</span>
+                                <h3 className="text-2xl font-bold text-gray-900 mb-4 font-heading">Nos Rencontres</h3>
+                                <div className="text-gray-600 mb-6 flex-grow space-y-4">
+                                    {/* Compte-rendu de la réunion associations */}
+                                    <div className="bg-accent/5 p-4 rounded-xl border border-accent/20">
+                                        <div className="flex items-center gap-2 mb-1">
+                                            <span className="bg-accent text-white text-xs font-bold px-2 py-0.5 rounded-full">Compte-rendu</span>
+                                        </div>
+                                        <span className="font-bold text-gray-900 block">30 Janvier - Associations</span>
+                                        <p className="text-sm text-gray-600 mt-1">Échanges avec le tissu associatif sportif, culturel et social.</p>
+                                        <Link href="/demarche#associations" className="text-accent font-semibold text-sm inline-flex items-center gap-1 mt-2 hover:gap-2 transition-all">
+                                            Lire le compte-rendu <ArrowRight className="w-3 h-3" />
+                                        </Link>
                                     </div>
                                     <div className="w-full h-px bg-gray-100" />
+                                    {/* Prochain RDV */}
                                     <div>
+                                        <div className="flex items-center gap-2 mb-1">
+                                            <span className="bg-primary text-white text-xs font-bold px-2 py-0.5 rounded-full">À venir</span>
+                                        </div>
                                         <span className="font-bold text-gray-900 block text-lg">Jeudi 12 Février</span>
-                                        <span className="text-primary font-medium">Réunion Publique</span>
+                                        <span className="text-primary font-medium">Réunion Publique - Espace Culturel</span>
                                     </div>
                                 </div>
                                 <Button asChild className="w-full md:w-auto mt-auto" size="lg">
                                     <Link href="/demarche#agendas">
-                                        En savoir plus
+                                        Voir tous les rendez-vous
                                         <ArrowRight className="ml-2 w-4 h-4" />
                                     </Link>
                                 </Button>

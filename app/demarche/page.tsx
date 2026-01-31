@@ -34,23 +34,9 @@ export default function DemarchePage() {
                         </div>
                         <h2 className="text-3xl md:text-4xl font-bold mb-8">Prochaines Rencontres</h2>
 
-                        <div className="grid md:grid-cols-2 gap-6 mb-8">
-                            {/* Event 1: Associations */}
-                            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20 transform hover:scale-105 transition-transform duration-300">
-                                <div className="mb-4">
-                                    <span className="bg-accent text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Associations</span>
-                                </div>
-                                <p className="text-2xl font-bold text-white mb-1">Vendredi 30 Janvier</p>
-                                <p className="text-xl font-bold text-accent mb-4">20h00</p>
-                                <p className="text-lg font-medium opacity-90 mb-2">Rencontre Associations</p>
-                                <p className="text-sm opacity-75 mb-4">Maison des Associations</p>
-                                <p className="text-sm leading-relaxed opacity-80">
-                                    Un temps d’échange pour construire le projet municipal avec le tissu associatif.
-                                </p>
-                            </div>
-
-                            {/* Event 2: Public */}
-                            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20 transform hover:scale-105 transition-transform duration-300">
+                        <div className="flex justify-center mb-8">
+                            {/* Event: Réunion Publique du 12 février */}
+                            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 transform hover:scale-105 transition-transform duration-300 max-w-md w-full">
                                 <div className="mb-4">
                                     <span className="bg-white text-primary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Tous publics</span>
                                 </div>
@@ -154,8 +140,72 @@ export default function DemarchePage() {
                 </div>
             </section>
 
-            {/* SECTION 3: Compte-rendu Réunion 2 (Jan 8) */}
-            <section className="py-16 bg-gray-50/50">
+            {/* SECTION 3: Compte-rendu Rencontre Associations (Jan 30) */}
+            <section id="associations" className="py-16 bg-gray-50/50">
+                <div className="container mx-auto px-4">
+                    <div className="max-w-4xl mx-auto">
+                        <div className="flex items-center gap-4 mb-8">
+                            <Badge className="bg-gray-200 text-gray-700 hover:bg-gray-300 px-3 py-1 text-sm">Passé</Badge>
+                            <Badge className="bg-accent text-white hover:bg-accent px-3 py-1 text-sm">Associations</Badge>
+                            <span className="text-gray-500 font-medium">30 Janvier 2026</span>
+                        </div>
+
+                        <div className="prose max-w-none">
+                            <h2 className="text-3xl font-bold text-gray-900 mb-6">Rencontre avec les Associations</h2>
+
+                            <div className="mb-8 rounded-xl overflow-hidden shadow-lg">
+                                <img
+                                    src="/reunion-associations-jan2026.jpg"
+                                    alt="Rencontre avec les associations - 30 janvier 2026"
+                                    className="w-full h-auto object-cover"
+                                />
+                            </div>
+
+                            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 mb-8">
+                                <p className="text-xl text-primary font-medium italic">
+                                    "Un temps d'écoute et d'échanges avec l'ensemble des représentants des associations de la commune."
+                                </p>
+                            </div>
+
+                            <div className="space-y-6 text-gray-700 leading-relaxed">
+                                <p>
+                                    Vendredi 30 janvier, la liste « Dommartin avec Vous » a invité l'ensemble des représentants des associations de la commune pour un temps d'écoute et d'échanges, afin de mieux connaître leurs réalités et de comprendre leurs besoins.
+                                </p>
+
+                                <p>
+                                    Cette rencontre a été l'occasion de dialoguer ouvertement sur le fonctionnement au quotidien des associations, leurs réussites, les difficultés rencontrées (organisation, bénévolat, stockage, financements, communication, etc.) ainsi que leurs attentes pour l'avenir. Les échanges ont mis en lumière la richesse et l'engagement du tissu associatif, mais aussi des points concrets qui méritent d'être travaillés collectivement.
+                                </p>
+
+                                <h3 className="text-xl font-bold text-gray-900 mt-8 mb-4 flex items-center gap-2">
+                                    <Lightbulb className="w-5 h-5 text-accent" />
+                                    Notre méthode
+                                </h3>
+                                <p>
+                                    Fidèles à notre engagement, nous voulons avancer avec une méthode simple : <strong>écouter, échanger, comprendre, puis proposer des solutions réalistes</strong>. Notre objectif est de formuler des réponses utiles et applicables, au plus près des besoins exprimés, dans un esprit de respect et de coopération, tout en gardant une vigilance constante sur la maîtrise des dépenses communales.
+                                </p>
+
+                                <h3 className="text-xl font-bold text-gray-900 mt-8 mb-4 flex items-center gap-2">
+                                    <Users className="w-5 h-5 text-accent" />
+                                    Remerciements
+                                </h3>
+                                <p>
+                                    Nous remercions chaleureusement les participant(e)s d'être venus en nombre, représentant l'ensemble du monde associatif sportif, culturel et social, pour la qualité des échanges, la franchise des retours et la richesse des contributions.
+                                </p>
+
+                                <div className="bg-accent/10 p-6 rounded-xl mt-8 border border-accent/20">
+                                    <p className="text-primary font-medium text-center">
+                                        <Target className="w-5 h-5 inline-block mr-2" />
+                                        Des réponses et des propositions seront présentées le <strong>12 février</strong> à l'occasion de notre réunion publique.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* SECTION 4: Compte-rendu Réunion 2 (Jan 8) */}
+            <section className="py-16">
                 <div className="container mx-auto px-4">
                     <div className="max-w-4xl mx-auto">
                         <div className="flex items-center gap-4 mb-8">
@@ -207,7 +257,7 @@ export default function DemarchePage() {
                 </div>
             </section>
 
-            {/* SECTION 4: Compte-rendu Réunion 1 (Dec) */}
+            {/* SECTION 5: Compte-rendu Réunion 1 (Dec) */}
             <section className="py-16">
                 <div className="container mx-auto px-4">
                     <div className="max-w-5xl mx-auto">
