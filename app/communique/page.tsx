@@ -2,11 +2,11 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Calendar, ExternalLink } from "lucide-react";
+import { ArrowLeft, ArrowRight, ExternalLink, AlertTriangle, FileText, Newspaper } from "lucide-react";
 
 export const metadata: Metadata = {
     title: "Dans les médias | Dommartin avec vous",
-    description: "Municipales 2026 : la liste « Dommartin avec Vous » se présente, menée par Jean-Jacques Rosaye.",
+    description: "Courrier aux acteurs économiques et couverture presse de la liste Dommartin avec Vous.",
 };
 
 export default function CommuniquePage() {
@@ -26,87 +26,104 @@ export default function CommuniquePage() {
                             DANS LES MÉDIAS
                         </span>
                         <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 font-heading leading-tight mb-4">
-                            Municipales 2026 : la liste « Dommartin avec Vous » se présente
+                            Actualités & Publications
                         </h1>
-                        <div className="flex items-center text-gray-500 font-medium">
-                            <Calendar className="w-5 h-5 mr-2" />
-                            Dommartin-lès-Remiremont, le 18 janvier 2026
-                        </div>
                     </div>
                 </div>
             </div>
 
             <div className="container mx-auto px-4 py-12">
-                <div className="max-w-4xl mx-auto">
+                <div className="max-w-4xl mx-auto space-y-12">
 
-                    {/* Visual from FB */}
-                    <div className="relative w-full aspect-video md:aspect-[21/9] bg-gray-100 rounded-3xl overflow-hidden shadow-lg mb-12">
-                        <Image
-                            src="/communique-2026.png"
-                            alt="Visuel du communiqué de presse"
-                            fill
-                            className="object-cover"
-                        />
-                    </div>
+                    {/* SECTION PRINCIPALE: Courrier aux acteurs économiques */}
+                    <section className="bg-gradient-to-br from-primary/5 to-accent/5 p-8 md:p-10 rounded-3xl border border-primary/20 shadow-lg">
+                        <div className="flex items-center gap-3 mb-6">
+                            <span className="bg-accent text-white font-bold px-4 py-1.5 rounded-full text-sm animate-pulse">
+                                NOUVEAU
+                            </span>
+                            <span className="bg-primary/10 text-primary font-bold px-4 py-1.5 rounded-full text-sm">
+                                Acteurs économiques
+                            </span>
+                        </div>
 
-                    {/* Content */}
-                    <div className="prose prose-lg prose-headings:text-primary max-w-none text-gray-800 leading-relaxed">
-                        <p className="font-bold text-xl mb-8">
-                            Menée par Jean-Jacques Rosaye, une équipe de Picosés annonce la création de la liste « Dommartin avec Vous » à l’occasion des élections municipales des 15 et 22 mars 2026.
-                        </p>
+                        <div className="flex items-start gap-4 mb-6">
+                            <div className="bg-primary/10 w-14 h-14 rounded-2xl flex items-center justify-center shrink-0">
+                                <FileText className="w-7 h-7 text-primary" />
+                            </div>
+                            <div>
+                                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+                                    Courrier aux acteurs économiques
+                                </h2>
+                                <p className="text-lg text-primary font-medium italic">
+                                    "Une phase d'écoute et de concertation pour construire ensemble un diagnostic partagé."
+                                </p>
+                            </div>
+                        </div>
 
-                        <h3 className="text-2xl font-bold text-gray-900 mt-10 mb-6">Ø Une liste née d’une démarche d’écoute et de concertation</h3>
-
-                        <p>
-                            Depuis plusieurs semaines, la réflexion s’est construite à partir d’une démarche participative inédite.
-                            Le collectif a multiplié les rencontres, les ateliers et les consultations pour recueillir les attentes
-                            réelles des habitants. C'est de cette dynamique qu'est né le projet, avant même la constitution de la liste.
-                        </p>
-
-                        <p>
-                            Aujourd'hui, l'équipe est au complet et prête à porter ce projet ambitieux et réaliste pour Dommartin-lès-Remiremont.
-                            Elle rassemble des femmes et des hommes d'horizons divers, unis par la même volonté de servir l'intérêt général
-                            et de redonner la parole aux citoyens.
-                        </p>
-
-                        <div className="bg-gray-50 p-6 rounded-2xl border-l-4 border-accent my-8">
-                            <p className="italic text-gray-600 m-0">
-                                « Nous voulons une gouvernance transparente, qui associe les habitants aux décisions structurantes.
-                                C'est le sens de notre charte d'engagement. »
-                                <br />
-                                <span className="font-bold not-italic text-gray-900 mt-2 block">— Jean-Jacques Rosaye</span>
+                        <div className="space-y-4 text-gray-700 leading-relaxed mb-6">
+                            <p>
+                                Dans le cadre de la démarche « <strong className="text-primary">Dommartin avec vous !</strong> », nous avons adressé une lettre aux acteurs économiques de la commune afin d'engager une phase d'écoute et de concertation. L'objectif est de recueillir vos priorités, difficultés et propositions pour construire un diagnostic partagé et identifier des leviers concrets en faveur de l'activité locale.
+                            </p>
+                            <p>
+                                L'intégralité de la lettre est disponible via le lien ci-dessous.
                             </p>
                         </div>
+
+                        {/* Rectificatif */}
+                        <div className="bg-amber-50 border-l-4 border-amber-400 p-4 rounded-r-xl mb-8">
+                            <p className="text-amber-800 font-medium flex items-start gap-2">
+                                <AlertTriangle className="w-5 h-5 shrink-0 mt-0.5" />
+                                <span>
+                                    <strong>Rectificatif :</strong> une première version de la lettre comportait une erreur dans l'adresse mail. Nous vous confirmons que la bonne adresse est : <a href="mailto:dommartinavecvous@proton.me" className="text-primary underline font-bold">dommartinavecvous@proton.me</a>
+                                </span>
+                            </p>
+                        </div>
+
+                        <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white shadow-lg">
+                            <a
+                                href="/Acteurs économiques.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Consulter la lettre (PDF)
+                                <ArrowRight className="ml-2 w-5 h-5" />
+                            </a>
+                        </Button>
+                    </section>
+
+                    {/* Séparateur */}
+                    <div className="flex items-center gap-4">
+                        <div className="flex-1 h-px bg-gray-200"></div>
+                        <span className="text-gray-400 font-medium text-sm uppercase tracking-wider">Revue de presse</span>
+                        <div className="flex-1 h-px bg-gray-200"></div>
                     </div>
 
-                    {/* External Link */}
-                    <div className="mt-12 flex flex-col md:flex-row gap-4 items-center justify-between bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
-                        <div className="space-y-4">
-                            <div>
-                                <h4 className="font-bold text-lg text-gray-900">Lire l'article complet</h4>
-                                <p className="text-gray-600">Retrouvez la couverture presse sur RemiremontVallées.com</p>
-                            </div>
-                            <Button asChild className="shrink-0 w-full md:w-auto" variant="outline">
+                    {/* SECTION SECONDAIRE: Articles de presse (minimisée) */}
+                    <section className="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                        <div className="flex items-center gap-3 mb-4">
+                            <Newspaper className="w-5 h-5 text-gray-500" />
+                            <h3 className="text-lg font-bold text-gray-700">Articles de presse</h3>
+                        </div>
+
+                        <p className="text-gray-600 mb-6 text-sm">
+                            Municipales 2026 : la liste « Dommartin avec Vous » se présente, menée par Jean-Jacques Rosaye.
+                        </p>
+
+                        <div className="flex flex-col sm:flex-row gap-3">
+                            <Button asChild variant="outline" size="sm" className="text-gray-600 border-gray-300 hover:bg-gray-100">
                                 <Link href="https://remiremontvallees.com/2026/01/19/dommartin-les-remiremont-municipales-2026-la-liste-dommartin-avec-vous-se-presente-menee-par-jean-jacques-rosaye/" target="_blank" rel="noopener noreferrer">
-                                    Lire sur le site média
-                                    <ExternalLink className="ml-2 w-4 h-4" />
+                                    RemiremontVallées.com
+                                    <ExternalLink className="ml-2 w-3 h-3" />
                                 </Link>
                             </Button>
-                        </div>
-
-                        <div className="space-y-4 md:border-l md:pl-6 md:border-gray-100">
-                            <div>
-                                <h4 className="font-bold text-lg text-gray-900">Sur les réseaux</h4>
-                                <p className="text-gray-600">Voir la publication sur Facebook (Aveu 88)</p>
-                            </div>
-                            <Button asChild className="shrink-0 w-full md:w-auto" variant="secondary">
+                            <Button asChild variant="outline" size="sm" className="text-gray-600 border-gray-300 hover:bg-gray-100">
                                 <Link href="https://www.facebook.com/share/1BsfkAgXqk/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
-                                    Voir sur Facebook
-                                    <ExternalLink className="ml-2 w-4 h-4" />
+                                    Voir sur Facebook (Aveu 88)
+                                    <ExternalLink className="ml-2 w-3 h-3" />
                                 </Link>
                             </Button>
                         </div>
-                    </div>
+                    </section>
 
                 </div>
             </div>

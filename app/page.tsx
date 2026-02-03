@@ -100,18 +100,28 @@ export default function Home() {
                                 </Button>
                             </div>
 
-                            {/* Carte 2: Communiqué */}
+                            {/* Carte 2: Actualités & Médias */}
                             <div className="bg-white p-6 md:p-8 rounded-3xl shadow-xl border border-gray-100 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col">
-                                <div className="bg-accent/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
-                                    <Newspaper className="w-8 h-8 text-accent" />
+                                <div className="flex items-start justify-between mb-6">
+                                    <div className="bg-accent/10 w-16 h-16 rounded-2xl flex items-center justify-center">
+                                        <FileText className="w-8 h-8 text-accent" />
+                                    </div>
+                                    <span className="bg-accent text-white text-xs font-bold px-2.5 py-1 rounded-full animate-pulse">Nouveau</span>
                                 </div>
-                                <h3 className="text-2xl font-bold text-gray-900 mb-4 font-heading">Dans les médias</h3>
-                                <p className="text-gray-600 mb-8 text-lg flex-grow">
-                                    <span className="font-semibold text-gray-800">Municipales 2026 :</span> la liste « Dommartin avec Vous » se présente.
-                                </p>
-                                <Button asChild className="w-full md:w-auto mt-auto" variant="outline" size="lg">
+                                <h3 className="text-2xl font-bold text-gray-900 mb-6 font-heading">Actualités</h3>
+                                <div className="text-gray-600 mb-8 flex-grow space-y-4">
+                                    <div className="bg-primary/5 p-4 rounded-xl border border-primary/10">
+                                        <p className="font-bold text-primary text-lg mb-1">Courrier aux acteurs économiques</p>
+                                        <p className="text-gray-600">Une démarche d'écoute et de concertation pour construire un diagnostic partagé de l'activité locale.</p>
+                                    </div>
+                                    <div className="flex items-center gap-2 text-gray-500">
+                                        <Newspaper className="w-4 h-4" />
+                                        <span>Retrouvez aussi notre revue de presse</span>
+                                    </div>
+                                </div>
+                                <Button asChild className="w-full md:w-auto mt-auto" size="lg">
                                     <Link href="/communique">
-                                        Lire les articles
+                                        Consulter
                                         <ArrowRight className="ml-2 w-4 h-4" />
                                     </Link>
                                 </Button>
