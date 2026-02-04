@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { Shield, Leaf, Users, ArrowLeft } from "lucide-react";
+import { Shield, Leaf, Users, Building2 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -10,7 +10,7 @@ import { DeplacementsSecurises } from "@/components/deplacements-securises";
 export const metadata: Metadata = {
     title: "Nos Projets | Dommartin avec vous",
     description:
-        "Découvrez les 3 chantiers majeurs de la liste Dommartin avec Vous : Cadre de vie & sécurité, Vitalité & services, Lien social & jeunesse.",
+        "Découvrez les 3 chantiers majeurs de la liste Dommartin avec Vous : Cadre de vie & sécurité, Vitalité & services, Lien social & jeunesse, et notre vision intercommunale.",
 };
 
 export default function NosProjects() {
@@ -58,6 +58,15 @@ export default function NosProjects() {
                         >
                             <Users className="w-4 h-4" />
                             Lien social
+                        </a>
+                        {/* Séparateur visuel */}
+                        <div className="w-px h-8 bg-gray-300 mx-1 shrink-0" />
+                        <a
+                            href="#intercommunalite"
+                            className="flex items-center gap-2 px-4 py-2 rounded-full bg-primary-dark/10 text-primary-dark font-semibold hover:bg-primary-dark hover:text-white transition-all whitespace-nowrap shrink-0"
+                        >
+                            <Building2 className="w-4 h-4" />
+                            Intercommunalité
                         </a>
                     </div>
                 </div>
@@ -196,6 +205,130 @@ export default function NosProjects() {
 
                             {/* Projet Terrain Multisport */}
                             <TerrainMultisport />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Section 4: Intercommunalité */}
+            <section id="intercommunalite" className="py-20 bg-gray-50 scroll-mt-32">
+                <div className="container mx-auto px-4">
+                    <div className="max-w-4xl mx-auto">
+                        <div className="flex items-center gap-4 mb-8">
+                            <div className="bg-primary-dark/10 w-16 h-16 rounded-2xl flex items-center justify-center">
+                                <Building2 className="w-8 h-8 text-primary-dark" />
+                            </div>
+                            <div>
+                                <span className="text-sm font-bold text-primary-dark uppercase tracking-wider">Cadre Intercommunal</span>
+                                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 font-heading">
+                                    Intercommunalité
+                                </h2>
+                            </div>
+                        </div>
+
+                        <div className="prose prose-lg max-w-none">
+                            {/* Introduction CCPVM */}
+                            <div className="bg-white p-6 md:p-8 rounded-2xl border border-primary/20 shadow-sm mb-8">
+                                <p className="text-lg text-gray-600 font-medium mb-2">
+                                    Communauté de Communes de la Porte des Vosges Méridionales (CCPVM)
+                                </p>
+                                <h3 className="text-xl font-bold text-primary mb-4">
+                                    Agir, peser, sécuriser les services du quotidien
+                                </h3>
+                                <p className="text-gray-700 leading-relaxed mb-4">
+                                    Notre projet pour Dommartin-lès-Remiremont s'inscrit dans une réalité institutionnelle claire :
+                                    une part croissante des décisions structurantes se joue à l'échelle intercommunale, via la
+                                    Communauté de Communes de la Porte des Vosges Méridionales (CCPVM).
+                                </p>
+                                <p className="text-gray-700 leading-relaxed">
+                                    Pour autant, le transfert de compétences ne doit jamais signifier un transfert de responsabilité politique :
+                                    les élus municipaux ont le devoir de porter la voix des habitants, de défendre les priorités locales
+                                    et d'exiger des décisions utiles et équitables pour Dommartin.
+                                </p>
+                            </div>
+
+                            {/* Nos priorités intercommunales */}
+                            <div className="bg-white p-6 md:p-8 rounded-2xl border border-gray-100 mt-8">
+                                <h3 className="text-xl font-bold text-gray-900 mb-6">Nos priorités, au regard des compétences intercommunales</h3>
+                                <div className="space-y-6">
+                                    <div className="flex items-start gap-3">
+                                        <span className="w-2 h-2 bg-primary rounded-full mt-2 shrink-0" />
+                                        <div>
+                                            <span className="font-semibold text-gray-900">Services essentiels</span>
+                                            <span className="text-gray-600"> (eau potable, assainissement collectif, déchets) : continuité dans le service de proximité aux habitants, amélioration de la qualité de l'eau, maintien d'un prix raisonnable</span>
+                                        </div>
+                                    </div>
+                                    <div className="flex items-start gap-3">
+                                        <span className="w-2 h-2 bg-primary rounded-full mt-2 shrink-0" />
+                                        <div>
+                                            <span className="font-semibold text-gray-900">Urbanisme</span>
+                                            <span className="text-gray-600"> : défense des spécificités de notre commune dans le nouveau PLUI et dans le SCOT, création d'une aide à la réhabilitation du bâti existant</span>
+                                        </div>
+                                    </div>
+                                    <div className="flex items-start gap-3">
+                                        <span className="w-2 h-2 bg-primary rounded-full mt-2 shrink-0" />
+                                        <div>
+                                            <span className="font-semibold text-gray-900">Cadre de vie et sécurité</span>
+                                            <span className="text-gray-600"> : aménagement cohérent sur les communes, accès à la mobilité adaptée sur tout le territoire intercommunal</span>
+                                        </div>
+                                    </div>
+                                    <div className="flex items-start gap-3">
+                                        <span className="w-2 h-2 bg-primary rounded-full mt-2 shrink-0" />
+                                        <div>
+                                            <span className="font-semibold text-gray-900">Attractivité & économie locale</span>
+                                            <span className="text-gray-600"> : soutien au tissu économique local, valorisation de notre territoire et de nos hébergements vis-à-vis du tourisme, partenariat avec le Club Vosgien pour l'entretien des sentiers de randonnée</span>
+                                        </div>
+                                    </div>
+                                    <div className="flex items-start gap-3">
+                                        <span className="w-2 h-2 bg-primary rounded-full mt-2 shrink-0" />
+                                        <div>
+                                            <span className="font-semibold text-gray-900">Familles & solidarités</span>
+                                            <span className="text-gray-600"> : partage de l'accès de nos enfants aux centres aérés dans des conditions identiques pour tous, aide à la réflexion pour la création d'une MAM dans notre commune</span>
+                                        </div>
+                                    </div>
+                                    <div className="flex items-start gap-3">
+                                        <span className="w-2 h-2 bg-primary rounded-full mt-2 shrink-0" />
+                                        <div>
+                                            <span className="font-semibold text-gray-900">Transition & résilience</span>
+                                            <span className="text-gray-600"> : gestion des milieux aquatiques réaliste et travaux de bon sens en accord avec les riverains</span>
+                                        </div>
+                                    </div>
+                                    <div className="flex items-start gap-3">
+                                        <span className="w-2 h-2 bg-primary rounded-full mt-2 shrink-0" />
+                                        <div>
+                                            <span className="font-semibold text-gray-900">Culture & sport</span>
+                                            <span className="text-gray-600"> : accès aux équipements et services intercommunaux avec les mêmes conditions pour tous les habitants</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Engagement gouvernance */}
+                            <div className="bg-gradient-to-br from-primary to-primary-dark p-6 md:p-8 rounded-2xl mt-8 text-white">
+                                <h3 className="text-xl font-bold mb-4">Notre engagement : une gouvernance exigeante au service des Picosés</h3>
+                                <ul className="space-y-3">
+                                    <li className="flex items-start gap-3">
+                                        <span className="w-2 h-2 bg-white rounded-full mt-2 shrink-0" />
+                                        <span><strong>Présence et travail actif</strong> dans les instances intercommunales : défendre Dommartin dans les arbitrages</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="w-2 h-2 bg-white rounded-full mt-2 shrink-0" />
+                                        <span><strong>Position claire</strong> sur les dossiers : priorités, calendriers, niveaux de service, financements</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="w-2 h-2 bg-white rounded-full mt-2 shrink-0" />
+                                        <span><strong>Suivi des engagements</strong> : points d'étape réguliers et bilan annuel</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="w-2 h-2 bg-white rounded-full mt-2 shrink-0" />
+                                        <span><strong>Transparence</strong> : informer sur les décisions intercommunales qui impactent directement la commune</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="w-2 h-2 bg-white rounded-full mt-2 shrink-0" />
+                                        <span><strong>Maîtrise du budget intercommunal</strong></span>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Calendar, Mail, MapPin, Users, Heart, Shield, CheckCircle, ArrowRight, Leaf, FileText, Newspaper, Instagram } from "lucide-react";
+import { Calendar, Mail, MapPin, Users, Heart, Shield, CheckCircle, ArrowRight, Leaf, FileText, Newspaper, Instagram, Building2 } from "lucide-react";
 import { Metadata } from "next";
 
 import { UpcomingEvents } from "@/components/UpcomingEvents";
@@ -212,6 +212,27 @@ export default function Home() {
                             <span className="text-primary-light font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
                                 En savoir plus <ArrowRight className="w-4 h-4" />
                             </span>
+                        </Link>
+                    </div>
+
+                    {/* Encart Intercommunalité */}
+                    <div className="max-w-6xl mx-auto mt-12">
+                        <Link href="/nos-projets#intercommunalite" className="block bg-gradient-to-br from-primary-dark/5 to-primary/10 p-6 md:p-8 rounded-2xl shadow-lg border border-primary/20 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                            <div className="flex flex-col md:flex-row md:items-center gap-6">
+                                <div className="bg-primary-dark/10 w-16 h-16 rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-primary-dark group-hover:text-white transition-colors">
+                                    <Building2 className="w-8 h-8 text-primary-dark group-hover:text-white transition-colors" />
+                                </div>
+                                <div className="flex-grow">
+                                    <span className="text-sm font-bold text-primary-dark uppercase tracking-wider">Cadre Intercommunal</span>
+                                    <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2 font-heading">Intercommunalité</h3>
+                                    <p className="text-gray-600">Agir, peser, sécuriser les services du quotidien au sein de la Communauté de Communes de la Porte des Vosges Méridionales.</p>
+                                </div>
+                                <div className="shrink-0">
+                                    <span className="text-primary-dark font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                                        Découvrir notre vision <ArrowRight className="w-4 h-4" />
+                                    </span>
+                                </div>
+                            </div>
                         </Link>
                     </div>
                 </div>
