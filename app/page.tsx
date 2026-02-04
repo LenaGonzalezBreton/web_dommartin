@@ -39,7 +39,7 @@ export default function Home() {
                             Dommartin <span className="text-accent">avec vous</span>
                         </h1>
                         <p className="text-xl md:text-3xl font-bold text-gray-100 tracking-wide max-w-4xl mx-auto drop-shadow-md leading-relaxed">
-                            Ici, vous suivez la construction du programme et de l’équipe.
+                            Ici, vous découvrez l’équipe désormais constituée et les premières étapes du projet municipal qui vous sera présenté le 12 février.
                         </p>
                         <div className="mt-10">
                             <div className="inline-flex flex-row items-center justify-center md:gap-3 px-6 py-3 md:px-5 md:py-2.5 rounded-xl md:rounded-full bg-white/10 backdrop-blur-md border border-white/30 text-white text-sm md:text-base font-medium tracking-wide shadow-lg hover:bg-white/20 transition-all cursor-default group max-w-full text-center">
