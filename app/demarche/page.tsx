@@ -24,45 +24,7 @@ export default function DemarchePage() {
                 description="Retrouvez ici les comptes-rendus de nos ateliers participatifs. C'est ensemble, en croisant nos regards, que nous construisons le projet de demain."
             />
 
-            {/* SECTION 1: PROCHAIN RENDEZ-VOUS (Feb 12) */}
-            <section id="agendas" className="py-16 bg-primary text-white relative overflow-hidden">
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop')] opacity-10 bg-cover bg-center mix-blend-overlay"></div>
-                <div className="container mx-auto px-4 text-center relative z-10">
-                    <div className="max-w-3xl mx-auto">
-                        <div className="inline-block bg-accent text-white font-bold px-4 py-1 rounded-full text-sm mb-6 uppercase tracking-wider animate-pulse">
-                            À venir
-                        </div>
-                        <h2 className="text-3xl md:text-4xl font-bold mb-8">Prochaines Rencontres</h2>
-
-                        <div className="flex justify-center mb-8">
-                            {/* Event: Réunion Publique du 12 février */}
-                            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 transform hover:scale-105 transition-transform duration-300 max-w-md w-full">
-                                <div className="mb-4">
-                                    <span className="bg-white text-primary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Tous publics</span>
-                                </div>
-                                <p className="text-2xl font-bold text-white mb-1">Jeudi 12 Février</p>
-                                <p className="text-xl font-bold text-accent mb-4">20h00</p>
-                                <p className="text-lg font-medium opacity-90 mb-2">Réunion Publique</p>
-                                <p className="text-sm opacity-75 mb-4">Espace Culturel</p>
-                                <p className="text-sm leading-relaxed opacity-80">
-                                    Présentation du programme et de l'équipe complète. Venez échanger avec nous !
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="space-y-4">
-                            <p className="text-lg opacity-90">
-                                D’ici là, on continue d’échanger et de recueillir vos idées.
-                            </p>
-                            <a href="mailto:dommartinavecvous@proton.me" className="inline-flex items-center gap-2 text-accent hover:text-accent/80 font-bold transition-colors">
-                                <span className="underline decoration-2 underline-offset-4">dommartinavecvous@proton.me</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* SECTION 2: CHARTE D'ENGAGEMENT (Imported) */}
+            {/* SECTION 1: CHARTE D'ENGAGEMENT (Imported) */}
             <section className="py-16 bg-white">
                 <div className="container mx-auto px-4">
                     <div className="max-w-4xl mx-auto">
@@ -140,6 +102,75 @@ export default function DemarchePage() {
                 </div>
             </section>
 
+            {/* SECTION 2: COMPTE-RENDU RÉUNION PUBLIQUE (12 Février) */}
+            <section id="reunion-publique-fevrier" className="py-16 bg-gray-800 text-white relative overflow-hidden">
+                <div className="absolute inset-0 bg-[url('/reunion-12-fevrier.jpg')] opacity-40 bg-cover bg-center"></div>
+                <div className="container mx-auto px-4 relative z-10">
+                    <div className="max-w-3xl mx-auto">
+                        <div className="flex items-center gap-4 mb-8 justify-center flex-wrap">
+                            <Badge className="bg-white/20 text-white hover:bg-white/30 px-3 py-1 text-sm">Passé</Badge>
+                            <Badge className="bg-accent text-white hover:bg-accent px-3 py-1 text-sm">Réunion Publique</Badge>
+                            <span className="text-white/80 font-medium">12 Février 2026</span>
+                        </div>
+                        <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Réunion Publique du 12 Février</h2>
+
+                        <div className="space-y-8">
+                            {/* Intro / Thank you */}
+                            <div className="bg-white/10 backdrop-blur-sm p-6 md:p-8 rounded-2xl border border-white/20">
+                                <h3 className="text-2xl font-bold text-accent mb-4">MERCI !</h3>
+                                <p className="text-lg leading-relaxed mb-4">
+                                    Hier soir, nous avons tenu notre réunion publique pour présenter notre programme et l’ensemble des colistiers.
+                                    Cette soirée a été une réussite : vous, habitantes et habitants de Dommartin êtes venus nombreux, et nous vous en remercions chaleureusement.
+                                </p>
+                                <p className="leading-relaxed opacity-90">
+                                    Votre présence témoigne de votre intérêt pour la vie communale. Elle motive encore davantage notre équipe à poursuivre dans cette direction : l’écoute, l’échange et la restitution.
+                                </p>
+                            </div>
+
+                            {/*Permanences */}
+                            <div className="bg-accent/20 backdrop-blur-sm p-6 md:p-8 rounded-2xl border border-accent/30">
+                                <h4 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                                    Permanences à venir
+                                </h4>
+                                <p className="mb-4 opacity-90">Pour continuer à construire avec vous, nous mettons en place des permanences :</p>
+                                <div className="grid sm:grid-cols-3 gap-3 mb-4">
+                                    <div className="bg-white/10 rounded-xl p-4 text-center border border-white/10">
+                                        <span className="block text-lg font-bold">Samedi 21</span>
+                                        <span className="text-sm opacity-80">février</span>
+                                    </div>
+                                    <div className="bg-white/10 rounded-xl p-4 text-center border border-white/10">
+                                        <span className="block text-lg font-bold">Samedi 28</span>
+                                        <span className="text-sm opacity-80">février</span>
+                                    </div>
+                                    <div className="bg-white/10 rounded-xl p-4 text-center border border-white/10">
+                                        <span className="block text-lg font-bold">Samedi 7</span>
+                                        <span className="text-sm opacity-80">mars</span>
+                                    </div>
+                                </div>
+                                <p className="font-semibold text-accent">Maison des Associations, de 10h à 12h.</p>
+                                <p className="mt-2 text-sm opacity-80">Chacun pourra venir à notre rencontre pour échanger, poser ses questions et faire des suggestions.</p>
+                            </div>
+
+                            {/* Visites de terrain */}
+                            <div className="bg-white/10 backdrop-blur-sm p-6 md:p-8 rounded-2xl border border-white/20">
+                                <p className="leading-relaxed mb-4">
+                                    Parallèlement, nous organiserons des <strong>visites de terrain</strong> afin d’identifier, sur place et avec les habitants qui le souhaitent, les « points noirs » et les difficultés du quotidien : par exemple l’accès piéton à l’école, les arrêts de bus, la place des AFN, etc.
+                                </p>
+                                <p className="text-accent font-medium text-center text-lg">
+                                    Nous vous informerons au fur et à mesure des points de rendez-vous et des prochaines dates.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="space-y-4 mt-8 text-center">
+                            <a href="mailto:dommartinavecvous@proton.me" className="inline-flex items-center gap-2 text-accent hover:text-accent/80 font-bold transition-colors">
+                                <span className="underline decoration-2 underline-offset-4">dommartinavecvous@proton.me</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* SECTION 3: Compte-rendu Rencontre Associations (Jan 30) */}
             <section id="associations" className="py-16 bg-gray-50/50">
                 <div className="container mx-auto px-4">
@@ -195,7 +226,7 @@ export default function DemarchePage() {
                                 <div className="bg-accent/10 p-6 rounded-xl mt-8 border border-accent/20">
                                     <p className="text-primary font-medium text-center">
                                         <Target className="w-5 h-5 inline-block mr-2" />
-                                        Des réponses et des propositions seront présentées le <strong>12 février</strong> à l'occasion de notre réunion publique.
+                                        Des réponses et des propositions ont été présentées lors de notre <a href="#reunion-publique-fevrier" className="underline font-bold hover:text-primary-dark transition-colors">réunion publique du 12 février</a>.
                                     </p>
                                 </div>
                             </div>
@@ -225,7 +256,7 @@ export default function DemarchePage() {
 
                             <div className="space-y-6 text-gray-700 leading-relaxed">
                                 <p>
-                                    La réunion du jeudi 8 a confirmé une dynamique forte : une participation active et nombreuse, malgré les intempéries, et une envie partagée de construire ensemble un projet municipal citoyen, non partisan et participatif. Les échanges ont permis de clarifier la feuille de route, de mieux faire ressortir les attentes prioritaires des picosés, et d’avancer concrètement vers un programme qui sera présenté lors de la prochaine réunion du 12 février 2026.
+                                    La réunion du jeudi 8 a confirmé une dynamique forte : une participation active et nombreuse, malgré les intempéries, et une envie partagée de construire ensemble un projet municipal citoyen, non partisan et participatif. Les échanges ont permis de clarifier la feuille de route, de mieux faire ressortir les attentes prioritaires des picosés, et d’avancer concrètement vers un programme qui a été présenté lors de la réunion publique du 12 février 2026.
                                 </p>
 
                                 <h3 className="text-xl font-bold text-gray-900 mt-8 mb-4 flex items-center gap-2">

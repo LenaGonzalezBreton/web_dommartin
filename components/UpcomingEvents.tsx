@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { Calendar, MapPin, Users, Newspaper, X } from "lucide-react";
@@ -65,8 +65,8 @@ export function UpcomingEvents() {
         <section className="py-12 bg-gray-50 border-y border-gray-200">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-12">
-                    <h2 className="text-xl font-bold text-primary mb-2 uppercase tracking-wide">Prochains Rendez-vous</h2>
-                    <h3 className="text-3xl font-bold text-gray-900 font-heading">À vos agendas</h3>
+                    <h2 className="text-xl font-bold text-primary mb-2 uppercase tracking-wide">Nos Rencontres</h2>
+                    <h3 className="text-3xl font-bold text-gray-900 font-heading">Retour sur nos Échanges</h3>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">

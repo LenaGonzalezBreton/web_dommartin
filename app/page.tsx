@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Calendar, Mail, MapPin, Users, Heart, Shield, CheckCircle, ArrowRight, Leaf, FileText, Newspaper, Instagram, Building2 } from "lucide-react";
@@ -22,7 +22,7 @@ export default function Home() {
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="/fond-dommartin.png"
+                        src="/fond-dommartin.jpg"
                         alt="Vue de Dommartin"
                         fill
                         className="object-cover"
@@ -38,8 +38,8 @@ export default function Home() {
                         <h1 className="text-3xl md:text-5xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 drop-shadow-lg font-heading">
                             Dommartin <span className="text-accent">avec vous</span>
                         </h1>
-                        <p className="text-xl md:text-3xl font-bold text-gray-100 tracking-wide max-w-4xl mx-auto drop-shadow-md leading-relaxed">
-                            Ici, vous découvrez l’équipe désormais constituée et les premières étapes du projet municipal qui vous sera présenté le 12 février.
+                        <p className="text-xl md:text-2xl font-medium text-gray-100 tracking-wide max-w-4xl mx-auto drop-shadow-md leading-relaxed">
+                            Un projet partagé, porté par l’écoute, le dialogue et l’engagement collectif.
                         </p>
                         <div className="mt-10">
                             <div className="inline-flex flex-row items-center justify-center md:gap-3 px-6 py-3 md:px-5 md:py-2.5 rounded-xl md:rounded-full bg-white/10 backdrop-blur-md border border-white/30 text-white text-sm md:text-base font-medium tracking-wide shadow-lg hover:bg-white/20 transition-all cursor-default group max-w-full text-center">
@@ -71,6 +71,18 @@ export default function Home() {
                                 </div>
                                 <h3 className="text-2xl font-bold text-gray-900 mb-4 font-heading">Nos Rencontres</h3>
                                 <div className="text-gray-600 mb-6 flex-grow space-y-4">
+                                    {/* Compte-rendu réunion publique 12 février */}
+                                    <div className="bg-primary/5 p-4 rounded-xl border border-primary/20">
+                                        <div className="flex items-center gap-2 mb-1">
+                                            <span className="bg-primary text-white text-xs font-bold px-2 py-0.5 rounded-full">Compte-rendu</span>
+                                        </div>
+                                        <span className="font-bold text-gray-900 block">12 Février - Réunion Publique</span>
+                                        <p className="text-sm text-gray-600 mt-1">Présentation du programme et de l&#39;équipe. Une soirée réussie avec les Dommartinois !</p>
+                                        <Link href="/demarche#reunion-publique-fevrier" className="text-primary font-semibold text-sm inline-flex items-center gap-1 mt-2 hover:gap-2 transition-all">
+                                            Lire le compte-rendu <ArrowRight className="w-3 h-3" />
+                                        </Link>
+                                    </div>
+                                    <div className="w-full h-px bg-gray-100" />
                                     {/* Compte-rendu de la réunion associations */}
                                     <div className="bg-accent/5 p-4 rounded-xl border border-accent/20">
                                         <div className="flex items-center gap-2 mb-1">
@@ -81,15 +93,6 @@ export default function Home() {
                                         <Link href="/demarche#associations" className="text-accent font-semibold text-sm inline-flex items-center gap-1 mt-2 hover:gap-2 transition-all">
                                             Lire le compte-rendu <ArrowRight className="w-3 h-3" />
                                         </Link>
-                                    </div>
-                                    <div className="w-full h-px bg-gray-100" />
-                                    {/* Prochain RDV */}
-                                    <div>
-                                        <div className="flex items-center gap-2 mb-1">
-                                            <span className="bg-primary text-white text-xs font-bold px-2 py-0.5 rounded-full">À venir</span>
-                                        </div>
-                                        <span className="font-bold text-gray-900 block text-lg">Jeudi 12 Février</span>
-                                        <span className="text-primary font-medium">Réunion Publique - Espace Culturel</span>
                                     </div>
                                 </div>
                                 <Button asChild className="w-full md:w-auto mt-auto" size="lg">
@@ -274,23 +277,65 @@ export default function Home() {
             {/* CTA SECTION */}
             <section className="py-20 bg-white">
                 <div className="container mx-auto px-4">
-                    <div className="max-w-4xl mx-auto bg-gradient-to-br from-white to-gray-50 p-6 md:p-8 rounded-3xl shadow-xl border border-gray-100 text-center">
-                        <h3 className="text-2xl font-bold text-primary mb-6">Soyez acteurs avec nous</h3>
-
-                        <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-                            Votre participation, votre soutien, et vos idées sont les bienvenus pour enrichir notre projet.
-                        </p>
-
-                        <div className="flex flex-col sm:flex-row justify-center gap-4">
-                            <Button asChild className="bg-primary hover:bg-primary-dark text-white font-bold h-12 px-8 text-lg shadow-lg hover:shadow-primary/30 transition-all">
-                                <Link href="mailto:dommartinavecvous@proton.me">
-                                    <Mail className="mr-2 h-5 w-5" />
-                                    Nous contacter
-                                </Link>
-                            </Button>
+                    <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-6">
+                        {/* Soyez acteurs */}
+                        <div className="bg-gradient-to-br from-white to-gray-50 p-6 md:p-8 rounded-3xl shadow-xl border border-gray-100 text-center flex flex-col justify-center">
+                            <h3 className="text-2xl font-bold text-primary mb-6">Soyez acteurs avec nous</h3>
+                            <p className="text-gray-600 mb-8 max-w-md mx-auto">
+                                Votre participation, votre soutien, et vos id&#233;es sont les bienvenus pour enrichir notre projet.
+                            </p>
+                            <div className="flex justify-center">
+                                <Button asChild className="bg-primary hover:bg-primary-dark text-white font-bold h-12 px-8 text-lg shadow-lg hover:shadow-primary/30 transition-all">
+                                    <Link href="mailto:dommartinavecvous@proton.me">
+                                        <Mail className="mr-2 h-5 w-5" />
+                                        Nous contacter
+                                    </Link>
+                                </Button>
+                            </div>
                         </div>
 
-
+                        {/* Permanences */}
+                        <div className="bg-gradient-to-br from-primary to-primary-dark p-6 md:p-8 rounded-3xl shadow-xl text-white flex flex-col">
+                            <h3 className="text-2xl font-bold mb-2">Permanences</h3>
+                            <p className="text-white/80 mb-6 text-sm">Venez &#224; notre rencontre pour &#233;changer et poser vos questions</p>
+                            <div className="space-y-3 flex-grow">
+                                <div className="bg-white/15 backdrop-blur-sm rounded-xl p-4 flex items-center gap-4 border border-white/10">
+                                    <div className="bg-white/20 rounded-lg px-3 py-2 text-center shrink-0">
+                                        <span className="block text-xs font-medium opacity-80">FÉV</span>
+                                        <span className="block text-2xl font-bold leading-none">21</span>
+                                    </div>
+                                    <div>
+                                        <span className="font-semibold block">Samedi 21 f&#233;vrier</span>
+                                        <span className="text-sm text-white/70">10h - 12h</span>
+                                    </div>
+                                </div>
+                                <div className="bg-white/15 backdrop-blur-sm rounded-xl p-4 flex items-center gap-4 border border-white/10">
+                                    <div className="bg-white/20 rounded-lg px-3 py-2 text-center shrink-0">
+                                        <span className="block text-xs font-medium opacity-80">FÉV</span>
+                                        <span className="block text-2xl font-bold leading-none">28</span>
+                                    </div>
+                                    <div>
+                                        <span className="font-semibold block">Samedi 28 f&#233;vrier</span>
+                                        <span className="text-sm text-white/70">10h - 12h</span>
+                                    </div>
+                                </div>
+                                <div className="bg-white/15 backdrop-blur-sm rounded-xl p-4 flex items-center gap-4 border border-white/10">
+                                    <div className="bg-white/20 rounded-lg px-3 py-2 text-center shrink-0">
+                                        <span className="block text-xs font-medium opacity-80">MARS</span>
+                                        <span className="block text-2xl font-bold leading-none">7</span>
+                                    </div>
+                                    <div>
+                                        <span className="font-semibold block">Samedi 7 mars</span>
+                                        <span className="text-sm text-white/70">10h - 12h</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="mt-5 pt-4 border-t border-white/20 text-center">
+                                <p className="text-base font-bold text-accent">
+                                    &#x1F4CD; Maison des Associations
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
