@@ -94,6 +94,7 @@ export default function Home() {
                                             Lire le compte-rendu <ArrowRight className="w-3 h-3" />
                                         </Link>
                                     </div>
+
                                 </div>
                                 <Button asChild className="w-full md:w-auto mt-auto" size="lg">
                                     <Link href="/demarche#agendas">
@@ -117,16 +118,19 @@ export default function Home() {
                                         <div className="flex items-center gap-2 mb-1">
                                             <span className="bg-accent text-white text-xs font-bold px-2 py-0.5 rounded-full">Nouveau</span>
                                         </div>
-                                        <p className="font-bold text-gray-900 text-lg mb-1">Visite au GAEC des Mitreuches</p>
-                                        <p className="text-gray-600 text-sm">Échanges avec Rémi et Colin sur les réalités du monde agricole local.</p>
+                                        <p className="font-bold text-gray-900 mb-1">Désenrochement aux Mézins</p>
+                                        <p className="text-gray-600 text-sm">Un dossier à reprendre avec attention, transparence et concertation.</p>
                                         <Link href="/communique" className="text-accent font-semibold text-sm inline-flex items-center gap-1 mt-2 hover:gap-2 transition-all">
                                             Lire l&apos;article <ArrowRight className="w-3 h-3" />
                                         </Link>
                                     </div>
                                     <div className="w-full h-px bg-gray-100" />
-                                    <div className="bg-primary/5 p-4 rounded-xl border border-primary/10">
-                                        <p className="font-bold text-primary mb-1">Courrier aux acteurs économiques</p>
-                                        <p className="text-gray-600 text-sm">Une démarche d&apos;écoute et de concertation pour l&apos;activité locale.</p>
+                                    <div className="bg-primary/5 p-3 rounded-xl border border-primary/10">
+                                        <p className="font-semibold text-primary text-sm mb-0.5">Visite au GAEC des Mitreuches</p>
+                                        <p className="text-gray-500 text-xs">Échanges sur les réalités du monde agricole local.</p>
+                                    </div>
+                                    <div className="bg-gray-50 p-3 rounded-xl border border-gray-100">
+                                        <p className="font-semibold text-gray-700 text-sm">Courrier aux acteurs économiques</p>
                                     </div>
                                 </div>
                                 <Button asChild className="w-full md:w-auto mt-auto" size="lg">
@@ -135,6 +139,48 @@ export default function Home() {
                                         <ArrowRight className="ml-2 w-4 h-4" />
                                     </Link>
                                 </Button>
+                            </div>
+                        </div>
+
+                        {/* Permanences (Full width) */}
+                        <div className="bg-gradient-to-br from-primary to-primary-dark p-6 md:p-8 rounded-3xl shadow-xl text-white relative overflow-hidden">
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+
+                            <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
+                                <div className="text-center md:text-left shrink-0">
+                                    <div className="inline-block bg-white/20 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-3">
+                                        Rencontres
+                                    </div>
+                                    <h3 className="text-2xl md:text-3xl font-bold mb-2 font-heading">Permanences</h3>
+                                    <p className="text-white/90 max-w-xs">Venez échanger avec nous et poser toutes vos questions.</p>
+                                    <p className="mt-4 font-bold text-accent flex items-center justify-center md:justify-start gap-2">
+                                        <MapPin className="w-5 h-5" />
+                                        Maison des Associations
+                                    </p>
+                                </div>
+
+                                <div className="flex-grow w-full md:w-auto">
+                                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                                        <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20 flex flex-col items-center justify-center text-center hover:bg-white/20 transition-all">
+                                            <span className="text-xs font-bold opacity-80 uppercase mb-1">FÉVRIER</span>
+                                            <span className="text-3xl font-bold mb-1">21</span>
+                                            <span className="text-sm font-semibold">Samedi</span>
+                                            <span className="text-xs opacity-90 mt-1">10h - 12h</span>
+                                        </div>
+                                        <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20 flex flex-col items-center justify-center text-center hover:bg-white/20 transition-all">
+                                            <span className="text-xs font-bold opacity-80 uppercase mb-1">FÉVRIER</span>
+                                            <span className="text-3xl font-bold mb-1">28</span>
+                                            <span className="text-sm font-semibold">Samedi</span>
+                                            <span className="text-xs opacity-90 mt-1">10h - 12h</span>
+                                        </div>
+                                        <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20 flex flex-col items-center justify-center text-center hover:bg-white/20 transition-all">
+                                            <span className="text-xs font-bold opacity-80 uppercase mb-1">MARS</span>
+                                            <span className="text-3xl font-bold mb-1">07</span>
+                                            <span className="text-sm font-semibold">Samedi</span>
+                                            <span className="text-xs opacity-90 mt-1">10h - 12h</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -284,11 +330,11 @@ export default function Home() {
             {/* CTA SECTION */}
             <section className="py-20 bg-white">
                 <div className="container mx-auto px-4">
-                    <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-6">
+                    <div className="max-w-2xl mx-auto">
                         {/* Soyez acteurs */}
-                        <div className="bg-gradient-to-br from-white to-gray-50 p-6 md:p-8 rounded-3xl shadow-xl border border-gray-100 text-center flex flex-col justify-center">
+                        <div className="bg-gradient-to-br from-white to-gray-50 p-6 md:p-10 rounded-3xl shadow-xl border border-gray-100 text-center flex flex-col justify-center">
                             <h3 className="text-2xl font-bold text-primary mb-6">Soyez acteurs avec nous</h3>
-                            <p className="text-gray-600 mb-8 max-w-md mx-auto">
+                            <p className="text-gray-600 mb-8 mx-auto">
                                 Votre participation, votre soutien, et vos id&#233;es sont les bienvenus pour enrichir notre projet.
                             </p>
                             <div className="flex justify-center">
@@ -298,49 +344,6 @@ export default function Home() {
                                         Nous contacter
                                     </Link>
                                 </Button>
-                            </div>
-                        </div>
-
-                        {/* Permanences */}
-                        <div className="bg-gradient-to-br from-primary to-primary-dark p-6 md:p-8 rounded-3xl shadow-xl text-white flex flex-col">
-                            <h3 className="text-2xl font-bold mb-2">Permanences</h3>
-                            <p className="text-white/80 mb-6 text-sm">Venez &#224; notre rencontre pour &#233;changer et poser vos questions</p>
-                            <div className="space-y-3 flex-grow">
-                                <div className="bg-white/15 backdrop-blur-sm rounded-xl p-4 flex items-center gap-4 border border-white/10">
-                                    <div className="bg-white/20 rounded-lg px-3 py-2 text-center shrink-0">
-                                        <span className="block text-xs font-medium opacity-80">FÉV</span>
-                                        <span className="block text-2xl font-bold leading-none">21</span>
-                                    </div>
-                                    <div>
-                                        <span className="font-semibold block">Samedi 21 f&#233;vrier</span>
-                                        <span className="text-sm text-white/70">10h - 12h</span>
-                                    </div>
-                                </div>
-                                <div className="bg-white/15 backdrop-blur-sm rounded-xl p-4 flex items-center gap-4 border border-white/10">
-                                    <div className="bg-white/20 rounded-lg px-3 py-2 text-center shrink-0">
-                                        <span className="block text-xs font-medium opacity-80">FÉV</span>
-                                        <span className="block text-2xl font-bold leading-none">28</span>
-                                    </div>
-                                    <div>
-                                        <span className="font-semibold block">Samedi 28 f&#233;vrier</span>
-                                        <span className="text-sm text-white/70">10h - 12h</span>
-                                    </div>
-                                </div>
-                                <div className="bg-white/15 backdrop-blur-sm rounded-xl p-4 flex items-center gap-4 border border-white/10">
-                                    <div className="bg-white/20 rounded-lg px-3 py-2 text-center shrink-0">
-                                        <span className="block text-xs font-medium opacity-80">MARS</span>
-                                        <span className="block text-2xl font-bold leading-none">7</span>
-                                    </div>
-                                    <div>
-                                        <span className="font-semibold block">Samedi 7 mars</span>
-                                        <span className="text-sm text-white/70">10h - 12h</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="mt-5 pt-4 border-t border-white/20 text-center">
-                                <p className="text-base font-bold text-accent">
-                                    &#x1F4CD; Maison des Associations
-                                </p>
                             </div>
                         </div>
                     </div>

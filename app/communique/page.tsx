@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, ArrowRight, ExternalLink, AlertTriangle, FileText, Newspaper, Tractor } from "lucide-react";
+import { ArrowLeft, ArrowRight, ExternalLink, AlertTriangle, FileText, Newspaper, Tractor, Trees } from "lucide-react";
 
 export const metadata: Metadata = {
     title: "Dans les médias | Dommartin avec vous",
@@ -35,12 +35,70 @@ export default function CommuniquePage() {
             <div className="container mx-auto px-4 py-12">
                 <div className="max-w-4xl mx-auto space-y-12">
 
-                    {/* SECTION: Visite au GAEC des Mitreuches */}
-                    <section className="bg-gradient-to-br from-primary/5 to-accent/5 p-8 md:p-10 rounded-3xl border border-primary/20 shadow-lg">
+                    {/* SECTION: Désenrochement aux Mézins */}
+                    <section className="bg-gradient-to-br from-green-50 to-emerald-50 p-8 md:p-10 rounded-3xl border border-green-100 shadow-lg">
                         <div className="flex items-center gap-3 mb-6">
                             <span className="bg-accent text-white font-bold px-4 py-1.5 rounded-full text-sm animate-pulse">
                                 NOUVEAU
                             </span>
+                            <span className="bg-green-100 text-green-700 font-bold px-4 py-1.5 rounded-full text-sm">
+                                Environnement & Cadre de vie
+                            </span>
+                        </div>
+
+                        <div className="flex items-start gap-4 mb-6">
+                            <div className="bg-green-100 w-14 h-14 rounded-2xl flex items-center justify-center shrink-0">
+                                <Trees className="w-7 h-7 text-green-700" />
+                            </div>
+                            <div>
+                                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+                                    Désenrochement aux Mézins : un dossier à reprendre avec attention
+                                </h2>
+                                <p className="text-lg text-green-800 font-medium italic">
+                                    "Un esprit de transparence, de concertation et de préservation de notre cadre de vie."
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="space-y-4 text-gray-700 leading-relaxed mb-8">
+                            <p>
+                                Nous nous sommes rendus sur les rives de la <strong className="text-green-700">Moselotte</strong>, au niveau du site des Mézins, afin d&apos;évoquer le dossier des travaux de désenrochement envisagés sur ce secteur et les conséquences possibles qu&apos;un tel projet pourrait entraîner.
+                            </p>
+                            <p>
+                                Ce déplacement nous a permis de constater la situation sur le terrain et d&apos;échanger sur les enjeux environnementaux, paysagers et de sécurité liés à ce projet, ainsi que sur ses impacts potentiels pour le cadre de vie et les usages locaux.
+                            </p>
+                            <p>
+                                Ce type de projet appelle une <strong className="text-green-700">information transparente et préalable des habitants</strong>, afin qu&apos;ils puissent connaître les objectifs, mesurer les impacts possibles et contribuer aux échanges en amont des arbitrages.
+                            </p>
+                            <div className="bg-white/60 p-4 rounded-xl border-l-4 border-green-500 italic">
+                                C&apos;est pourquoi ce dossier mérite d&apos;être repris avec une attention approfondie, dans un esprit de transparence, de concertation et de préservation de notre cadre de vie. Nous continuerons à suivre ce sujet et à vous tenir informés des éléments et des prochaines étapes.
+                            </div>
+                        </div>
+
+                        {/* Photos */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div className="relative aspect-[16/10] rounded-2xl overflow-hidden shadow-md">
+                                <Image
+                                    src="/mezins-moselotte.jpg"
+                                    alt="Désenrochement aux Mézins - Rives de la Moselotte"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                            <div className="relative aspect-[16/10] rounded-2xl overflow-hidden shadow-md">
+                                <Image
+                                    src="/mezins-moselotte-2.jpg"
+                                    alt="Désenrochement aux Mézins - Visite sur le terrain"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* SECTION: Visite au GAEC des Mitreuches */}
+                    <section className="bg-gradient-to-br from-primary/5 to-accent/5 p-8 md:p-10 rounded-3xl border border-primary/20 shadow-lg">
+                        <div className="flex items-center gap-3 mb-6">
                             <span className="bg-primary/10 text-primary font-bold px-4 py-1.5 rounded-full text-sm">
                                 Sur le terrain
                             </span>
@@ -70,9 +128,9 @@ export default function CommuniquePage() {
                             </p>
                         </div>
 
-                        {/* Photo grid */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <div className="relative aspect-[16/10] rounded-2xl overflow-hidden shadow-md">
+                        {/* Photo grid - 3 photos */}
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-md md:col-span-1">
                                 <Image
                                     src="/gaec-mitreuches-1.jpg"
                                     alt="Visite au GAEC des Mitreuches - Découverte des installations"
@@ -80,10 +138,18 @@ export default function CommuniquePage() {
                                     className="object-cover"
                                 />
                             </div>
-                            <div className="relative aspect-[16/10] rounded-2xl overflow-hidden shadow-md">
+                            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-md md:col-span-1">
                                 <Image
                                     src="/gaec-mitreuches-2.jpg"
                                     alt="Visite au GAEC des Mitreuches - Échanges dans l'étable"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-md md:col-span-1">
+                                <Image
+                                    src="/gaec-mitreuches-3.jpg"
+                                    alt="Visite au GAEC des Mitreuches - Échanges en extérieur"
                                     fill
                                     className="object-cover"
                                 />
