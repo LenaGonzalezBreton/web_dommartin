@@ -77,7 +77,7 @@ export default function Home() {
                                             <span className="bg-primary text-white text-xs font-bold px-2 py-0.5 rounded-full">Compte-rendu</span>
                                         </div>
                                         <span className="font-bold text-gray-900 block">12 Février - Réunion Publique</span>
-                                        <p className="text-sm text-gray-600 mt-1">Présentation du programme et de l&#39;équipe. Une soirée réussie avec les Dommartinois !</p>
+                                        <p className="text-sm text-gray-600 mt-1">Présentation du programme et de l&#39;équipe. Une soirée réussie avec les picosés !</p>
                                         <Link href="/demarche#reunion-publique-fevrier" className="text-primary font-semibold text-sm inline-flex items-center gap-1 mt-2 hover:gap-2 transition-all">
                                             Lire le compte-rendu <ArrowRight className="w-3 h-3" />
                                         </Link>
