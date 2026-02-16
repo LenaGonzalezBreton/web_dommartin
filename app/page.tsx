@@ -113,13 +113,20 @@ export default function Home() {
                                 </div>
                                 <h3 className="text-2xl font-bold text-gray-900 mb-6 font-heading">Actualités</h3>
                                 <div className="text-gray-600 mb-8 flex-grow space-y-4">
-                                    <div className="bg-primary/5 p-4 rounded-xl border border-primary/10">
-                                        <p className="font-bold text-primary text-lg mb-1">Courrier aux acteurs économiques</p>
-                                        <p className="text-gray-600">Une démarche d'écoute et de concertation pour construire un diagnostic partagé de l'activité locale.</p>
+                                    <div className="bg-accent/5 p-4 rounded-xl border border-accent/20">
+                                        <div className="flex items-center gap-2 mb-1">
+                                            <span className="bg-accent text-white text-xs font-bold px-2 py-0.5 rounded-full">Nouveau</span>
+                                        </div>
+                                        <p className="font-bold text-gray-900 text-lg mb-1">Visite au GAEC des Mitreuches</p>
+                                        <p className="text-gray-600 text-sm">Échanges avec Rémi et Colin sur les réalités du monde agricole local.</p>
+                                        <Link href="/communique" className="text-accent font-semibold text-sm inline-flex items-center gap-1 mt-2 hover:gap-2 transition-all">
+                                            Lire l&apos;article <ArrowRight className="w-3 h-3" />
+                                        </Link>
                                     </div>
-                                    <div className="flex items-center gap-2 text-gray-500">
-                                        <Newspaper className="w-4 h-4" />
-                                        <span>Retrouvez aussi notre revue de presse</span>
+                                    <div className="w-full h-px bg-gray-100" />
+                                    <div className="bg-primary/5 p-4 rounded-xl border border-primary/10">
+                                        <p className="font-bold text-primary mb-1">Courrier aux acteurs économiques</p>
+                                        <p className="text-gray-600 text-sm">Une démarche d&apos;écoute et de concertation pour l&apos;activité locale.</p>
                                     </div>
                                 </div>
                                 <Button asChild className="w-full md:w-auto mt-auto" size="lg">
