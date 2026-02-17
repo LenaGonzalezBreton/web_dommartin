@@ -75,7 +75,7 @@ export default function NosProjects() {
                             className="flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent font-semibold hover:bg-accent hover:text-white transition-all whitespace-nowrap shrink-0"
                         >
                             <MessageCircle className="w-4 h-4" />
-                            Dialogue
+                            Consultatif
                         </a>
                     </div>
                 </div>
