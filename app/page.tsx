@@ -294,7 +294,7 @@ export default function Home() {
 
                     {/* Encart Dommartin en dialogue */}
                     <div className="max-w-6xl mx-auto mt-8">
-                        <Link href="/nos-projets#dialogue" className="block bg-gradient-to-br from-accent/5 to-accent/20 p-6 md:p-8 rounded-2xl shadow-lg border border-accent/20 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                        <Link href="/nos-projets#consultatif" className="block bg-gradient-to-br from-accent/5 to-accent/20 p-6 md:p-8 rounded-2xl shadow-lg border border-accent/20 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
                             <div className="flex flex-col md:flex-row md:items-center gap-6">
                                 <div className="bg-accent/10 w-16 h-16 rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-accent group-hover:text-white transition-colors">
                                     <MessageCircle className="w-8 h-8 text-accent group-hover:text-white transition-colors" />
