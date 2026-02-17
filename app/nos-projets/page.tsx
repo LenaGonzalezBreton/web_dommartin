@@ -344,7 +344,7 @@ export default function NosProjects() {
             </section>
 
             {/* Section 5: Dommartin en dialogue */}
-            <section id="dialogue" className="py-20 bg-white scroll-mt-32">
+            <section id="consultatif" className="py-20 bg-white scroll-mt-32">
                 <div className="container mx-auto px-4">
                     <div className="max-w-4xl mx-auto">
                         <div className="flex items-center gap-4 mb-8">
