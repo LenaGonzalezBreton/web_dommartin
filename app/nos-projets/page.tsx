@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { Shield, Leaf, Users, Building2 } from "lucide-react";
+import { Shield, Leaf, Users, Building2, MessageCircle, Calendar } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -67,6 +67,15 @@ export default function NosProjects() {
                         >
                             <Building2 className="w-4 h-4" />
                             Intercommunalité
+                        </a>
+                        {/* Séparateur visuel */}
+                        <div className="w-px h-8 bg-gray-300 mx-1 shrink-0" />
+                        <a
+                            href="#dialogue"
+                            className="flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent font-semibold hover:bg-accent hover:text-white transition-all whitespace-nowrap shrink-0"
+                        >
+                            <MessageCircle className="w-4 h-4" />
+                            Dialogue
                         </a>
                     </div>
                 </div>
@@ -334,6 +343,131 @@ export default function NosProjects() {
                 </div>
             </section>
 
+            {/* Section 5: Dommartin en dialogue */}
+            <section id="dialogue" className="py-20 bg-white scroll-mt-32">
+                <div className="container mx-auto px-4">
+                    <div className="max-w-4xl mx-auto">
+                        <div className="flex items-center gap-4 mb-8">
+                            <div className="bg-accent/10 w-16 h-16 rounded-2xl flex items-center justify-center">
+                                <MessageCircle className="w-8 h-8 text-accent" />
+                            </div>
+                            <div>
+                                <span className="text-sm font-bold text-accent uppercase tracking-wider">Nouvelle démarche</span>
+                                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 font-heading">
+                                    Dommartin en dialogue
+                                </h2>
+                            </div>
+                        </div>
+
+                        <div className="prose prose-lg max-w-none">
+                            <p className="text-xl text-gray-700 mb-6 leading-relaxed">
+                                <strong className="text-primary">Démocratie locale : renforcer la participation citoyenne à Dommartin.</strong>
+                                <br />
+                                Fidèles à notre démarche, construire un programme qui réponde aux attentes des Picosés en allant à leur rencontre,
+                                en les écoutant et en les associant, nous voulons créer des espaces de participation clairs et utiles.
+                            </p>
+
+                            <div className="bg-accent/5 p-6 md:p-8 rounded-2xl border border-accent/20 mt-8 mb-8">
+                                <p className="text-lg text-gray-700 leading-relaxed font-medium">
+                                    Ainsi nous renforcerons la participation des habitants à la vie communale, dans un cadre clair, respectueux des compétences du conseil municipal et conforme au Code général des collectivités territoriales (CGCT).
+                                </p>
+                            </div>
+
+                            {/* 1. Conseil consultatif citoyen */}
+                            <h3 className="text-2xl font-bold text-gray-900 mt-12 mb-6 flex items-center gap-3">
+                                <span className="bg-accent text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">1</span>
+                                Créer un Conseil consultatif citoyen
+                            </h3>
+                            <p className="text-gray-700 leading-relaxed mb-4">
+                                Ce conseil serait un espace permanent de dialogue entre habitants et élus. Il pourrait :
+                            </p>
+                            <ul className="space-y-3 text-gray-600 mb-6">
+                                <li className="flex items-start gap-3">
+                                    <span className="w-2 h-2 bg-accent rounded-full mt-2 shrink-0" />
+                                    <span>Permettre une saisine du conseil municipal par les habitants sur des propositions d’intérêt communal</span>
+                                </li>
+                                <li className="flex items-start gap-3">
+                                    <span className="w-2 h-2 bg-accent rounded-full mt-2 shrink-0" />
+                                    <span>Être saisi par le conseil municipal pour avis avant certaines décisions ayant un impact important</span>
+                                </li>
+                                <li className="flex items-start gap-3">
+                                    <span className="w-2 h-2 bg-accent rounded-full mt-2 shrink-0" />
+                                    <span>Contribuer à identifier et prioriser des projets communaux</span>
+                                </li>
+                                <li className="flex items-start gap-3">
+                                    <span className="w-2 h-2 bg-accent rounded-full mt-2 shrink-0" />
+                                    <span>Le cas échéant, aider à organiser des consultations locales sur des priorités d’investissement impliquant de façon conséquente les finances de la commune</span>
+                                </li>
+                            </ul>
+                            <div className="bg-white border-l-4 border-accent pl-6 py-2 my-6">
+                                <p className="text-gray-700 italic">
+                                    <strong>Il ne se substituerait pas au conseil municipal :</strong> La décision resterait toujours de la compétence des élus. Mais elle serait éclairée, enrichie et mieux comprise.
+                                </p>
+                            </div>
+
+                            {/* 2. Commissions municipales */}
+                            <h3 className="text-2xl font-bold text-gray-900 mt-12 mb-6 flex items-center gap-3">
+                                <span className="bg-accent text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">2</span>
+                                Mettre en place des commissions municipales ouvertes et thématiques
+                            </h3>
+                            <div className="grid md:grid-cols-3 gap-4 mb-6">
+                                <div className="bg-gray-50 p-4 rounded-xl text-center border border-gray-100 hover:border-accent/40 transition-colors">
+                                    <span className="font-bold text-gray-900 block mb-1">Forêt & Bois</span>
+                                </div>
+                                <div className="bg-gray-50 p-4 rounded-xl text-center border border-gray-100 hover:border-accent/40 transition-colors">
+                                    <span className="font-bold text-gray-900 block mb-1">Mobilités</span>
+                                </div>
+                                <div className="bg-gray-50 p-4 rounded-xl text-center border border-gray-100 hover:border-accent/40 transition-colors">
+                                    <span className="font-bold text-gray-900 block mb-1">Jeunesse / Vie associative</span>
+                                </div>
+                            </div>
+                            <p className="text-gray-700 mb-8">
+                                Ces commissions associeraient élus, habitants volontaires et, selon les sujets, partenaires ou professionnels.
+                            </p>
+
+                            {/* Notre objectif */}
+                            <div className="bg-gradient-to-br from-primary to-primary-light p-8 rounded-2xl text-white shadow-lg">
+                                <h3 className="text-xl font-bold mb-6 border-b border-white/20 pb-4">Notre objectif</h3>
+                                <ul className="space-y-4">
+                                    <li className="flex items-center gap-3">
+                                        <div className="bg-white/20 p-1.5 rounded-full">
+                                            <MessageCircle className="w-4 h-4" />
+                                        </div>
+                                        <span className="font-medium">Favoriser le dialogue et la transparence</span>
+                                    </li>
+                                    <li className="flex items-center gap-3">
+                                        <div className="bg-white/20 p-1.5 rounded-full">
+                                            <Users className="w-4 h-4" />
+                                        </div>
+                                        <span className="font-medium">Encourager l’engagement responsable des habitants</span>
+                                    </li>
+                                    <li className="flex items-center gap-3">
+                                        <div className="bg-white/20 p-1.5 rounded-full">
+                                            <Shield className="w-4 h-4" />
+                                        </div>
+                                        <span className="font-medium">Construire des décisions mieux partagées</span>
+                                    </li>
+                                    <li className="flex items-center gap-3">
+                                        <div className="bg-white/20 p-1.5 rounded-full">
+                                            <Leaf className="w-4 h-4" />
+                                        </div>
+                                        <span className="font-medium">Faire vivre la participation au centre comme dans les hameaux</span>
+                                    </li>
+                                </ul>
+                                <div className="mt-8 pt-6 border-t border-white/20 text-center">
+                                    <p className="text-xl font-heading font-bold">
+                                        Dommartin est riche de ses habitants.
+                                    </p>
+                                    <p className="opacity-90 mt-2">
+                                        Nous voulons leur donner les moyens de contribuer, dans un cadre organisé, respectueux et constructif.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* CTA Section */}
             <section className="py-16 bg-gradient-to-br from-primary/5 to-accent/5">
                 <div className="container mx-auto px-4 text-center">
@@ -341,11 +475,25 @@ export default function NosProjects() {
                     <p className="text-gray-600 mb-8 max-w-xl mx-auto">
                         Vos idées et suggestions sont les bienvenues pour enrichir ces projets.
                     </p>
-                    <Button asChild size="lg">
-                        <Link href="mailto:dommartinavecvous@proton.me">
-                            Nous contacter
-                        </Link>
-                    </Button>
+                    <div className="flex flex-col md:flex-row items-center justify-center gap-8 mt-8">
+                        <Button asChild size="lg">
+                            <Link href="mailto:dommartinavecvous@proton.me">
+                                Nous contacter
+                            </Link>
+                        </Button>
+                        <div className="flex items-center gap-3 text-left bg-white/50 p-4 rounded-xl border border-gray-100">
+                            <div className="bg-primary/10 p-2 rounded-full shrink-0">
+                                <Calendar className="w-5 h-5 text-primary" />
+                            </div>
+                            <div>
+                                <span className="block font-bold text-gray-900 text-sm">Permanences</span>
+                                <span className="text-gray-600 text-sm block">
+                                    Samedis 21, 28 février et 7 mars <br />
+                                    de 10h à 12h à la Maison des Associations.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>

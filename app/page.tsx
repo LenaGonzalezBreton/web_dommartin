@@ -1,7 +1,7 @@
 ﻿import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Calendar, Mail, MapPin, Users, Heart, Shield, CheckCircle, ArrowRight, Leaf, FileText, Newspaper, Instagram, Building2 } from "lucide-react";
+import { Calendar, Mail, MapPin, Users, Heart, Shield, CheckCircle, ArrowRight, Leaf, FileText, Newspaper, Instagram, Building2, MessageCircle } from "lucide-react";
 import { Metadata } from "next";
 
 import { UpcomingEvents } from "@/components/UpcomingEvents";
@@ -286,6 +286,27 @@ export default function Home() {
                                 <div className="shrink-0">
                                     <span className="text-primary-dark font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
                                         Découvrir notre vision <ArrowRight className="w-4 h-4" />
+                                    </span>
+                                </div>
+                            </div>
+                        </Link>
+                    </div>
+
+                    {/* Encart Dommartin en dialogue */}
+                    <div className="max-w-6xl mx-auto mt-8">
+                        <Link href="/nos-projets#dialogue" className="block bg-gradient-to-br from-accent/5 to-accent/20 p-6 md:p-8 rounded-2xl shadow-lg border border-accent/20 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                            <div className="flex flex-col md:flex-row md:items-center gap-6">
+                                <div className="bg-accent/10 w-16 h-16 rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-accent group-hover:text-white transition-colors">
+                                    <MessageCircle className="w-8 h-8 text-accent group-hover:text-white transition-colors" />
+                                </div>
+                                <div className="flex-grow">
+                                    <span className="text-sm font-bold text-accent uppercase tracking-wider">Nouvelle démarche</span>
+                                    <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2 font-heading">Dommartin en dialogue</h3>
+                                    <p className="text-gray-600">Conseil consultatif citoyen, commissions ouvertes... Découvrez comment nous voulons renforcer la participation à Dommartin.</p>
+                                </div>
+                                <div className="shrink-0">
+                                    <span className="text-accent font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                                        Voir le dispositif <ArrowRight className="w-4 h-4" />
                                     </span>
                                 </div>
                             </div>
