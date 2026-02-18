@@ -114,23 +114,24 @@ export default function Home() {
                                 </div>
                                 <h3 className="text-2xl font-bold text-gray-900 mb-6 font-heading">Actualités</h3>
                                 <div className="text-gray-600 mb-8 flex-grow space-y-4">
-                                    <div className="bg-accent/5 p-4 rounded-xl border border-accent/20">
+                                    <div className="bg-amber-50 p-4 rounded-xl border border-amber-200">
                                         <div className="flex items-center gap-2 mb-1">
                                             <span className="bg-accent text-white text-xs font-bold px-2 py-0.5 rounded-full">Nouveau</span>
                                         </div>
-                                        <p className="font-bold text-gray-900 mb-1">Désenrochement aux Mézins</p>
-                                        <p className="text-gray-600 text-sm">Un dossier à reprendre avec attention, transparence et concertation.</p>
+                                        <p className="font-bold text-gray-900 mb-1">Menuiserie Demangel</p>
+                                        <p className="text-gray-600 text-sm">Rencontre avec un acteur historique de l'économie locale.</p>
                                         <Link href="/communique" className="text-accent font-semibold text-sm inline-flex items-center gap-1 mt-2 hover:gap-2 transition-all">
                                             Lire l&apos;article <ArrowRight className="w-3 h-3" />
                                         </Link>
                                     </div>
                                     <div className="w-full h-px bg-gray-100" />
+                                    <div className="bg-green-50 p-3 rounded-xl border border-green-100">
+                                        <p className="font-semibold text-green-800 text-sm mb-0.5">Désenrochement aux Mézins</p>
+                                        <p className="text-gray-500 text-xs">Un dossier à suivre avec attention.</p>
+                                    </div>
                                     <div className="bg-primary/5 p-3 rounded-xl border border-primary/10">
                                         <p className="font-semibold text-primary text-sm mb-0.5">Visite au GAEC des Mitreuches</p>
-                                        <p className="text-gray-500 text-xs">Échanges sur les réalités du monde agricole local.</p>
-                                    </div>
-                                    <div className="bg-gray-50 p-3 rounded-xl border border-gray-100">
-                                        <p className="font-semibold text-gray-700 text-sm">Courrier aux acteurs économiques</p>
+                                        <p className="text-gray-500 text-xs">Échanges sur les réalités agricoles.</p>
                                     </div>
                                 </div>
                                 <Button asChild className="w-full md:w-auto mt-auto" size="lg">

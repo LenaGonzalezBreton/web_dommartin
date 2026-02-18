@@ -35,6 +35,90 @@ export default function CommuniquePage() {
             <div className="container mx-auto px-4 py-12">
                 <div className="max-w-4xl mx-auto space-y-12">
 
+                    {/* SECTION: Menuiserie Demangel - NEW */}
+                    <section className="bg-gradient-to-br from-amber-50 to-orange-50 p-8 md:p-10 rounded-3xl border border-amber-100 shadow-lg relative overflow-hidden">
+                        <div className="absolute top-0 right-0 w-64 h-64 bg-amber-100/50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+
+                        <div className="relative z-10">
+                            <div className="flex items-center gap-3 mb-6">
+                                <span className="bg-accent text-white font-bold px-4 py-1.5 rounded-full text-sm animate-pulse">
+                                    A LA UNE
+                                </span>
+                                <span className="bg-amber-100 text-amber-800 font-bold px-4 py-1.5 rounded-full text-sm">
+                                    Economie locale
+                                </span>
+                            </div>
+
+                            <div className="flex items-start gap-4 mb-8">
+                                <div className="bg-amber-100 w-16 h-16 rounded-2xl flex items-center justify-center shrink-0">
+                                    <Trees className="w-8 h-8 text-amber-700" />
+                                </div>
+                                <div>
+                                    <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-3 font-heading leading-tight">
+                                        À la rencontre des acteurs économiques : Menuiserie Demangel
+                                    </h2>
+                                    <p className="text-lg text-amber-800 font-medium italic">
+                                        "Une véritable histoire familiale locale depuis 1968, ancrée dans la commune."
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="space-y-6 text-gray-700 leading-relaxed text-lg mb-10">
+                                <p>
+                                    Dans la continuité de notre lettre adressée aux acteurs économiques du territoire, nous avons reçu plusieurs retours par mail. <strong className="text-amber-700">Merci à celles et ceux qui ont pris le temps de nous répondre</strong> et de partager leurs réalités, leurs attentes et leurs idées.
+                                </p>
+                                <p>
+                                    Nous avons également commencé une série de visites sur le terrain. Nous étions récemment à la rencontre du dirigeant de la <strong className="text-gray-900">menuiserie Demangel</strong>, implantée à Dommartin-les-Remiremont depuis 1968.
+                                </p>
+                                <p>
+                                    Spécialisée dans les menuiseries extérieures bois, l’entreprise propose également depuis une quinzaine d’années des menuiseries mixtes bois/aluminium, pour répondre à l’évolution des besoins et des usages.
+                                </p>
+                                <p>
+                                    Avec <strong className="text-amber-700">6 actifs</strong>, la menuiserie Demangel réalise une menuiserie sur mesure de qualité, et travaille avec des clients professionnels fidèles, devenus au fil des années de véritables partenaires.
+                                </p>
+
+                                <div className="bg-white/80 p-6 rounded-2xl border-l-4 border-accent shadow-sm my-8">
+                                    <p className="italic text-gray-800 mb-2 font-medium">
+                                        "Ces rencontres sont précieuses."
+                                    </p>
+                                    <p className="text-sm">
+                                        Elles permettent de mieux comprendre les enjeux concrets des entreprises locales — emploi, savoir-faire, transmission, conditions d’activité — et de construire une <strong className="text-accent">action municipale réaliste, au plus près du terrain</strong>.
+                                    </p>
+                                </div>
+
+                                <p>
+                                    Nous poursuivrons ces visites dans les semaines à venir, avec la même conviction : un territoire est un ensemble, et ses entreprises, artisans, agriculteurs, commerçants, professions libérales et acteurs du tourisme apportent une pierre essentielle à la vie communale.
+                                </p>
+                            </div>
+
+                            {/* Photos */}
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group">
+                                    <Image
+                                        src="/menuiserie-demangel-1.jpg"
+                                        alt="Rencontre avec l'équipe de la Menuiserie Demangel"
+                                        fill
+                                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                                        <p className="text-white font-medium text-sm">Échanges avec l'équipe dirigeante</p>
+                                    </div>
+                                </div>
+                                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group">
+                                    <Image
+                                        src="/menuiserie-demangel-2.jpg"
+                                        alt="Visite de l'atelier Menuiserie Demangel à Dommartin"
+                                        fill
+                                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                                        <p className="text-white font-medium text-sm">Au cœur de l'atelier de fabrication</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
                     {/* SECTION: Désenrochement aux Mézins */}
                     <section className="bg-gradient-to-br from-green-50 to-emerald-50 p-8 md:p-10 rounded-3xl border border-green-100 shadow-lg">
                         <div className="flex items-center gap-3 mb-6">

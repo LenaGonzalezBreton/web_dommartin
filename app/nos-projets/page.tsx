@@ -71,11 +71,11 @@ export default function NosProjects() {
                         {/* Séparateur visuel */}
                         <div className="w-px h-8 bg-gray-300 mx-1 shrink-0" />
                         <a
-                            href="#consultatif"
+                            href="#communications"
                             className="flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent font-semibold hover:bg-accent hover:text-white transition-all whitespace-nowrap shrink-0"
                         >
                             <MessageCircle className="w-4 h-4" />
-                            Consultatif
+                            Communications
                         </a>
                     </div>
                 </div>
@@ -343,8 +343,8 @@ export default function NosProjects() {
                 </div>
             </section>
 
-            {/* Section 5: Dommartin en dialogue */}
-            <section id="consultatif" className="py-20 bg-white scroll-mt-32">
+            {/* Section 5: Communications (anciennement Consultatif) */}
+            <section id="communications" className="py-20 bg-white scroll-mt-32">
                 <div className="container mx-auto px-4">
                     <div className="max-w-4xl mx-auto">
                         <div className="flex items-center gap-4 mb-8">
@@ -462,6 +462,160 @@ export default function NosProjects() {
                                         Nous voulons leur donner les moyens de contribuer, dans un cadre organisé, respectueux et constructif.
                                     </p>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* CTA Section */}
+            {/* Section 6: Maire disponible (Sous Communications) */}
+            <section className="py-20 bg-gray-50 scroll-mt-32 border-t border-gray-200">
+                <div className="container mx-auto px-4">
+                    <div className="max-w-4xl mx-auto">
+                        <div className="flex items-center gap-4 mb-8">
+                            <div className="bg-primary/10 w-16 h-16 rounded-2xl flex items-center justify-center">
+                                <Users className="w-8 h-8 text-primary" />
+                            </div>
+                            <div>
+                                <span className="text-sm font-bold text-primary uppercase tracking-wider">Proximité</span>
+                                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 font-heading">
+                                    Un maire disponible, à l’écoute, présent sur le terrain
+                                </h2>
+                            </div>
+                        </div>
+
+                        <div className="prose prose-lg max-w-none text-gray-700">
+                            <p className="text-xl font-medium text-primary mb-6 leading-relaxed">
+                                La première décision d’un mandat ne se vote pas. Elle se vit.
+                            </p>
+                            <p className="mb-8">
+                                Avant les projets, avant les investissements, il y a une priorité : la relation entre le maire, les élus et les habitants.
+                                <br />
+                                <strong>Nous voulons une mairie accessible, humaine et présente.</strong>
+                            </p>
+
+                            {/* Permanences */}
+                            <div className="bg-white p-6 md:p-8 rounded-2xl border border-gray-100 shadow-sm mb-10">
+                                <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+                                    <MessageCircle className="w-6 h-6 text-accent" />
+                                    Des permanences réellement ouvertes à tous
+                                </h3>
+                                <p className="mb-4">
+                                    Les permanences du maire seront régulières, identifiées et accessibles. Chaque habitant pourra venir :
+                                </p>
+                                <ul className="space-y-2 mb-6">
+                                    <li className="flex items-start gap-3">
+                                        <span className="w-1.5 h-1.5 bg-accent rounded-full mt-2.5 shrink-0" />
+                                        <span>Poser une question</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="w-1.5 h-1.5 bg-accent rounded-full mt-2.5 shrink-0" />
+                                        <span>Signaler un problème</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="w-1.5 h-1.5 bg-accent rounded-full mt-2.5 shrink-0" />
+                                        <span>Proposer une idée</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="w-1.5 h-1.5 bg-accent rounded-full mt-2.5 shrink-0" />
+                                        <span>Demander des explications sur une décision</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="w-1.5 h-1.5 bg-accent rounded-full mt-2.5 shrink-0" />
+                                        <span>Suivre un dossier</span>
+                                    </li>
+                                </ul>
+                                <p className="italic font-medium text-gray-900 border-l-4 border-accent pl-4">
+                                    "Être à l’écoute, ce n’est pas seulement recevoir : c’est répondre, expliquer et assurer un suivi."
+                                </p>
+                            </div>
+
+                            {/* Présence active */}
+                            <div className="mb-12">
+                                <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+                                    <span className="text-3xl">🚶</span>
+                                    Une présence active dans la commune
+                                </h3>
+                                <p className="text-lg font-medium text-gray-800 mb-4">
+                                    Dommartin vit dans chacun de ses hameaux.
+                                </p>
+                                <p className="mb-4">
+                                    La présence sur le terrain sera organisée et régulière :
+                                </p>
+                                <ul className="grid md:grid-cols-2 gap-4 mb-6">
+                                    <li className="bg-white p-4 rounded-xl border border-gray-100 flex items-center gap-3">
+                                        <span className="w-2 h-2 bg-primary rounded-full shrink-0" />
+                                        <span>Visites dans les hameaux</span>
+                                    </li>
+                                    <li className="bg-white p-4 rounded-xl border border-gray-100 flex items-center gap-3">
+                                        <span className="w-2 h-2 bg-primary rounded-full shrink-0" />
+                                        <span>Rencontres avec les habitants</span>
+                                    </li>
+                                    <li className="bg-white p-4 rounded-xl border border-gray-100 flex items-center gap-3">
+                                        <span className="w-2 h-2 bg-primary rounded-full shrink-0" />
+                                        <span>Échanges avec les responsables associatifs</span>
+                                    </li>
+                                    <li className="bg-white p-4 rounded-xl border border-gray-100 flex items-center gap-3">
+                                        <span className="w-2 h-2 bg-primary rounded-full shrink-0" />
+                                        <span>Dialogue avec les commerçants (création d’un registre)</span>
+                                    </li>
+                                    <li className="bg-white p-4 rounded-xl border border-gray-100 flex items-center gap-3 md:col-span-2">
+                                        <span className="w-2 h-2 bg-primary rounded-full shrink-0" />
+                                        <span>Suivi concret des chantiers</span>
+                                    </li>
+                                </ul>
+                                <p className="text-gray-900 font-bold bg-primary/5 p-4 rounded-xl">
+                                    Le maire et les élus seront visibles, disponibles et engagés dans la réalité quotidienne de la commune.
+                                </p>
+                            </div>
+
+                            <div className="grid md:grid-cols-2 gap-8">
+                                {/* Vœux du maire */}
+                                <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
+                                    <h3 className="text-xl font-bold text-gray-900 mb-3">
+                                        Le retour des vœux du maire
+                                    </h3>
+                                    <p className="text-gray-600 mb-4 text-sm">
+                                        Un temps de rencontre et d’accueil.
+                                    </p>
+                                    <p className="mb-4 text-sm">
+                                        Nous relancerons la cérémonie des vœux du maire : un moment pour faire le point sur l’année, présenter clairement les projets, échanger, se rencontrer.
+                                    </p>
+                                    <p className="font-medium text-primary text-sm">
+                                        Ce sera aussi l’occasion d’accueillir les nouveaux Picosés et de faciliter leur intégration.
+                                    </p>
+                                </div>
+
+                                {/* Information */}
+                                <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
+                                    <h3 className="text-xl font-bold text-gray-900 mb-3">
+                                        Informer au fil de l'eau
+                                    </h3>
+                                    <p className="text-gray-600 mb-4 text-sm">
+                                        Pas "après coup".
+                                    </p>
+                                    <ul className="space-y-2 text-sm mb-4">
+                                        <li>
+                                            <strong>Panneau numérique</strong> pour les infos municipales et associatives.
+                                        </li>
+                                        <li>
+                                            <strong>Bulletin municipal</strong> : biannuel ou complété par un feuillet d’actualités.
+                                        </li>
+                                    </ul>
+                                    <p className="font-medium text-primary text-sm">
+                                        Objectif : informer quand les nouvelles sont utiles (travaux, décisions, événements).
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="mt-10 text-center">
+                                <span className="inline-block bg-accent/10 text-accent font-bold px-4 py-2 rounded-full mb-4">
+                                    Proximité → Transparence → Participation
+                                </span>
+                                <p className="text-2xl font-heading font-bold text-gray-900">
+                                    Une commune plus proche, plus claire, plus à l’écoute.
+                                </p>
                             </div>
                         </div>
                     </div>
