@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { TerrainMultisport } from "@/components/terrain-multisport";
 import { HalleMarche } from "@/components/halle-marche";
 import { DeplacementsSecurises } from "@/components/deplacements-securises";
+import { ForetCommunale } from "@/components/foret-communale";
 
 export const metadata: Metadata = {
     title: "Nos Projets | Dommartin avec vous",
@@ -122,6 +123,9 @@ export default function NosProjects() {
 
                             {/* Projet Déplacements sécurisés */}
                             <DeplacementsSecurises />
+
+                            {/* Projet Forêt communale */}
+                            <ForetCommunale />
                         </div>
                     </div>
                 </div>
