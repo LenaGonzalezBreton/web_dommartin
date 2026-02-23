@@ -7,6 +7,7 @@ import { TerrainMultisport } from "@/components/terrain-multisport";
 import { HalleMarche } from "@/components/halle-marche";
 import { DeplacementsSecurises } from "@/components/deplacements-securises";
 import { ForetCommunale } from "@/components/foret-communale";
+import { Associations } from "@/components/associations";
 
 export const metadata: Metadata = {
     title: "Nos Projets | Dommartin avec vous",
@@ -218,6 +219,9 @@ export default function NosProjects() {
 
                             {/* Projet Terrain Multisport */}
                             <TerrainMultisport />
+
+                            {/* Associations */}
+                            <Associations />
                         </div>
                     </div>
                 </div>
