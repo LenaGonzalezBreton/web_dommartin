@@ -8,6 +8,7 @@ import { HalleMarche } from "@/components/halle-marche";
 import { DeplacementsSecurises } from "@/components/deplacements-securises";
 import { ForetCommunale } from "@/components/foret-communale";
 import { Associations } from "@/components/associations";
+import { TransitionEnvironnementale } from "@/components/transition-environnementale";
 
 export const metadata: Metadata = {
     title: "Nos Projets | Dommartin avec vous",
@@ -127,6 +128,9 @@ export default function NosProjects() {
 
                             {/* Projet Forêt communale */}
                             <ForetCommunale />
+
+                            {/* Transition environnementale */}
+                            <TransitionEnvironnementale />
                         </div>
                     </div>
                 </div>

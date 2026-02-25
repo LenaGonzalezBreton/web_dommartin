@@ -5,6 +5,7 @@ import { Calendar, Mail, MapPin, Users, Heart, Shield, CheckCircle, ArrowRight, 
 import { Metadata } from "next";
 
 import { UpcomingEvents } from "@/components/UpcomingEvents";
+import { PopupFev21 } from "@/components/popup-fev21";
 
 export const metadata: Metadata = {
     title: {
@@ -162,12 +163,7 @@ export default function Home() {
 
                                 <div className="flex-grow w-full md:w-auto">
                                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                                        <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20 flex flex-col items-center justify-center text-center hover:bg-white/20 transition-all">
-                                            <span className="text-xs font-bold opacity-80 uppercase mb-1">FÉVRIER</span>
-                                            <span className="text-3xl font-bold mb-1">21</span>
-                                            <span className="text-sm font-semibold">Samedi</span>
-                                            <span className="text-xs opacity-90 mt-1">10h - 12h</span>
-                                        </div>
+                                        <PopupFev21 />
                                         <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20 flex flex-col items-center justify-center text-center hover:bg-white/20 transition-all">
                                             <span className="text-xs font-bold opacity-80 uppercase mb-1">FÉVRIER</span>
                                             <span className="text-3xl font-bold mb-1">28</span>
