@@ -133,7 +133,7 @@ export default function DemarchePage() {
                                     Permanences à venir
                                 </h4>
                                 <p className="mb-4 opacity-90">Pour continuer à construire avec vous, nous mettons en place des permanences :</p>
-                                <div className="grid sm:grid-cols-3 gap-3 mb-4">
+                                <div className="grid sm:grid-cols-4 gap-3 mb-4">
                                     <div className="bg-white/10 rounded-xl p-4 text-center border border-white/10">
                                         <span className="block text-lg font-bold">Samedi 21</span>
                                         <span className="text-sm opacity-80">février</span>
@@ -146,8 +146,13 @@ export default function DemarchePage() {
                                         <span className="block text-lg font-bold">Samedi 7</span>
                                         <span className="text-sm opacity-80">mars</span>
                                     </div>
+                                    <div className="bg-white/10 rounded-xl p-4 text-center border border-white/10">
+                                        <span className="block text-lg font-bold">Mardi 10</span>
+                                        <span className="text-sm opacity-80">mars</span>
+                                        <span className="block text-xs opacity-70 mt-1">18h - 21h</span>
+                                    </div>
                                 </div>
-                                <p className="font-semibold text-accent">Maison des Associations, de 10h à 12h.</p>
+                                <p className="font-semibold text-accent">Maison des Associations — Samedis 10h-12h / Mardi 10 mars 18h-21h.</p>
                                 <p className="mt-2 text-sm opacity-80">Chacun pourra venir à notre rencontre pour échanger, poser ses questions et faire des suggestions.</p>
                             </div>
 

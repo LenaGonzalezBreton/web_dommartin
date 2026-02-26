@@ -9,6 +9,7 @@ import { DeplacementsSecurises } from "@/components/deplacements-securises";
 import { ForetCommunale } from "@/components/foret-communale";
 import { Associations } from "@/components/associations";
 import { TransitionEnvironnementale } from "@/components/transition-environnementale";
+import { Vitalite } from "@/components/vitalite";
 
 export const metadata: Metadata = {
     title: "Nos Projets | Dommartin avec vous",
@@ -154,26 +155,11 @@ export default function NosProjects() {
 
                         <div className="prose prose-lg max-w-none">
                             <p className="text-xl text-gray-700 mb-6 leading-relaxed">
-                                Soutenir les commerces, l'emploi local et relever le défi énergétique de nos bâtiments.
+                                Préserver nos métiers, valoriser nos forces, renforcer notre territoire.
                             </p>
 
-                            <div className="bg-white p-6 md:p-8 rounded-2xl border border-gray-100 mt-8">
-                                <h3 className="text-xl font-bold text-gray-900 mb-4">Nos priorités :</h3>
-                                <ul className="space-y-3 text-gray-600">
-                                    <li className="flex items-start gap-3">
-                                        <span className="w-2 h-2 bg-accent rounded-full mt-2 shrink-0" />
-                                        <span>Accompagner et soutenir les commerces de proximité</span>
-                                    </li>
-                                    <li className="flex items-start gap-3">
-                                        <span className="w-2 h-2 bg-accent rounded-full mt-2 shrink-0" />
-                                        <span>Favoriser l'emploi local et les circuits courts</span>
-                                    </li>
-                                    <li className="flex items-start gap-3">
-                                        <span className="w-2 h-2 bg-accent rounded-full mt-2 shrink-0" />
-                                        <span>Améliorer la performance énergétique des bâtiments communaux</span>
-                                    </li>
-                                </ul>
-                            </div>
+                            {/* Contenu Vitalité économique */}
+                            <Vitalite />
 
                             {/* Projet Halle */}
                             <HalleMarche />
@@ -654,8 +640,9 @@ export default function NosProjects() {
                             <div>
                                 <span className="block font-bold text-gray-900 text-sm">Permanences</span>
                                 <span className="text-gray-600 text-sm block">
-                                    Samedis 21, 28 février et 7 mars <br />
-                                    de 10h à 12h à la Maison des Associations.
+                                    Samedis 21, 28 février et 7 mars (10h-12h) <br />
+                                    Mardi 10 mars (18h-21h)<br />
+                                    à la Maison des Associations.
                                 </span>
                             </div>
                         </div>
