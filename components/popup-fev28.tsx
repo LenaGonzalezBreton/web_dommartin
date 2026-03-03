@@ -5,7 +5,7 @@ import { createPortal } from "react-dom";
 import Image from "next/image";
 import { X, CheckCircle, ChevronLeft, ChevronRight } from "lucide-react";
 
-const photos = [
+const photosTract = [
     { src: "/fev28-photo1.png", alt: "Distribution de tracts - échange avec un habitant" },
     { src: "/fev28-photo2.png", alt: "Visite d'entreprise - deux candidats devant le bâtiment" },
     { src: "/fev28-photo3.png", alt: "Remise du tract à la porte d'un habitant" },
@@ -16,17 +16,81 @@ const photos = [
     { src: "/fev28-photo8.jpg", alt: "Selfie de deux colistiers avec le tract lors de la distribution" },
 ];
 
+const photosBois = [
+    { src: "/bois-menuiserie.png", alt: "Visite de la Menuiserie Rustique Bois - Adam Étienne" },
+    { src: "/bois-scierie1.png", alt: "Visite de la Scierie Mobile Perrin - site de l'entreprise" },
+    { src: "/bois-scierie2.jpg", alt: "Scierie Mobile Perrin - vue de l'extérieur" },
+];
+
 const THUMB_VISIBLE = 5;
+
+function PhotoCarousel({ photos }: { photos: { src: string; alt: string }[] }) {
+    const [activePhoto, setActivePhoto] = useState(0);
+
+    const thumbStart = Math.max(0, Math.min(activePhoto - Math.floor(THUMB_VISIBLE / 2), photos.length - THUMB_VISIBLE));
+    const visibleIndices = Array.from({ length: Math.min(THUMB_VISIBLE, photos.length) }, (_, k) => thumbStart + k).filter(i => i < photos.length);
+
+    const prevPhoto = () => setActivePhoto((p) => (p - 1 + photos.length) % photos.length);
+    const nextPhoto = () => setActivePhoto((p) => (p + 1) % photos.length);
+
+    return (
+        <div>
+            {/* Carousel principal */}
+            <div className="relative rounded-2xl overflow-hidden shadow-md mb-3 bg-gray-900" style={{ height: "300px" }}>
+                <Image
+                    key={activePhoto}
+                    src={photos[activePhoto].src}
+                    alt={photos[activePhoto].alt}
+                    fill
+                    className="object-contain"
+                />
+                {/* Flèches navigation */}
+                <button
+                    onClick={prevPhoto}
+                    className="absolute left-2 top-1/2 -translate-y-1/2 w-9 h-9 bg-black/50 hover:bg-black/70 text-white rounded-full flex items-center justify-center transition-colors"
+                >
+                    <ChevronLeft className="w-5 h-5" />
+                </button>
+                <button
+                    onClick={nextPhoto}
+                    className="absolute right-2 top-1/2 -translate-y-1/2 w-9 h-9 bg-black/50 hover:bg-black/70 text-white rounded-full flex items-center justify-center transition-colors"
+                >
+                    <ChevronRight className="w-5 h-5" />
+                </button>
+                {/* Compteur */}
+                <div className="absolute bottom-2 right-3 bg-black/60 text-white text-xs px-2.5 py-0.5 rounded-full font-medium">
+                    {activePhoto + 1} / {photos.length}
+                </div>
+            </div>
+
+            {/* Vignettes */}
+            <div className="grid gap-2" style={{ gridTemplateColumns: `repeat(${Math.min(photos.length, THUMB_VISIBLE)}, 1fr)` }}>
+                {visibleIndices.map((i) => (
+                    <button
+                        key={i}
+                        onClick={() => setActivePhoto(i)}
+                        className={`relative rounded-xl overflow-hidden border-2 transition-all bg-gray-900 ${i === activePhoto
+                            ? "border-primary shadow-md scale-105"
+                            : "border-transparent hover:border-gray-300"
+                            }`}
+                        style={{ height: "56px" }}
+                    >
+                        <Image
+                            src={photos[i].src}
+                            alt={photos[i].alt}
+                            fill
+                            className="object-contain"
+                        />
+                    </button>
+                ))}
+            </div>
+        </div>
+    );
+}
 
 export function PopupFev28() {
     const [isOpen, setIsOpen] = useState(false);
     const [mounted, setMounted] = useState(false);
-    const [activePhoto, setActivePhoto] = useState(0);
-
-    // Sliding window: always show THUMB_VISIBLE thumbnails, centered on active
-    const thumbStart = Math.max(0, Math.min(activePhoto - Math.floor(THUMB_VISIBLE / 2), photos.length - THUMB_VISIBLE));
-    const visibleThumbs = photos.slice(thumbStart, thumbStart + THUMB_VISIBLE);
-    const visibleIndices = Array.from({ length: THUMB_VISIBLE }, (_, k) => thumbStart + k).filter(i => i < photos.length);
 
     useEffect(() => {
         setMounted(true);
@@ -40,9 +104,6 @@ export function PopupFev28() {
         }
         return () => { document.body.style.overflow = ""; };
     }, [isOpen]);
-
-    const prevPhoto = () => setActivePhoto((p) => (p - 1 + photos.length) % photos.length);
-    const nextPhoto = () => setActivePhoto((p) => (p + 1) % photos.length);
 
     const modal = (
         <div
@@ -74,7 +135,7 @@ export function PopupFev28() {
                 </div>
 
                 {/* Content */}
-                <div className="px-6 py-5 space-y-5">
+                <div className="px-6 py-5 space-y-6">
                     {/* Badge */}
                     <div className="flex items-center gap-2">
                         <CheckCircle className="w-5 h-5 text-green-600 shrink-0" />
@@ -95,6 +156,75 @@ export function PopupFev28() {
                         </p>
                     </div>
 
+                    {/* ---- NOUVELLE SECTION : Visites entreprises bois ---- */}
+                    <div className="space-y-4">
+                        <div className="flex items-center gap-2">
+                            <span className="text-lg">🌳</span>
+                            <h3 className="text-base font-bold text-gray-900">
+                                Nos colistiers, acteurs économiques de Dommartin : le bois au cœur de nos savoir-faire
+                            </h3>
+                        </div>
+
+                        <p className="text-gray-700 text-sm leading-relaxed">
+                            La liste <span className="font-semibold text-primary">« Dommartin avec Vous »</span> est allée à la rencontre de deux entreprises locales,
+                            pour illustrer une réalité qui nous tient à cœur : parmi nos colistiers, certains sont directement
+                            impliqués dans la vie de Dommartin au quotidien, à travers leur activité professionnelle
+                            (artisans, entrepreneurs, agriculteurs…).
+                        </p>
+                        <p className="text-gray-700 text-sm leading-relaxed">
+                            Ces visites ont aussi été l&apos;occasion de mettre en valeur un patrimoine essentiel pour notre commune :
+                            la forêt et l&apos;usage du bois 🌳
+                        </p>
+
+                        {/* Galerie photos bois */}
+                        <div>
+                            <p className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">📸 Photos des visites</p>
+                            <PhotoCarousel photos={photosBois} />
+                        </div>
+
+                        {/* Menuiserie Rustique Bois */}
+                        <div className="bg-amber-50 border border-amber-200 rounded-xl p-4">
+                            <p className="font-bold text-amber-800 mb-1 text-sm uppercase tracking-wide">
+                                🪵 Menuiserie Rustique Bois — Adam Étienne
+                            </p>
+                            <p className="text-gray-700 text-sm leading-relaxed">
+                                Rustique Bois est une menuiserie spécialisée dans le travail du bois sur mesure.
+                                Adam Étienne y conçoit et fabrique des <strong>escaliers personnalisés</strong>, ainsi que
+                                des <strong>meubles uniques</strong> adaptés aux besoins de chacun : aménagements intérieurs,
+                                mobilier pour particuliers, mais aussi créations pour des bars, restaurants et établissements
+                                professionnels. Un savoir-faire local qui allie précision, créativité et sens du détail.
+                            </p>
+                        </div>
+
+                        {/* Scierie Mobile Perrin */}
+                        <div className="bg-green-50 border border-green-200 rounded-xl p-4">
+                            <p className="font-bold text-green-800 mb-1 text-sm uppercase tracking-wide">
+                                🌲 Scierie Mobile Perrin — Arnaud & Élisabeth Perrin
+                            </p>
+                            <p className="text-gray-700 text-sm leading-relaxed">
+                                La Scierie Mobile Perrin intervient au plus près de la ressource : elle est capable de scier
+                                le bois <strong>directement en forêt</strong>, mais aussi sur le site de l&apos;entreprise.
+                                Son activité consiste à transformer les grumes en bois d&apos;œuvre et bois de charpente,
+                                principalement en résineux, avec également un peu de feuillus. Cette capacité de travail
+                                <em>« sur place »</em> est un vrai atout pour valoriser les forêts locales et répondre
+                                efficacement aux besoins des projets de construction et d&apos;aménagement.
+                            </p>
+                        </div>
+
+                        <p className="text-gray-600 text-sm leading-relaxed italic">
+                            Nous continuerons à aller à la rencontre du cœur économique de notre commune, en nous rendant
+                            directement sur le terrain, chez nos colistiers comme chez tous les Picosés qui font vivre
+                            Dommartin par leur travail, leur savoir-faire et leur engagement au quotidien.
+                        </p>
+                    </div>
+
+                    {/* ---- FIN SECTION bois ---- */}
+
+                    {/* Séparateur */}
+                    <div className="border-t border-gray-100 pt-2">
+                        <p className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">📸 Distribution de tracts — photos du week-end</p>
+                    </div>
+
                     {/* Remerciements */}
                     <div className="bg-accent/5 border border-accent/20 rounded-xl p-4">
                         <p className="text-gray-700 text-sm leading-relaxed">
@@ -103,59 +233,9 @@ export function PopupFev28() {
                         </p>
                     </div>
 
-                    {/* Galerie photos */}
+                    {/* Galerie photos tract */}
                     <div>
-                        <p className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">📸 Photos du week-end</p>
-
-                        {/* Carousel principal */}
-                        <div className="relative rounded-2xl overflow-hidden shadow-md mb-3 bg-gray-900" style={{ height: "340px" }}>
-                            <Image
-                                key={activePhoto}
-                                src={photos[activePhoto].src}
-                                alt={photos[activePhoto].alt}
-                                fill
-                                className="object-contain"
-                            />
-                            {/* Flèches navigation */}
-                            <button
-                                onClick={prevPhoto}
-                                className="absolute left-2 top-1/2 -translate-y-1/2 w-9 h-9 bg-black/50 hover:bg-black/70 text-white rounded-full flex items-center justify-center transition-colors"
-                            >
-                                <ChevronLeft className="w-5 h-5" />
-                            </button>
-                            <button
-                                onClick={nextPhoto}
-                                className="absolute right-2 top-1/2 -translate-y-1/2 w-9 h-9 bg-black/50 hover:bg-black/70 text-white rounded-full flex items-center justify-center transition-colors"
-                            >
-                                <ChevronRight className="w-5 h-5" />
-                            </button>
-                            {/* Compteur */}
-                            <div className="absolute bottom-2 right-3 bg-black/60 text-white text-xs px-2.5 py-0.5 rounded-full font-medium">
-                                {activePhoto + 1} / {photos.length}
-                            </div>
-                        </div>
-
-                        {/* Vignettes glissantes (5 visibles max) */}
-                        <div className="grid grid-cols-5 gap-2">
-                            {visibleIndices.map((i) => (
-                                <button
-                                    key={i}
-                                    onClick={() => setActivePhoto(i)}
-                                    className={`relative rounded-xl overflow-hidden border-2 transition-all bg-gray-900 ${i === activePhoto
-                                            ? "border-primary shadow-md scale-105"
-                                            : "border-transparent hover:border-gray-300"
-                                        }`}
-                                    style={{ height: "64px" }}
-                                >
-                                    <Image
-                                        src={photos[i].src}
-                                        alt={photos[i].alt}
-                                        fill
-                                        className="object-contain"
-                                    />
-                                </button>
-                            ))}
-                        </div>
+                        <PhotoCarousel photos={photosTract} />
                     </div>
 
                     {/* Conclusion */}

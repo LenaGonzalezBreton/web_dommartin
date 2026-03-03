@@ -116,17 +116,23 @@ export default function Home() {
                                 </div>
                                 <h3 className="text-2xl font-bold text-gray-900 mb-6 font-heading">Actualités</h3>
                                 <div className="text-gray-600 mb-8 flex-grow space-y-4">
+                                    {/* Nouvel article : visites menuiserie + scierie */}
                                     <div className="bg-amber-50 p-4 rounded-xl border border-amber-200">
                                         <div className="flex items-center gap-2 mb-1">
                                             <span className="bg-accent text-white text-xs font-bold px-2 py-0.5 rounded-full">Nouveau</span>
+                                            <span className="text-xs text-gray-500">28 février</span>
                                         </div>
-                                        <p className="font-bold text-gray-900 mb-1">Menuiserie Demangel</p>
-                                        <p className="text-gray-600 text-sm">Rencontre avec un acteur historique de l'économie locale.</p>
-                                        <Link href="/communique" className="text-accent font-semibold text-sm inline-flex items-center gap-1 mt-2 hover:gap-2 transition-all">
+                                        <p className="font-bold text-gray-900 mb-1">🌳 Le bois au cœur de nos savoir-faire</p>
+                                        <p className="text-gray-600 text-sm">Visite de la Menuiserie Rustique Bois (Adam Étienne) et de la Scierie Mobile Perrin — deux colistiers, acteurs économiques de Dommartin.</p>
+                                    </div>
+                                    <div className="w-full h-px bg-gray-100" />
+                                    <div className="bg-amber-50/50 p-3 rounded-xl border border-amber-100">
+                                        <p className="font-semibold text-amber-800 text-sm mb-0.5">Menuiserie Demangel</p>
+                                        <p className="text-gray-500 text-xs">Rencontre avec un acteur historique de l&apos;économie locale.</p>
+                                        <Link href="/communique" className="text-accent font-semibold text-sm inline-flex items-center gap-1 mt-1 hover:gap-2 transition-all">
                                             Lire l&apos;article <ArrowRight className="w-3 h-3" />
                                         </Link>
                                     </div>
-                                    <div className="w-full h-px bg-gray-100" />
                                     <div className="bg-green-50 p-3 rounded-xl border border-green-100">
                                         <p className="font-semibold text-green-800 text-sm mb-0.5">Désenrochement aux Mézins</p>
                                         <p className="text-gray-500 text-xs">Un dossier à suivre avec attention.</p>
