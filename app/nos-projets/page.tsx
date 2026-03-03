@@ -8,6 +8,7 @@ import { HalleMarche } from "@/components/halle-marche";
 import { DeplacementsSecurises } from "@/components/deplacements-securises";
 import { ForetCommunale } from "@/components/foret-communale";
 import { Associations } from "@/components/associations";
+import { LienSocialIntergen } from "@/components/lien-social-intergen";
 import { TransitionEnvironnementale } from "@/components/transition-environnementale";
 import { Vitalite } from "@/components/vitalite";
 
@@ -212,6 +213,9 @@ export default function NosProjects() {
 
                             {/* Associations */}
                             <Associations />
+
+                            {/* Intergénérationnel */}
+                            <LienSocialIntergen />
                         </div>
                     </div>
                 </div>
