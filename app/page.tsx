@@ -33,6 +33,21 @@ export default function Home() {
                     />
                     {/* Darker overlay for text readability on the image */}
                     <div className="absolute inset-0 bg-black/40 backdrop-blur-[1px]" />
+                    {/* Jean-Jacques Rosaye portrait overlay */}
+                    <div className="absolute bottom-6 right-6 md:bottom-10 md:right-10 z-20 flex flex-col items-center">
+                        <div className="w-28 h-28 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-white shadow-2xl">
+                            <Image
+                                src="/jean-jacques-rosaye.jpg"
+                                alt="Jean-Jacques Rosaye"
+                                width={200}
+                                height={200}
+                                className="w-full h-full object-cover object-top"
+                            />
+                        </div>
+                        <div className="mt-3 bg-white px-5 py-2 rounded-full shadow-xl">
+                            <span className="text-sm md:text-base font-bold text-primary">avec Jean-Jacques ROSAYE</span>
+                        </div>
+                    </div>
                 </div>
 
                 <div className="container mx-auto px-4 relative z-10 text-center">
@@ -47,8 +62,7 @@ export default function Home() {
                             <div className="inline-flex flex-row items-center justify-center md:gap-3 px-6 py-3 md:px-5 md:py-2.5 rounded-xl md:rounded-full bg-white/10 backdrop-blur-md border border-white/30 text-white text-sm md:text-base font-medium tracking-wide shadow-lg hover:bg-white/20 transition-all cursor-default group max-w-full text-center">
                                 <span className="w-2 h-2 rounded-full bg-accent animate-pulse shadow-[0_0_8px_rgba(224,160,93,0.8)] shrink-0 hidden md:block" />
                                 <div className="flex flex-col md:flex-row md:items-center gap-1.5 md:gap-1.5">
-                                    <span className="opacity-90">Élections municipales</span>
-                                    <span className="font-bold text-base md:text-base md:font-medium">des 15 et 22 mars 2026</span>
+                                    <span className="font-bold text-base md:text-lg">Municipales 2026 : rendez-vous le 15 mars</span>
                                 </div>
                             </div>
                         </div>

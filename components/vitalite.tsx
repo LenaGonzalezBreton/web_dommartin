@@ -150,6 +150,72 @@ export function Vitalite() {
                 </ul>
             </div>
 
+            {/* Commerce de proximité */}
+            <div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+                    <span className="bg-accent text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">🏪</span>
+                    Un commerce de proximité à Dommartin : un projet à construire avec sérieux
+                </h3>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                    À Dommartin, la question d&apos;un commerce de proximité revient régulièrement dans nos échanges avec les habitants. Pouvoir acheter du pain, quelques produits essentiels, et disposer d&apos;un lieu convivial comme un café citoyen représente, pour beaucoup de Picosés, un véritable enjeu de qualité de vie.
+                </p>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                    Nous souhaitons ouvrir la réflexion sur la création d&apos;un commerce multi-activité, associant dépôt de pain, petite épicerie et espace de rencontre intergénérationnel.
+                </p>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                    Ce besoin n&apos;est pas isolé : de nombreuses communes rurales sont confrontées à la même problématique. L&apos;exemple de plusieurs communes autour de nous montre qu&apos;un projet peut aboutir lorsqu&apos;il est accompagné par la collectivité, notamment par l&apos;acquisition et la réhabilitation d&apos;un local permettant l&apos;installation d&apos;un professionnel.
+                </p>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                    À Dommartin, la situation est différente. La vente d&apos;une part importante des biens communaux ces dernières années rend aujourd&apos;hui plus complexe la mise à disposition d&apos;un local. La première étape consistera donc à identifier une solution immobilière réaliste (acquisition, réhabilitation, partenariat ou autre montage adapté).
+                </p>
+                <p className="text-gray-700 leading-relaxed mb-6">
+                    Ce projet devra se construire en lien avec la Communauté de communes de la Porte des Vosges Méridionales, compétente en matière de développement économique, ainsi qu&apos;avec les dispositifs publics de soutien existants.
+                </p>
+
+                {/* Méthode */}
+                <div className="bg-gradient-to-br from-green-50 to-accent/5 p-6 rounded-2xl border border-accent/20 mb-6">
+                    <h4 className="font-bold text-gray-900 mb-4">Notre méthode est claire :</h4>
+                    <ul className="space-y-3 text-gray-700">
+                        <li className="flex items-center gap-3">
+                            <span className="text-accent font-bold">✔️</span>
+                            <span>Étudier sérieusement la faisabilité</span>
+                        </li>
+                        <li className="flex items-center gap-3">
+                            <span className="text-accent font-bold">✔️</span>
+                            <span>Garantir un modèle économiquement viable</span>
+                        </li>
+                        <li className="flex items-center gap-3">
+                            <span className="text-accent font-bold">✔️</span>
+                            <span>Construire un projet durable pour la commune</span>
+                        </li>
+                    </ul>
+                </div>
+
+                {/* Solutions complémentaires */}
+                <div className="bg-white p-6 rounded-2xl border border-accent/20 shadow-sm">
+                    <p className="text-gray-700 leading-relaxed mb-4">
+                        En parallèle de ce projet, nous étudierons activement des solutions complémentaires afin de garantir un service de proximité adapté aux besoins des Picosés, comme :
+                    </p>
+                    <ul className="space-y-3 text-gray-700 mb-4">
+                        <li className="flex items-start gap-3">
+                            <span className="w-2 h-2 bg-accent rounded-full mt-2 shrink-0" />
+                            <span>Un service d&apos;aide à la mobilité pour faciliter l&apos;accès aux courses et aux services</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                            <span className="w-2 h-2 bg-accent rounded-full mt-2 shrink-0" />
+                            <span>L&apos;accueil régulier d&apos;un camion épicerie ambulant et/ou d&apos;un dépôt de pain</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                            <span className="w-2 h-2 bg-accent rounded-full mt-2 shrink-0" />
+                            <span>Toute autre initiative pragmatique répondant aux réalités de notre commune</span>
+                        </li>
+                    </ul>
+                    <p className="text-gray-700 font-medium italic border-l-4 border-accent pl-4">
+                        Notre objectif reste le même : apporter des réponses concrètes et adaptées au quotidien des habitants.
+                    </p>
+                </div>
+            </div>
+
             {/* Conclusion */}
             <div className="bg-gradient-to-br from-accent to-accent/80 p-6 md:p-8 rounded-2xl text-white shadow-lg">
                 <h3 className="text-xl font-bold mb-4">Une commune utile, accueillante et engagée</h3>
