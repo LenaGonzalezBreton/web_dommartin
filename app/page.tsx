@@ -85,8 +85,20 @@ export default function Home() {
                                 <div className="bg-primary/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
                                     <Calendar className="w-8 h-8 text-primary" />
                                 </div>
-                                <h3 className="text-2xl font-bold text-gray-900 mb-4 font-heading">Nos Rencontres</h3>
+                                <h3 className="text-2xl font-bold text-gray-900 mb-4 font-heading">Rendez-vous</h3>
                                 <div className="text-gray-600 mb-6 flex-grow space-y-4">
+                                    {/* Sécurité arrêts de bus */}
+                                    <div className="bg-blue-50 p-4 rounded-xl border border-blue-200">
+                                        <div className="flex items-center gap-2 mb-1">
+                                            <span className="bg-primary text-white text-xs font-bold px-2 py-0.5 rounded-full animate-pulse">Nouveau</span>
+                                        </div>
+                                        <p className="font-bold text-gray-900 mb-1">🚌 Sécurité des arrêts de bus</p>
+                                        <p className="text-sm text-gray-700 font-semibold mt-1">👉 Rendez-vous samedi à 14h – place Saint-Laurent.</p>
+                                        <p className="text-sm text-gray-600 mt-2">Nous irons voir plusieurs points d&apos;arrêt dans la commune afin d&apos;échanger sur les questions de visibilité, d&apos;éclairage, d&apos;aménagement et de sécurité.</p>
+                                        <p className="text-sm text-gray-600 mt-1">L&apos;objectif : mieux protéger les enfants, améliorer les conditions d&apos;attente et réfléchir ensemble à des solutions pour des déplacements plus sûrs.</p>
+                                        <p className="text-sm text-primary font-semibold mt-2">Habitants, parents, riverains : votre regard est précieux.</p>
+                                    </div>
+                                    <div className="w-full h-px bg-gray-100" />
                                     {/* Compte-rendu réunion publique 12 février */}
                                     <div className="bg-primary/5 p-4 rounded-xl border border-primary/20">
                                         <div className="flex items-center gap-2 mb-1">
@@ -130,10 +142,21 @@ export default function Home() {
                                 </div>
                                 <h3 className="text-2xl font-bold text-gray-900 mb-6 font-heading">Actualités</h3>
                                 <div className="text-gray-600 mb-8 flex-grow space-y-4">
-                                    {/* Nouvel article : visites menuiserie + scierie */}
+                                    {/* Nouvel article : Maison Louis */}
                                     <div className="bg-amber-50 p-4 rounded-xl border border-amber-200">
                                         <div className="flex items-center gap-2 mb-1">
                                             <span className="bg-accent text-white text-xs font-bold px-2 py-0.5 rounded-full">Nouveau</span>
+                                        </div>
+                                        <p className="font-bold text-gray-900 mb-1">🧀 Rencontre : la Maison Louis</p>
+                                        <p className="text-gray-600 text-sm">Visite des locaux d&apos;affinage de fromages et du magasin « Le Panier de Louis ».</p>
+                                        <Link href="/communique" className="text-accent font-semibold text-sm inline-flex items-center gap-1 mt-2 hover:gap-2 transition-all">
+                                            Lire l&apos;article <ArrowRight className="w-3 h-3" />
+                                        </Link>
+                                    </div>
+                                    <div className="w-full h-px bg-gray-100" />
+                                    {/* Article : visites menuiserie + scierie */}
+                                    <div className="bg-amber-50/50 p-4 rounded-xl border border-amber-100">
+                                        <div className="flex items-center gap-2 mb-1">
                                             <span className="text-xs text-gray-500">28 février</span>
                                         </div>
                                         <p className="font-bold text-gray-900 mb-1">🌳 Le bois au cœur de nos savoir-faire</p>

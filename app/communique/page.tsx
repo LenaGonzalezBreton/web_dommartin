@@ -35,7 +35,7 @@ export default function CommuniquePage() {
             <div className="container mx-auto px-4 py-12">
                 <div className="max-w-4xl mx-auto space-y-12">
 
-                    {/* SECTION: Menuiserie Demangel - NEW */}
+                    {/* SECTION: Maison Louis - Affinage de fromages */}
                     <section className="bg-gradient-to-br from-amber-50 to-orange-50 p-8 md:p-10 rounded-3xl border border-amber-100 shadow-lg relative overflow-hidden">
                         <div className="absolute top-0 right-0 w-64 h-64 bg-amber-100/50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
 
@@ -44,6 +44,93 @@ export default function CommuniquePage() {
                                 <span className="bg-accent text-white font-bold px-4 py-1.5 rounded-full text-sm animate-pulse">
                                     A LA UNE
                                 </span>
+                                <span className="bg-amber-100 text-amber-800 font-bold px-4 py-1.5 rounded-full text-sm">
+                                    Economie locale
+                                </span>
+                            </div>
+
+                            <div className="flex items-start gap-4 mb-8">
+                                <div className="bg-amber-100 w-16 h-16 rounded-2xl flex items-center justify-center shrink-0">
+                                    <Trees className="w-8 h-8 text-amber-700" />
+                                </div>
+                                <div>
+                                    <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-3 font-heading leading-tight">
+                                        Rencontre avec les acteurs économiques : la Maison Louis
+                                    </h2>
+                                    <p className="text-lg text-amber-800 font-medium italic">
+                                        &quot;Une belle entreprise picosée, dynamique et tournée vers l&apos;avenir.&quot;
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="space-y-6 text-gray-700 leading-relaxed text-lg mb-10">
+                                <p>
+                                    Dans le cadre de nos rencontres régulières avec les acteurs économiques de notre village, nous poursuivons nos visites afin de mieux comprendre leurs activités, leurs projets et les éventuelles préoccupations qu&apos;ils peuvent rencontrer.
+                                </p>
+                                <p>
+                                    C&apos;est dans cet esprit que la <strong className="text-amber-700">Maison Louis</strong> nous a récemment accueillis dans ses locaux d&apos;affinage de fromages ainsi que dans son magasin.
+                                </p>
+                                <p>
+                                    Entreprise picosée, la Maison Louis a été créée en 1994 au centre du hameau de Pont. Face au développement de son activité, elle a construit en 2019 de nouveaux locaux situés à proximité de la rue du Haut des Rang.
+                                </p>
+                                <p>
+                                    Spécialisé dans l&apos;affinage de fromages fermiers, biologiques ou non, et principalement de munsters, <strong className="text-gray-900">Bernard Louis</strong> travaille en lien étroit avec le territoire : chaque semaine, il est approvisionné en fromages blancs par trois exploitations situées dans un rayon d&apos;environ 10 km.
+                                </p>
+                                <p>
+                                    Au fil des années, l&apos;entreprise a également développé ses propres spécialités. Parmi elles, un fromage fermier plus fondant, présenté dans une boîte en bois et destiné à être chauffé avant dégustation, baptisé <strong className="text-amber-700">« le Louis d&apos;🟡 »</strong>.
+                                </p>
+                                <p>
+                                    Après trois à quatre semaines d&apos;affinage, les munsters fermiers, les Louis d&apos;🟡 et les fromages fermiers fumés au bois de hêtre sont expédiés dans toute la France, notamment vers le marché de Rungis, afin d&apos;approvisionner crémeries, revendeurs spécialisés et tables de restaurants.
+                                </p>
+
+                                <div className="bg-white/80 p-6 rounded-2xl border-l-4 border-accent shadow-sm my-8">
+                                    <p className="italic text-gray-800 mb-2 font-medium">
+                                        Le Panier de Louis
+                                    </p>
+                                    <p className="text-sm">
+                                        En complément de cette activité, le magasin « Le Panier de Louis » propose à la vente une sélection de produits locaux : boissons, pains de la Grenouille, gâteaux, confiseries et bien sûr les produits issus de l&apos;atelier d&apos;affinage voisin. Un système de <strong className="text-accent">casiers en libre-service</strong>, accessible à toute heure, permet désormais aux habitants et visiteurs de se procurer ces spécialités en dehors des horaires classiques d&apos;ouverture.
+                                    </p>
+                                </div>
+
+                                <p>
+                                    Cette visite nous a permis de découvrir une belle entreprise picosée, dynamique et tournée vers l&apos;avenir, qui emploie aujourd&apos;hui <strong className="text-amber-700">cinq personnes</strong> au sein de ses deux structures et porte encore de nombreux projets.
+                                </p>
+                            </div>
+
+                            {/* Photos */}
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group">
+                                    <Image
+                                        src="/maison-louis-1.png"
+                                        alt="Rencontre avec Bernard Louis devant les locaux d'affinage"
+                                        fill
+                                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                                        <p className="text-white font-medium text-sm">Échanges devant les locaux d&apos;affinage</p>
+                                    </div>
+                                </div>
+                                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group">
+                                    <Image
+                                        src="/maison-louis-2.png"
+                                        alt="Visite des caves d'affinage de la Maison Louis"
+                                        fill
+                                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                                        <p className="text-white font-medium text-sm">Visite des caves d&apos;affinage</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* SECTION: Menuiserie Demangel */}
+                    <section className="bg-gradient-to-br from-amber-50 to-orange-50 p-8 md:p-10 rounded-3xl border border-amber-100 shadow-lg relative overflow-hidden">
+                        <div className="absolute top-0 right-0 w-64 h-64 bg-amber-100/50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+
+                        <div className="relative z-10">
+                            <div className="flex items-center gap-3 mb-6">
                                 <span className="bg-amber-100 text-amber-800 font-bold px-4 py-1.5 rounded-full text-sm">
                                     Economie locale
                                 </span>

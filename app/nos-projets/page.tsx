@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { TerrainMultisport } from "@/components/terrain-multisport";
 import { HalleMarche } from "@/components/halle-marche";
 import { DeplacementsSecurises } from "@/components/deplacements-securises";
+import { SecuriteArretsBus } from "@/components/securite-arrets-bus";
 import { ForetCommunale } from "@/components/foret-communale";
 import { Associations } from "@/components/associations";
 import { LienSocialIntergen } from "@/components/lien-social-intergen";
@@ -127,6 +128,9 @@ export default function NosProjects() {
 
                             {/* Projet Déplacements sécurisés */}
                             <DeplacementsSecurises />
+
+                            {/* Sécurité des arrêts de bus */}
+                            <SecuriteArretsBus />
 
                             {/* Projet Forêt communale */}
                             <ForetCommunale />
