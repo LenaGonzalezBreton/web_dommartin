@@ -322,7 +322,7 @@ export default function Home() {
                                 </div>
                                 <div className="flex-grow">
                                     <span className="text-sm font-bold text-primary-dark uppercase tracking-wider">Cadre Intercommunal</span>
-                                    <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2 font-heading">Intercommunalité</h3>
+                                    <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2 font-heading">Finances communales / Intercommunalité</h3>
                                     <p className="text-gray-600">Agir, peser, sécuriser les services du quotidien au sein de la Communauté de Communes de la Porte des Vosges Méridionales.</p>
                                 </div>
                                 <div className="shrink-0">

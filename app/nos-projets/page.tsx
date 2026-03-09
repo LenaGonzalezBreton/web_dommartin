@@ -12,6 +12,7 @@ import { Associations } from "@/components/associations";
 import { LienSocialIntergen } from "@/components/lien-social-intergen";
 import { TransitionEnvironnementale } from "@/components/transition-environnementale";
 import { Vitalite } from "@/components/vitalite";
+import { FinancesCommunales } from "@/components/finances-communales";
 
 export const metadata: Metadata = {
     title: "Nos Projets | Dommartin avec vous",
@@ -72,7 +73,7 @@ export default function NosProjects() {
                             className="flex items-center gap-2 px-4 py-2 rounded-full bg-primary-dark/10 text-primary-dark font-semibold hover:bg-primary-dark hover:text-white transition-all whitespace-nowrap shrink-0"
                         >
                             <Building2 className="w-4 h-4" />
-                            Intercommunalité
+                            Finances / Interco.
                         </a>
                         {/* Séparateur visuel */}
                         <div className="w-px h-8 bg-gray-300 mx-1 shrink-0" />
@@ -236,7 +237,7 @@ export default function NosProjects() {
                             <div>
                                 <span className="text-sm font-bold text-primary-dark uppercase tracking-wider">Cadre Intercommunal</span>
                                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 font-heading">
-                                    Intercommunalité
+                                    Finances communales / Intercommunalité
                                 </h2>
                             </div>
                         </div>
@@ -344,6 +345,9 @@ export default function NosProjects() {
                                     </li>
                                 </ul>
                             </div>
+
+                            {/* Finances communales */}
+                            <FinancesCommunales />
                         </div>
                     </div>
                 </div>
