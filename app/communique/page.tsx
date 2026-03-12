@@ -2,12 +2,28 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { PhotoCarousel } from "@/components/photo-carousel";
 import { ArrowLeft, ArrowRight, ExternalLink, AlertTriangle, FileText, Newspaper, Tractor, Trees } from "lucide-react";
 
 export const metadata: Metadata = {
     title: "Dans les médias | Dommartin avec vous",
     description: "Actualités, courrier aux acteurs économiques et couverture presse de la liste Dommartin avec Vous.",
 };
+
+const professionFoiPhotos = [
+    { src: "/profession-foi-1.png", alt: "Profession de foi - Page 1" },
+    { src: "/profession-foi-2.jpg", alt: "Profession de foi - Page 2" },
+    { src: "/profession-foi-3.png", alt: "Profession de foi - Page 3" },
+];
+
+const fermeMoineauxPhotos = [
+    { src: "/moineaux-1.jpg", alt: "Ferme Aux Moineaux - Photo 1" },
+    { src: "/moineaux-2.png", alt: "Ferme Aux Moineaux - Photo 2" },
+    { src: "/moineaux-3.png", alt: "Ferme Aux Moineaux - Photo 3" },
+    { src: "/moineaux-4.png", alt: "Ferme Aux Moineaux - Photo 4" },
+    { src: "/moineaux-5.png", alt: "Ferme Aux Moineaux - Photo 5" },
+];
+const THUMB_VISIBLE = 5;
 
 export default function CommuniquePage() {
     return (
@@ -35,8 +51,8 @@ export default function CommuniquePage() {
             <div className="container mx-auto px-4 py-12">
                 <div className="max-w-4xl mx-auto space-y-12">
 
-                    {/* SECTION: Maison Louis - Affinage de fromages */}
-                    <section className="bg-gradient-to-br from-amber-50 to-orange-50 p-8 md:p-10 rounded-3xl border border-amber-100 shadow-lg relative overflow-hidden">
+                    {/* SECTION: Profession de foi */}
+                    <section id="profession-foi" className="bg-gradient-to-br from-amber-50 to-orange-50 p-8 md:p-10 rounded-3xl border border-amber-100 shadow-lg relative overflow-hidden">
                         <div className="absolute top-0 right-0 w-64 h-64 bg-amber-100/50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
 
                         <div className="relative z-10">
@@ -45,19 +61,142 @@ export default function CommuniquePage() {
                                     A LA UNE
                                 </span>
                                 <span className="bg-amber-100 text-amber-800 font-bold px-4 py-1.5 rounded-full text-sm">
-                                    Economie locale
+                                    Elections Municipales
                                 </span>
                             </div>
 
                             <div className="flex items-start gap-4 mb-8">
                                 <div className="bg-amber-100 w-16 h-16 rounded-2xl flex items-center justify-center shrink-0">
-                                    <Trees className="w-8 h-8 text-amber-700" />
+                                    <FileText className="w-8 h-8 text-amber-700" />
+                                </div>
+                                <div>
+                                    <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-3 font-heading leading-tight">
+                                        Dommartin : un projet pour rassembler et préparer l’avenir
+                                    </h2>
+                                    <p className="text-lg text-amber-800 font-medium italic">
+                                        &quot;L’équipe Dommartin avec vous&quot;
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="space-y-6 text-gray-700 leading-relaxed text-lg mb-10">
+                                <p>
+                                    À l’approche de l’élection de ce dimanche, nous avons souhaité partager avec les habitants notre profession de foi.
+                                </p>
+                                <p>
+                                    À travers cette profession de foi, nous partageons avec vous notre démarche fondée sur l’écoute des habitants et les priorités que nous portons pour l’avenir de Dommartin. <strong className="text-gray-900">Améliorer le cadre de vie, soutenir la vie associative, renforcer les services et préparer l’avenir de notre village</strong> font partie des engagements que nous proposons.
+                                </p>
+                                <p>
+                                    Nous restons bien sûr toutes et tous disponibles pour échanger avec vous, répondre à vos questions et écouter vos idées. Le dialogue avec les habitants est au cœur de notre démarche.
+                                </p>
+
+                                <div className="bg-white/80 p-6 rounded-2xl border-l-4 border-accent shadow-sm my-8">
+                                    <p className="italic text-gray-800 mb-2 font-medium">
+                                        Depuis le début, nous menons cette campagne avec une conviction simple : être disponibles, à l’écoute et respectueux de chacun.
+                                    </p>
+                                    <p className="text-sm font-bold text-accent">
+                                        Nous ne voulons pas diviser les Picosés.<br />
+                                        Nous voulons rassembler et construire ensemble l’avenir de Dommartin.
+                                    </p>
+                                </div>
+                            </div>
+
+                            {/* Images de la profession de foi */}
+                            <div className="mt-10 max-w-2xl mx-auto">
+                                <PhotoCarousel photos={professionFoiPhotos} />
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* SECTION: Ferme Aux Moineaux */}
+                    <section id="ferme-moineaux" className="bg-gradient-to-br from-green-50 to-emerald-50 p-8 md:p-10 rounded-3xl border border-green-100 shadow-lg relative overflow-hidden">
+                        <div className="absolute top-0 right-0 w-64 h-64 bg-green-100/50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+
+                        <div className="relative z-10">
+                            <div className="flex items-center gap-3 mb-6">
+                                <span className="bg-green-600 text-white font-bold px-4 py-1.5 rounded-full text-sm animate-pulse">
+                                    NOUVEAU
+                                </span>
+                                <span className="bg-green-100 text-green-800 font-bold px-4 py-1.5 rounded-full text-sm">
+                                    Agriculture & Tourisme
+                                </span>
+                            </div>
+
+                            <div className="flex items-start gap-4 mb-8">
+                                <div className="bg-green-100 w-16 h-16 rounded-2xl flex items-center justify-center shrink-0">
+                                    <Tractor className="w-8 h-8 text-green-700" />
+                                </div>
+                                <div>
+                                    <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-3 font-heading leading-tight">
+                                        Visite de l’équipe « Dommartin avec vous » à la Ferme Aux Moineaux
+                                    </h2>
+                                    <p className="text-lg text-green-800 font-medium italic">
+                                        Rencontre avec notre colistier Thomas et son épouse Sofiane.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="space-y-6 text-gray-700 leading-relaxed text-lg mb-10">
+                                <p>
+                                    Dans le cadre de nos rencontres avec les acteurs de la vie locale, l’équipe <strong className="text-gray-900">Dommartin avec vous</strong> s’est rendue à la Ferme Aux Moineaux, exploitée par notre colistier Thomas et son épouse Sofiane.
+                                </p>
+                                <p>
+                                    La composition de notre liste reflète notre volonté de rassembler des habitants représentant les différents secteurs d’activité de la commune. <strong className="text-green-700">Cette diversité est essentielle pour construire un projet municipal équilibré</strong> et attentif aux réalités du territoire.
+                                </p>
+                                <p>
+                                    Installés sur une ferme de montagne d’environ 50 hectares, Sofiane et Thomas développent plusieurs activités complémentaires qui s’inscrivent dans <strong className="text-gray-900">une démarche respectueuse de la nature</strong>.
+                                </p>
+                                
+                                <div className="bg-white/80 p-6 rounded-2xl border-l-4 border-green-500 shadow-sm my-8">
+                                    <h3 className="font-bold text-gray-900 mb-2">Des activités complémentaires et locales :</h3>
+                                    <ul className="list-disc pl-5 space-y-3 text-gray-700">
+                                        <li>
+                                            <strong className="text-green-800">Élevage ovin bio :</strong> Ils élèvent tout d’abord des brebis en agriculture biologique, nourries exclusivement à l’herbe ou au foin produit sur la ferme. La viande est commercialisée en vente directe, favorisant une économie très locale : les animaux sont nés, élevés et abattus sur le territoire.
+                                        </li>
+                                        <li>
+                                            <strong className="text-green-800">Élevage équin :</strong> La ferme accueille également un élevage de chevaux de race Franches-Montagnes, élevés en plein air et en troupeau.
+                                        </li>
+                                        <li>
+                                            <strong className="text-green-800">Tourisme rural :</strong> En parallèle de ces activités agricoles, Thomas et son épouse ont développé une activité touristique, avec un gîte de groupe pouvant accueillir jusqu’à 25 personnes ainsi que deux chambres d’hôtes. Cette offre contribue à l’attractivité touristique de notre commune et à la découverte de notre environnement naturel.
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <p>
+                                    Cette visite a été l’occasion de mieux comprendre leur travail, leur organisation entre élevage et accueil touristique, mais aussi leur <strong className="text-gray-900">attachement à notre territoire</strong>.
+                                </p>
+                                <p className="italic font-medium text-gray-800">
+                                    Nous remercions chaleureusement Sofiane et Thomas pour leur accueil et pour le partage de leur passion pour la nature et la vie rurale.
+                                </p>
+                            </div>
+
+                            {/* Images Carousel */}
+                            <div className="mt-10 max-w-2xl mx-auto">
+                                <PhotoCarousel photos={fermeMoineauxPhotos} />
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* SECTION: Maison Louis - Affinage de fromages */}
+                    <section className="bg-white p-8 md:p-10 rounded-3xl border border-gray-100 shadow-md relative overflow-hidden">
+                        <div className="absolute top-0 right-0 w-64 h-64 bg-gray-50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+
+                        <div className="relative z-10">
+                            <div className="flex items-center gap-3 mb-6">
+                                <span className="bg-amber-50 text-amber-700 font-bold px-4 py-1.5 rounded-full text-sm">
+                                    Economie locale
+                                </span>
+                            </div>
+
+                            <div className="flex items-start gap-4 mb-8">
+                                <div className="bg-amber-50 w-16 h-16 rounded-2xl flex items-center justify-center shrink-0">
+                                    <Trees className="w-8 h-8 text-amber-600" />
                                 </div>
                                 <div>
                                     <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-3 font-heading leading-tight">
                                         Rencontre avec les acteurs économiques : la Maison Louis
                                     </h2>
-                                    <p className="text-lg text-amber-800 font-medium italic">
+                                    <p className="text-lg text-amber-700 font-medium italic">
                                         &quot;Une belle entreprise picosée, dynamique et tournée vers l&apos;avenir.&quot;
                                     </p>
                                 </div>

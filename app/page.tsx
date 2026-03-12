@@ -1,4 +1,4 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Calendar, Mail, MapPin, Users, Heart, Shield, CheckCircle, ArrowRight, Leaf, FileText, Newspaper, Instagram, Building2, MessageCircle } from "lucide-react";
@@ -8,6 +8,7 @@ import { UpcomingEvents } from "@/components/UpcomingEvents";
 import { PopupFev21 } from "@/components/popup-fev21";
 import { PopupFev28 } from "@/components/popup-fev28";
 import { PopupMars07 } from "@/components/popup-mars07";
+import { PopupMars10 } from "@/components/popup-mars10";
 
 export const metadata: Metadata = {
     title: {
@@ -88,6 +89,17 @@ export default function Home() {
                                 </div>
                                 <h3 className="text-2xl font-bold text-gray-900 mb-4 font-heading">Rendez-vous</h3>
                                 <div className="text-gray-600 mb-6 flex-grow space-y-4">
+                                
+                                    {/* Élections 15 Mars */}
+                                    <div className="bg-amber-100 p-4 rounded-xl border border-amber-200">
+                                        <div className="flex items-center justify-between mb-1">
+                                            <span className="font-bold text-gray-900 text-lg">Dimanche 15 Mars</span>
+                                            <span className="bg-accent text-white text-xs font-bold px-2 py-0.5 rounded-full animate-pulse">Jour J</span>
+                                        </div>
+                                        <span className="font-bold text-gray-900 block mt-1">🗳️ Élections municipales</span>
+                                        <p className="text-sm text-gray-700 mt-1">Rendez-vous aux urnes pour choisir l'équipe qui construira avec vous l'avenir de Dommartin.</p>
+                                    </div>
+                                    <div className="w-full h-px bg-gray-100" />
 
                                     {/* Compte-rendu réunion publique 12 février */}
                                     <div className="bg-primary/5 p-4 rounded-xl border border-primary/20">
@@ -132,10 +144,42 @@ export default function Home() {
                                 </div>
                                 <h3 className="text-2xl font-bold text-gray-900 mb-6 font-heading">Actualités</h3>
                                 <div className="text-gray-600 mb-8 flex-grow space-y-4">
-                                    {/* Nouvel article : Maison Louis */}
+                                    {/* DOMMARTIN : UN PROJET POUR RASSEMBLER ET PRÉPARER L'AVENIR */}
+                                    <div className="bg-amber-100/50 p-4 rounded-xl border border-amber-200 shadow-sm relative overflow-hidden group">
+                                        <div className="absolute top-0 right-0 w-32 h-32 bg-accent/10 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2" />
+                                        <div className="relative z-10">
+                                            <div className="flex items-center gap-2 mb-2">
+                                                <span className="bg-accent text-white text-xs font-bold px-2.5 py-0.5 rounded-full shadow-sm animate-pulse">À la une</span>
+                                                <span className="text-xs font-semibold text-gray-500">Mars 2026</span>
+                                            </div>
+                                            <h4 className="font-bold text-gray-900 mb-1 leading-tight text-lg group-hover:text-primary transition-colors">
+                                                Dommartin : un projet pour rassembler et préparer l’avenir
+                                            </h4>
+                                            <p className="text-gray-600 text-sm mb-3">
+                                                À l’approche de l’élection de ce dimanche, découvrez notre profession de foi, fondée sur l’écoute et nos priorités pour l’avenir.
+                                            </p>
+                                            <Link href="/communique#profession-foi" className="inline-flex items-center justify-center gap-1.5 bg-primary/10 hover:bg-primary/20 text-primary font-semibold text-sm px-3 py-1.5 rounded-lg transition-all w-full md:w-auto">
+                                                Découvrir le projet complet <ArrowRight className="w-4 h-4" />
+                                            </Link>
+                                        </div>
+                                    </div>
+                                    <div className="w-full h-px bg-gray-100" />
+                                    {/* Nouvel article : Ferme Aux Moineaux */}
                                     <div className="bg-amber-50 p-4 rounded-xl border border-amber-200">
                                         <div className="flex items-center gap-2 mb-1">
-                                            <span className="bg-accent text-white text-xs font-bold px-2 py-0.5 rounded-full">Nouveau</span>
+                                            <span className="text-xs font-semibold text-gray-500">Dimanche 8 mars</span>
+                                        </div>
+                                        <p className="font-bold text-gray-900 mb-1">🌾 Visite à la Ferme Aux Moineaux</p>
+                                        <p className="text-gray-600 text-sm">Découverte de l'exploitation de Thomas et Sofiane : élevage bio, chevaux et tourisme rural.</p>
+                                        <Link href="/communique#ferme-moineaux" className="text-accent font-semibold text-sm inline-flex items-center gap-1 mt-2 hover:gap-2 transition-all">
+                                            Lire l&apos;article <ArrowRight className="w-3 h-3" />
+                                        </Link>
+                                    </div>
+                                    <div className="w-full h-px bg-gray-100" />
+                                    {/* Article : Maison Louis */}
+                                    <div className="bg-amber-50 p-4 rounded-xl border border-amber-200">
+                                        <div className="flex items-center gap-2 mb-1">
+                                            <span className="text-xs font-semibold text-gray-500">En ce moment</span>
                                         </div>
                                         <p className="font-bold text-gray-900 mb-1">🧀 Rencontre : la Maison Louis</p>
                                         <p className="text-gray-600 text-sm">Visite des locaux d&apos;affinage de fromages et du magasin « Le Panier de Louis ».</p>
@@ -200,12 +244,7 @@ export default function Home() {
                                         <PopupFev21 />
                                         <PopupFev28 />
                                         <PopupMars07 />
-                                        <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20 flex flex-col items-center justify-center text-center hover:bg-white/20 transition-all">
-                                            <span className="text-xs font-bold opacity-80 uppercase mb-1">MARS</span>
-                                            <span className="text-3xl font-bold mb-1">10</span>
-                                            <span className="text-sm font-semibold">Mardi</span>
-                                            <span className="text-xs opacity-90 mt-1">18h - 21h</span>
-                                        </div>
+                                        <PopupMars10 />
                                     </div>
                                 </div>
                             </div>
