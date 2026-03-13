@@ -51,6 +51,92 @@ export default function CommuniquePage() {
             <div className="container mx-auto px-4 py-12">
                 <div className="max-w-4xl mx-auto space-y-12">
 
+                    {/* SECTION: Message de clôture */}
+                    <section id="message-cloture" className="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 md:p-10 rounded-3xl border border-blue-100 shadow-lg relative overflow-hidden">
+                        <div className="absolute top-0 right-0 w-64 h-64 bg-blue-100/50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+
+                        <div className="relative z-10">
+                            <div className="flex items-center gap-3 mb-6">
+                                <span className="bg-primary text-white font-bold px-4 py-1.5 rounded-full text-sm animate-pulse">
+                                    A LA UNE
+                                </span>
+                                <span className="bg-blue-100 text-blue-800 font-bold px-4 py-1.5 rounded-full text-sm">
+                                    Dernier Message
+                                </span>
+                            </div>
+
+                            <div className="flex items-start gap-4 mb-8">
+                                <div className="bg-blue-100 w-16 h-16 rounded-2xl flex items-center justify-center shrink-0">
+                                    <Newspaper className="w-8 h-8 text-blue-700" />
+                                </div>
+                                <div>
+                                    <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-3 font-heading leading-tight">
+                                        Un dernier message aux Picosés avant la clôture
+                                    </h2>
+                                    <p className="text-lg text-blue-800 font-medium italic">
+                                        &quot;Jean-Jacques ROSAYE, au nom de tous les candidats&quot;
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="mb-10 w-full max-w-sm mx-auto aspect-[9/16] rounded-2xl overflow-hidden shadow-xl bg-gray-900 border-4 border-white">
+                                <video 
+                                    controls 
+                                    className="w-full h-full object-cover"
+                                    preload="metadata"
+                                >
+                                    <source src="/videos/4546d8ad-ddad-4560-9c23-892d9d23dd40.MP4" type="video/mp4" />
+                                    Votre navigateur ne prend pas en charge la lecture de vidéos.
+                                </video>
+                            </div>
+
+                            <div className="space-y-6 text-gray-700 leading-relaxed text-lg mb-10">
+                                <p>
+                                    <strong>Jean-Jacques ROSAYE</strong>, tête de liste de <strong>&quot;Dommartin avec vous&quot;</strong> a souhaité adresser au nom de tous les candidats et en son nom personnel, un dernier message aux Picosés avant la clôture de la campagne municipale.
+                                </p>
+                                <p>
+                                    Comme vous avez pu le constater ces derniers mois, Jean Jacques ROSAYE a démontré qu&apos;il est :
+                                </p>
+                                <ul className="list-none space-y-4">
+                                    <li className="flex items-start gap-3">
+                                        <span className="text-primary mt-1">✓</span>
+                                        <span><strong>Un homme d&apos;écoute</strong>, qualité indispensable pour un maire ;</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="text-primary mt-1">✓</span>
+                                        <span><strong>Un homme de dossiers</strong> qui connait parfaitement la commune comme il l&apos;a démontré lors de la réunion publique du 12 février en répondant personnellement aux questions des nombreux participants ;</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="text-primary mt-1">✓</span>
+                                        <span><strong>Un homme qui a été choisi par ses colistiers</strong> pour son sens du collectif et ses valeurs humaines.</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="text-primary mt-1">✓</span>
+                                        <span>Et surtout <strong>un homme disponible pour servir la commune à temps plein</strong>.</span>
+                                    </li>
+                                </ul>
+                                <p>
+                                    Toujours à l&apos;aise sur le terrain, avec l&apos;ensemble de ses colistiers il a sillonné Dommartin pendant toute la campagne électorale, allant à la rencontre des associations, des acteurs économiques et de l&apos;ensemble des Picosés.
+                                </p>
+                                <p>
+                                    C&apos;est bien pour l&apos;intérêt général qu&apos;il a fait le choix de se présenter ! Parce qu&apos;en tant que Picosé de souche, il veut un autre avenir pour Dommartin, centré sur la défense des intérêts des habitants, sur les échanges, le partage et sur la maitrise technique des dossiers.
+                                </p>
+                                <p>
+                                    Et parce qu&apos;une mairie, ce n&apos;est pas seulement un maire qui décide, il est entouré d&apos;une équipe diversifiée aux compétences complémentaires. Il sait également qu&apos;il peut compter sur de nombreux Picosés qui ont déjà témoigné de leur envie de participer à cette aventure collective et participative.
+                                </p>
+
+                                <div className="bg-white/80 p-6 rounded-2xl border-l-4 border-primary shadow-sm my-8 text-center pt-8 pb-8">
+                                    <p className="font-bold text-gray-900 text-lg md:text-xl mb-4 leading-snug">
+                                        Vous souhaitez un maire présent et une municipalité à votre écoute, <br className="hidden md:block"/>vous souhaitez être associés aux décisions importantes pour la commune, <br className="hidden md:block"/>vous voulez un réel changement pour Dommartin ?
+                                    </p>
+                                    <p className="text-xl md:text-2xl font-extrabold text-primary pt-2">
+                                        N&apos;hésitez plus, dimanche prochain, votez et faites voter <br className="hidden md:block"/>Dommartin avec vous !
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
                     {/* SECTION: Profession de foi */}
                     <section id="profession-foi" className="bg-gradient-to-br from-amber-50 to-orange-50 p-8 md:p-10 rounded-3xl border border-amber-100 shadow-lg relative overflow-hidden">
                         <div className="absolute top-0 right-0 w-64 h-64 bg-amber-100/50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />

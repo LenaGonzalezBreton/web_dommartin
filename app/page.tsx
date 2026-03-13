@@ -26,30 +26,15 @@ export default function Home() {
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="/fond-dommartin.jpg"
-                        alt="Vue de Dommartin"
+                        src="/equipe-accueil.jpg"
+                        alt="L'équipe Dommartin avec vous"
                         fill
-                        className="object-cover"
+                        className="object-cover object-[center_35%]"
                         priority
                         sizes="100vw"
                     />
                     {/* Darker overlay for text readability on the image */}
-                    <div className="absolute inset-0 bg-black/40 backdrop-blur-[1px]" />
-                    {/* Jean-Jacques Rosaye portrait overlay */}
-                    <div className="absolute bottom-6 right-6 md:bottom-10 md:right-10 z-20 flex flex-col items-center">
-                        <div className="w-28 h-28 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-white shadow-2xl">
-                            <Image
-                                src="/jean-jacques-rosaye.jpg"
-                                alt="Jean-Jacques Rosaye"
-                                width={200}
-                                height={200}
-                                className="w-full h-full object-cover object-top"
-                            />
-                        </div>
-                        <div className="mt-3 bg-white px-5 py-2 rounded-full shadow-xl">
-                            <span className="text-sm md:text-base font-bold text-primary">avec Jean-Jacques ROSAYE</span>
-                        </div>
-                    </div>
+                    <div className="absolute inset-0 bg-black/50 backdrop-blur-[1px]" />
                 </div>
 
                 <div className="container mx-auto px-4 relative z-10 text-center">
@@ -89,7 +74,7 @@ export default function Home() {
                                 </div>
                                 <h3 className="text-2xl font-bold text-gray-900 mb-4 font-heading">Rendez-vous</h3>
                                 <div className="text-gray-600 mb-6 flex-grow space-y-4">
-                                
+
                                     {/* Élections 15 Mars */}
                                     <div className="bg-amber-100 p-4 rounded-xl border border-amber-200">
                                         <div className="flex items-center justify-between mb-1">
@@ -144,6 +129,25 @@ export default function Home() {
                                 </div>
                                 <h3 className="text-2xl font-bold text-gray-900 mb-6 font-heading">Actualités</h3>
                                 <div className="text-gray-600 mb-8 flex-grow space-y-4">
+                                    {/* MESSAGE DE CLÔTURE DE CAMPAGNE */}
+                                    <div className="bg-primary/10 p-4 rounded-xl border border-primary/20 shadow-sm relative overflow-hidden group">
+                                        <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2" />
+                                        <div className="relative z-10">
+                                            <div className="flex items-center gap-2 mb-2">
+                                                <span className="bg-primary text-white text-xs font-bold px-2.5 py-0.5 rounded-full shadow-sm animate-pulse">À la une</span>
+                                            </div>
+                                            <h4 className="font-bold text-gray-900 mb-1 leading-tight text-lg group-hover:text-primary transition-colors">
+                                                Dernier message avant la clôture de la campagne
+                                            </h4>
+                                            <p className="text-gray-600 text-sm mb-3">
+                                                Jean-Jacques Rosaye adresse un dernier message vidéo aux Picosés.
+                                            </p>
+                                            <Link href="/communique#message-cloture" className="inline-flex items-center justify-center gap-1.5 bg-primary/10 hover:bg-primary/20 text-primary font-semibold text-sm px-3 py-1.5 rounded-lg transition-all w-full md:w-auto">
+                                                Voir la vidéo <ArrowRight className="w-4 h-4" />
+                                            </Link>
+                                        </div>
+                                    </div>
+                                    <div className="w-full h-px bg-gray-100" />
                                     {/* DOMMARTIN : UN PROJET POUR RASSEMBLER ET PRÉPARER L'AVENIR */}
                                     <div className="bg-amber-100/50 p-4 rounded-xl border border-amber-200 shadow-sm relative overflow-hidden group">
                                         <div className="absolute top-0 right-0 w-32 h-32 bg-accent/10 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2" />
@@ -186,31 +190,6 @@ export default function Home() {
                                         <Link href="/communique" className="text-accent font-semibold text-sm inline-flex items-center gap-1 mt-2 hover:gap-2 transition-all">
                                             Lire l&apos;article <ArrowRight className="w-3 h-3" />
                                         </Link>
-                                    </div>
-                                    <div className="w-full h-px bg-gray-100" />
-                                    {/* Article : visites menuiserie + scierie */}
-                                    <div className="bg-amber-50/50 p-4 rounded-xl border border-amber-100">
-                                        <div className="flex items-center gap-2 mb-1">
-                                            <span className="text-xs text-gray-500">28 février</span>
-                                        </div>
-                                        <p className="font-bold text-gray-900 mb-1">🌳 Le bois au cœur de nos savoir-faire</p>
-                                        <p className="text-gray-600 text-sm">Visite de la Menuiserie Rustique Bois (Adam Étienne) et de la Scierie Mobile Perrin — deux colistiers, acteurs économiques de Dommartin.</p>
-                                    </div>
-                                    <div className="w-full h-px bg-gray-100" />
-                                    <div className="bg-amber-50/50 p-3 rounded-xl border border-amber-100">
-                                        <p className="font-semibold text-amber-800 text-sm mb-0.5">Menuiserie Demangel</p>
-                                        <p className="text-gray-500 text-xs">Rencontre avec un acteur historique de l&apos;économie locale.</p>
-                                        <Link href="/communique" className="text-accent font-semibold text-sm inline-flex items-center gap-1 mt-1 hover:gap-2 transition-all">
-                                            Lire l&apos;article <ArrowRight className="w-3 h-3" />
-                                        </Link>
-                                    </div>
-                                    <div className="bg-green-50 p-3 rounded-xl border border-green-100">
-                                        <p className="font-semibold text-green-800 text-sm mb-0.5">Désenrochement aux Mézins</p>
-                                        <p className="text-gray-500 text-xs">Un dossier à suivre avec attention.</p>
-                                    </div>
-                                    <div className="bg-primary/5 p-3 rounded-xl border border-primary/10">
-                                        <p className="font-semibold text-primary text-sm mb-0.5">Visite au GAEC des Mitreuches</p>
-                                        <p className="text-gray-500 text-xs">Échanges sur les réalités agricoles.</p>
                                     </div>
                                 </div>
                                 <Button asChild className="w-full md:w-auto mt-auto" size="lg">
