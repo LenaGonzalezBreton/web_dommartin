@@ -9,6 +9,7 @@ import { PopupFev21 } from "@/components/popup-fev21";
 import { PopupFev28 } from "@/components/popup-fev28";
 import { PopupMars07 } from "@/components/popup-mars07";
 import { PopupMars10 } from "@/components/popup-mars10";
+import { PopupVictoire } from "@/components/popup-victoire";
 
 export const metadata: Metadata = {
     title: {
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
 export default function Home() {
     return (
         <div className="flex flex-col min-h-screen font-sans">
+            <PopupVictoire />
             {/* HER SELECTION: Not full screen, impactful image */}
             <section className="relative min-h-[70vh] md:h-[80vh] min-h-[600px] flex items-center justify-center">
                 {/* Background Image */}
@@ -49,7 +51,7 @@ export default function Home() {
                             <div className="inline-flex flex-row items-center justify-center md:gap-3 px-6 py-3 md:px-5 md:py-2.5 rounded-xl md:rounded-full bg-white/10 backdrop-blur-md border border-white/30 text-white text-sm md:text-base font-medium tracking-wide shadow-lg hover:bg-white/20 transition-all cursor-default group max-w-full text-center">
                                 <span className="w-2 h-2 rounded-full bg-accent animate-pulse shadow-[0_0_8px_rgba(224,160,93,0.8)] shrink-0 hidden md:block" />
                                 <div className="flex flex-col md:flex-row md:items-center gap-1.5 md:gap-1.5">
-                                    <span className="font-bold text-base md:text-lg">Municipales 2026 : rendez-vous le 15 mars</span>
+                                    <span className="font-bold text-base md:text-lg">Municipales 2026 : Merci pour votre confiance !</span>
                                 </div>
                             </div>
                         </div>
@@ -76,13 +78,13 @@ export default function Home() {
                                 <div className="text-gray-600 mb-6 flex-grow space-y-4">
 
                                     {/* Élections 15 Mars */}
-                                    <div className="bg-amber-100 p-4 rounded-xl border border-amber-200">
+                                    <div className="bg-green-100 p-4 rounded-xl border border-green-200">
                                         <div className="flex items-center justify-between mb-1">
-                                            <span className="font-bold text-gray-900 text-lg">Dimanche 15 Mars</span>
-                                            <span className="bg-accent text-white text-xs font-bold px-2 py-0.5 rounded-full animate-pulse">Jour J</span>
+                                            <span className="font-bold text-gray-900 text-lg">Élections Municipales</span>
+                                            <span className="bg-green-600 text-white text-xs font-bold px-2 py-0.5 rounded-full animate-pulse">Victoire !</span>
                                         </div>
-                                        <span className="font-bold text-gray-900 block mt-1">🗳️ Élections municipales</span>
-                                        <p className="text-sm text-gray-700 mt-1">Rendez-vous aux urnes pour choisir l'équipe qui construira avec vous l'avenir de Dommartin.</p>
+                                        <span className="font-bold text-gray-900 block mt-1">🎉 MERCI À TOUTES ET À TOUS</span>
+                                        <p className="text-sm text-gray-700 mt-1">La liste « Dommartin avec Vous » a été élue. Merci pour votre confiance pour construire ensemble l'avenir de Dommartin.</p>
                                     </div>
                                     <div className="w-full h-px bg-gray-100" />
 
@@ -248,9 +250,9 @@ export default function Home() {
                                     <div className="inline-block bg-primary/10 px-4 py-2 rounded-full mb-4">
                                         <span className="text-primary font-bold uppercase tracking-wider text-sm">Notre équipe</span>
                                     </div>
-                                    <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-heading">21 candidats engagés</h3>
+                                    <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-heading">Votre nouvelle équipe municipale</h3>
                                     <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                                        Découvrez les 21 candidats qui composent la liste « Dommartin avec Vous ».
+                                        Découvrez les 21 membres élus de la liste « Dommartin avec Vous ».
                                         <br />
                                         <span className="font-semibold text-primary">Des profils variés, unis par l'envie d'agir</span> pour notre commune.
                                     </p>
@@ -374,10 +376,10 @@ export default function Home() {
                         </h2>
                         <div className="prose prose-lg mx-auto text-gray-700 leading-relaxed max-w-3xl">
                             <p className="text-xl font-medium text-gray-800">
-                                La liste « Dommartin avec Vous » se présente pour les municipales 2026, menée par Jean-Jacques Rosaye.
+                                La liste « Dommartin avec Vous », menée par Jean-Jacques Rosaye, a été élue pour le mandat 2026-2032.
                             </p>
                             <p className="font-semibold text-primary text-lg mt-4">
-                                Découvrez notre démarche, nos engagements et soutenez-nous pour construire ensemble l'avenir de Dommartin.
+                                Découvrez notre démarche et les engagements sur lesquels nous construirons ensemble l'avenir de Dommartin.
                             </p>
                         </div>
                         <div className="mt-8 flex justify-center gap-4">

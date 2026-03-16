@@ -127,10 +127,10 @@ export default function CommuniquePage() {
 
                                 <div className="bg-white/80 p-6 rounded-2xl border-l-4 border-primary shadow-sm my-8 text-center pt-8 pb-8">
                                     <p className="font-bold text-gray-900 text-lg md:text-xl mb-4 leading-snug">
-                                        Vous souhaitez un maire présent et une municipalité à votre écoute, <br className="hidden md:block"/>vous souhaitez être associés aux décisions importantes pour la commune, <br className="hidden md:block"/>vous voulez un réel changement pour Dommartin ?
+                                        Vous avez souhaité un maire présent et une municipalité à votre écoute, <br className="hidden md:block"/>vous avez souhaité être associés aux décisions importantes pour la commune, <br className="hidden md:block"/>vous avez voulu un réel changement pour Dommartin :
                                     </p>
                                     <p className="text-xl md:text-2xl font-extrabold text-primary pt-2">
-                                        N&apos;hésitez plus, dimanche prochain, votez et faites voter <br className="hidden md:block"/>Dommartin avec vous !
+                                        Merci d&apos;avoir voté et fait voter <br className="hidden md:block"/>Dommartin avec vous !
                                     </p>
                                 </div>
                             </div>
@@ -167,7 +167,7 @@ export default function CommuniquePage() {
 
                             <div className="space-y-6 text-gray-700 leading-relaxed text-lg mb-10">
                                 <p>
-                                    À l’approche de l’élection de ce dimanche, nous avons souhaité partager avec les habitants notre profession de foi.
+                                    Lors de la campagne en amont de l'élection, nous avons souhaité partager avec les habitants notre profession de foi.
                                 </p>
                                 <p>
                                     À travers cette profession de foi, nous partageons avec vous notre démarche fondée sur l’écoute des habitants et les priorités que nous portons pour l’avenir de Dommartin. <strong className="text-gray-900">Améliorer le cadre de vie, soutenir la vie associative, renforcer les services et préparer l’avenir de notre village</strong> font partie des engagements que nous proposons.
@@ -628,7 +628,7 @@ export default function CommuniquePage() {
                         </div>
 
                         <p className="text-gray-600 mb-6 text-sm">
-                            Municipales 2026 : la liste « Dommartin avec Vous » se présente, menée par Jean-Jacques Rosaye.
+                            Municipales 2026 : la liste « Dommartin avec Vous », menée par Jean-Jacques Rosaye, a été élue.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-3">

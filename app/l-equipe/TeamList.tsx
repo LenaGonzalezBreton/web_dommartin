@@ -91,7 +91,7 @@ export function TeamList() {
                     {teamMembers.length > 0 && (
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-7xl mx-auto">
                             <div className="text-center mb-4 lg:col-span-2">
-                                <h3 className="text-2xl font-bold text-gray-900">Les Co-listiers</h3>
+                                <h3 className="text-2xl font-bold text-gray-900">Les membres de l'équipe municipale</h3>
                                 <div className="w-16 h-1 bg-accent mx-auto mt-4 rounded-full" />
                             </div>
 

@@ -31,7 +31,7 @@ export default function DemarchePage() {
                         <div className="text-center mb-12">
                             <h2 className="text-3xl font-bold text-gray-900 mb-4">Notre Charte d’Engagement</h2>
                             <p className="text-gray-600 text-lg">
-                                Les colistiers de « <strong className="text-primary">Dommartin avec Vous</strong> » s’engagent, pour toute la durée du mandat,
+                                L'équipe municipale de « <strong className="text-primary">Dommartin avec Vous</strong> » s’engage, pour toute la durée du mandat,
                                 à agir dans l’intérêt général, à décider de manière collégiale et à associer les habitants aux décisions importantes.
                             </p>
                         </div>
@@ -84,7 +84,7 @@ export default function DemarchePage() {
 
                         <div className="bg-gradient-to-r from-primary/5 to-accent/5 rounded-3xl p-8 text-center border border-gray-200 dashed-border relative overflow-hidden">
                             <h3 className="text-xl font-bold text-gray-800 mb-2 font-handwriting">
-                                “ Signée par les candidat·e·s de la liste Dommartin avec vous ”
+                                “ Signée par l'équipe de Dommartin avec vous ”
                             </h3>
                             <div className="mt-6">
                                 <a
